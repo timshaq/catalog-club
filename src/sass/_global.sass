@@ -1,5 +1,7 @@
-$tab: 1199px
-$mob: 699px
+$xl: 1200px
+$lg: 992px
+$md: 768px
+$xs: 576px
 
 /*    <NULL>    */
 
@@ -7,7 +9,7 @@ $mob: 699px
 	padding: 0
 	margin: 0
 	border: 0
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif
+	font-family: Ubuntu, sans-serif
 *, *:before,*:after
 	-moz-box-sizing: border-box
 	-webkit-box-sizing: border-box
@@ -18,13 +20,14 @@ a:focus, a:active
 	outline: none
 nav, footer, header, aside
 	display: block
-html, body 
+html, body
 	font-size: 100%
 	line-height: 1
 	font-size: 14px
 	-moz-text-size-adjust: 100%
 	-webkit-text-size-adjust: none
 	-webkit-overflow-scrolling: touch
+html
 	overflow-x: hidden
 input, button, textarea
 	font-family: inherit
@@ -55,20 +58,57 @@ h1,h2,h3,h4,h5,h6
 /*    <GLOBAL>    */
 
 \:root
-	--white: rgba(255,255,255, 1)
+	--white: rgba(255,255,255,1)
+	--black: rgba(0,0,0,1)
+	--black10: rgba(0,0,0,.1)
+	--gray: rgba(173,173,173, 1)
+	--gray2: rgba(237,237,237,1)
 
 
-.fix-cont 
-	max-width: 1170px
-	min-width: 320px
+*
+	color: var(--black)
+
+main
+	margin-top: 15px
+	@media(min-width:$md)
+		margin-top: 30px
+	@media(min-width:$xl)
+		margin-top: 25px
+
+.fix-cont
+	padding-left: 15px
+	padding-right: 15px
 	margin: 0 auto
 	height: 100%
 	width: 100%
-	@media(max-width:1199px) 
+	@media(min-width:$md)
 		max-width: 708px
-	@media(max-width:767px) 
-		max-width: none
-		padding-left: 15px
-		padding-right: 15px
+		padding-left: 0
+		padding-right: 0
+	@media(min-width:$xl)
+		max-width: 1170px
+		min-width: 320px
+
+.section-title
+	font-weight: 300
+	font-size: 20px
+	line-height: 23px
+.white-text
+	color: var(--white)
+
+.white-btn, .black-btn
+	display: flex
+	justify-content: center
+	align-items: center
+	font-size: 13px
+	line-height: 14px
+	padding: 16px 0
+.white-btn
+	color: var(--black)
+	border: 1px solid var(--gray)
+	background-color: var(--white)
+.black-btn
+	color: var(--white)
+	background-color: var(--black)
 	
 /*    </GLOBAL>    */

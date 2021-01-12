@@ -1,14 +1,35 @@
 @font-face {
-  font-family: 'Oswald';
-  src: url("../fonts/Oswald/Oswald-Regular.woff2") format("woff2"), url("../fonts/Oswald/Oswald-Regular.woff") format("woff");
+  font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu/Ubuntu-Light.woff2") format("woff2"), url("../fonts/Ubuntu/Ubuntu-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu/Ubuntu-LightItalic.woff2") format("woff2"), url("../fonts/Ubuntu/Ubuntu-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu/Ubuntu-Regular.woff2") format("woff2"), url("../fonts/Ubuntu/Ubuntu-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Oswald';
-  src: url("../fonts/Oswald/Oswald-Light.woff2") format("woff2"), url("../fonts/Oswald/Oswald-Light.woff") format("woff");
-  font-weight: 300;
+  font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu/Ubuntu-Medium.woff2") format("woff2"), url("../fonts/Ubuntu/Ubuntu-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu/Ubuntu-Bold.woff2") format("woff2"), url("../fonts/Ubuntu/Ubuntu-Bold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -26,40 +47,12 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'OpenSans';
-  src: url("../fonts/OpenSans/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'OpenSans';
-  src: url("../fonts/OpenSans/OpenSans-Light.woff2") format("woff2"), url("../fonts/OpenSans/OpenSans-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Open Sans Condensed';
-  src: url("../fonts/RobotoCondensed/RobotoCondensed-Regular.woff2") format("woff2"), url("../fonts/RobotoCondensed/RobotoCondensed-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Open Sans Condensed';
-  src: url("../fonts/RobotoCondensed/RobotoCondensed-Light.woff2") format("woff2"), url("../fonts/RobotoCondensed/RobotoCondensed-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-
 /*    <NULL>    */
 * {
   padding: 0;
   margin: 0;
   border: 0;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-family: Ubuntu, sans-serif;
 }
 
 *, *:before, *:after {
@@ -85,6 +78,9 @@ html, body {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: none;
   -webkit-overflow-scrolling: touch;
+}
+
+html {
   overflow-x: hidden;
 }
 
@@ -131,31 +127,196 @@ h1, h2, h3, h4, h5, h6 {
 /*    </NULL>    */
 /*    <GLOBAL>    */
 :root {
-  --white: rgba(255,255,255, 1);
+  --white: rgba(255,255,255,1);
+  --black: rgba(0,0,0,1);
+  --black10: rgba(0,0,0,.1);
+  --gray: rgba(173,173,173, 1);
+  --gray2: rgba(237,237,237,1);
+}
+
+* {
+  color: var(--black);
+}
+
+main {
+  margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+  main {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    margin-top: 25px;
+  }
 }
 
 .fix-cont {
-  max-width: 1170px;
-  min-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
   height: 100%;
   width: 100%;
 }
 
-@media (max-width: 1199px) {
+@media (min-width: 768px) {
   .fix-cont {
     max-width: 708px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 1200px) {
   .fix-cont {
-    max-width: none;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 1170px;
+    min-width: 320px;
   }
+}
+
+.section-title {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.white-text {
+  color: var(--white);
+}
+
+.white-btn, .black-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  line-height: 14px;
+  padding: 16px 0;
+}
+
+.white-btn {
+  color: var(--black);
+  border: 1px solid var(--gray);
+  background-color: var(--white);
+}
+
+.black-btn {
+  color: var(--white);
+  background-color: var(--black);
 }
 
 /*    </GLOBAL>    */
+.banner {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    margin-top: 30px;
+  }
+}
+
+.banner__fix-cont {
+  position: relative;
+  padding: 10px;
+  width: 290px;
+}
+
+@media (min-width: 768px) {
+  .banner__fix-cont {
+    width: 100%;
+  }
+}
+
+.banner__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+
+.banner__title {
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .banner__title {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.banner__subtitle {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 135%;
+}
+
+@media (min-width: 768px) {
+  .banner__subtitle {
+    font-size: 13px;
+    line-height: 155%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner__subtitle {
+    font-size: 14px;
+  }
+}
+
+.banner__title, .banner__subtitle {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.category-line .category-card__header {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.category-line .category-card__header:before {
+  content: '';
+  width: 100%;
+  height: 1.5px;
+  background-color: var(--black10);
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.category-line .category-card__title {
+  background-color: var(--black);
+  color: var(--gray2);
+  font-size: 15px;
+  line-height: 17px;
+  text-align: center;
+  width: 170px;
+}
 
 /*# sourceMappingURL=srcmaps/style.css.map */
