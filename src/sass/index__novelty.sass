@@ -1,0 +1,82 @@
+.novelty
+	&__fix-cont
+	&__title
+		margin-bottom: 25px
+		text-align: center
+	&__content
+		width: 290px
+		margin: 0 auto
+		@media(min-width:$md)
+			width: 708px
+		@media(min-width:$xl)
+			width: 100%
+			display: flex
+			justify-content: space-between
+	&__col
+		@media(min-width:$xl)
+			width: 48%
+	&__row
+		margin-bottom: 10px
+		display: flex
+		justify-content: space-between
+		@media(min-width:$md)
+			margin-bottom: 30px
+		@media(min-width:$xl)
+			height: 275px
+	&__card
+		position: relative
+		width: 140px
+		height: 140px
+		overflow: hidden
+		@media(min-width:$md)
+			width: 339px
+			height: 339px
+		@media(min-width:$xl)
+			width: auto
+			height: auto
+		&.video
+			& .novelty__card-blur
+				display: flex
+				flex-direction: column
+			& .novelty__card-title, & .novelty__card-subtitle
+				text-align: left
+	&__card-bg
+		width: 100%
+		height: 100%
+		object-fit: cover
+	&__card-blur
+		position: absolute
+		bottom: 0
+		left: 0
+		height: 50%
+		width: 100%
+		background-color: var(--black25)
+		backdrop-filter: blur(14px)
+		padding: 3px 9px
+		@media(min-width:$md)
+			height: 90px
+			padding: 10px 0
+			display: flex
+			flex-direction: column
+			align-items: center
+		@media(min-width:$xl)
+			bottom: 18px
+	&__card-title
+		font-size: 14px
+		line-height: 130%
+		margin-bottom: 5px
+		@media(min-width:$md)
+			font-size: 20px
+			width: 185px
+	&__card-subtitle
+		font-size: 10px
+		line-height: 14px
+		@media(min-width:$md)
+			font-size: 14px
+			width: 175px
+	&__card-title, &__card-subtitle
+		color: var(--white)
+		text-align: center
+
+
+

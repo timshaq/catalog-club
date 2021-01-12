@@ -61,12 +61,14 @@ h1,h2,h3,h4,h5,h6
 	--white: rgba(255,255,255,1)
 	--black: rgba(0,0,0,1)
 	--black10: rgba(0,0,0,.1)
+	--black10-hex: #e6e6e6
+	--black25: rgba(0,0,0,.25)
 	--gray: rgba(173,173,173, 1)
 	--gray2: rgba(237,237,237,1)
 	--orange: rgba(255,133,98,1)
 
 
-*
+*, a
 	color: var(--black)
 
 main
@@ -94,6 +96,9 @@ main
 	font-weight: 300
 	font-size: 20px
 	line-height: 23px
+	@media(min-width:$md)
+		font-size: 24px
+		line-height: 28px
 .card-title
 	font-size: 16px
 	line-height: 150%
