@@ -1,16 +1,40 @@
 .category-line
+	margin: 40px 0
 	&__fix-cont
-
+		@media(min-width:$md)
+			display: flex
 	&__category-card
 
 	&.three
+		& .category-line__fix-cont
+			@media(min-width:$md)
+				display: flex
+				justify-content: space-between
+				align-items: stretch
+		& .category-card
+			@media(min-width:$md)
+				width: 216px
+			@media(min-width:$xl)
+				width: 370px
+				&:not(:last-child)
+					& .category-card__header
+						&:before
+							width: calc(100% + 30px)
+			&__subtitle, &__description
+				@media(min-width:$xl)
+					padding: 0 30px
+			&__more, &__all
+				@media(min-width:$xl)
+					width: 46%
+					margin-left: 30px
+			
 	&.four
 
 	& .category-card
+		margin-bottom: 30px
+		display: flex
+		flex-direction: column
 		&__header
-			position: relative
-			display: flex
-			justify-content: center
 			&:before
 				content: ''
 				width: 100%
@@ -19,6 +43,10 @@
 				position: absolute
 				top: 50%
 				left: 0
+			position: relative
+			display: flex
+			justify-content: center
+			margin-bottom: 21px
 		&__title
 			background-color: var(--black)
 			color: var(--gray2)
@@ -27,11 +55,46 @@
 			text-align: center
 			width: 170px
 		&__ph
-
+			width: 100%
+			height: auto
+			object-fit: cover
+			margin-bottom: 15px
 		&__subtitle
-
+			margin-bottom: 15px
+			overflow: hidden
+			text-overflow: ellipsis
+			display: -webkit-box
+			-webkit-box-orient: vertical
+			-webkit-line-clamp: 2
+			line-height: 24px
+			max-height: 48px
 		&__description
-
+			font-weight: 300
+			font-size: 14px
+			overflow: hidden
+			text-overflow: ellipsis
+			display: -webkit-box
+			-webkit-box-orient: vertical
+			-webkit-line-clamp: 5
+			line-height: 21.7px
+			max-height: 123.5px
+			margin-bottom: 30px
+			@media(min-width:$md)
+				font-size: 13px
+				-webkit-line-clamp: 6
+				line-height: 19px
+				max-height: 114px
 		&__more
-
+			margin-top: auto
+			margin-bottom: 15px
 		&__all
+			font-size: 13px
+			line-height: 150%
+			color: var(--orange)
+			display: flex
+			justify-content: center
+			align-items: center
+		&__more, &__all
+			width: 66%
+			@media(min-width:$md)
+				width: 100%
