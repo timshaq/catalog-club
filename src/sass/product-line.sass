@@ -5,6 +5,27 @@
 			display: flex
 			flex-wrap: wrap
 			align-items: stretch
+	&.wardrobe
+		& .product-card
+			&__ph
+				width: 100%
+				height: 290px
+				object-fit: cover
+				object-position: top
+				@media(min-width:$md)
+					height: 216px
+				@media(min-width:$xl)
+					height: 360px
+	&.three
+		& .product-card
+			margin-bottom: 30px
+			display: flex
+			flex-direction: column
+			position: relative
+			@media(min-width:$md)
+				width: 216px
+			@media(min-width:$xl)
+				width: 370px
 	&__section-title
 		margin-bottom: 42px
 		text-align: center
@@ -25,13 +46,15 @@
 			width: 50px
 			height: 50px
 			border-radius: 100%
-			background-color: var(--dark-orange)
+			background-color: var(--gray)
 			display: flex
 			justify-content: center
 			align-items: center
 			color: var(--white)
 			font-size: 12px
 			line-height: 14px
+			&.sale
+				background-color: var(--dark-orange)
 		&__title
 			background-color: var(--black)
 			color: var(--gray2)
@@ -52,7 +75,7 @@
 		&__subtitle
 			margin-bottom: 5px
 			text-align: center
-		&__description, &__price
+		&__description, &__price, &__article
 			font-weight: 300
 			font-size: 14px
 			line-height: 150%
@@ -64,6 +87,8 @@
 			margin-right: auto
 			@media(min-width:$md)
 				width: 180px
+		&__article
+			margin-bottom: 30px
 		&__price-cont
 			display: flex
 			justify-content: center
