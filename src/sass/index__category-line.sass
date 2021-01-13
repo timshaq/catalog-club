@@ -14,18 +14,33 @@
 			@media(min-width:$md)
 				justify-content: space-between
 				align-items: stretch
+				flex-wrap: wrap
 		& .category-card
 			@media(min-width:$md)
 				width: 216px
 			@media(min-width:$xl)
 				width: 370px
-			&__subtitle, &__description
+			&__subtitle, &__description, &__date
 				@media(min-width:$xl)
 					padding: 0 30px
 			&__more, &__all
 				@media(min-width:$xl)
 					width: 46%
 					margin-left: 30px
+	&.tab-two
+		@media(min-width:$md)
+			& .category-card
+				width: 339px
+				&__more, &__all
+					width: 196px
+					margin-left: 20px
+				&__subtitle,
+				&__description,
+				&__date
+					padding: 0 20px
+		& .watch-more
+			&__link
+				height: 40px
 			
 	&.four
 		& .category-line__fix-cont
@@ -70,6 +85,12 @@
 			height: auto
 			object-fit: cover
 			margin-bottom: 15px
+		&__date
+			font-size: 14px
+			line-height: 16px
+			letter-spacing: 2.5px
+			color: var(--gray)
+			margin-bottom: 10px
 		&__subtitle
 			margin-bottom: 15px
 			overflow: hidden

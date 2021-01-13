@@ -153,5 +153,26 @@ main
 .black-btn
 	color: var(--white)
 	background-color: var(--black)
+
+
+.watch-more
+	position: relative
+	padding: 20px 0
+	&:before, &:after
+		content: ''
+		width: 100%
+		height: 1px
+		background-color: var(--gray)
+		position: absolute
+	&:before
+		top: 0
+	&:after
+		bottom: 0
+	@media(min-width:$md)
+		display: flex
+		justify-content: center
+	&__link
+		@media(min-width:$md)
+			width: 230px
 	
 /*    </GLOBAL>    */
