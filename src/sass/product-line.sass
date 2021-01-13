@@ -1,0 +1,83 @@
+.product-line
+	margin: 40px 0
+	&__fix-cont
+		@media(min-width:$md)
+			display: flex
+			flex-wrap: wrap
+			align-items: stretch
+	&__section-title
+		margin-bottom: 42px
+		text-align: center
+	&__product-card
+		width: 290px
+		margin: 0 auto
+	& .product-card
+		margin-bottom: 30px
+		display: flex
+		flex-direction: column
+		position: relative
+		@media(min-width:$xl)
+			width: 270px
+		&__status
+			position: absolute
+			top: 10px
+			right: 10px
+			width: 50px
+			height: 50px
+			border-radius: 100%
+			background-color: var(--dark-orange)
+			display: flex
+			justify-content: center
+			align-items: center
+			color: var(--white)
+			font-size: 12px
+			line-height: 14px
+		&__title
+			background-color: var(--black)
+			color: var(--gray2)
+			font-size: 15px
+			line-height: 18px
+			text-align: center
+			width: 170px
+			z-index: 2
+		&__ph
+			width: 100%
+			height: 360px
+			object-fit: cover
+			margin-bottom: 15px
+			@media(min-width:$md)
+				height: 450px
+			@media(min-width:$xl)
+				height: 360px
+		&__subtitle
+			margin-bottom: 5px
+			text-align: center
+		&__description, &__price
+			font-weight: 300
+			font-size: 14px
+			line-height: 150%
+			margin-bottom: 5px
+			text-align: center
+		&__description
+			width: 190px
+			margin-left: auto
+			margin-right: auto
+			@media(min-width:$md)
+				width: 180px
+		&__price-cont
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-bottom: 30px
+		&__price
+			&:nth-child(2)
+				margin-left: 5px
+			&.new
+				font-weight: 600
+		&__more
+			margin-left: auto
+			margin-right: auto
+			width: 210px
+			@media(min-width:$md)
+				width: 100%
+				margin-top: auto
