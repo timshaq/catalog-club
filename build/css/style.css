@@ -128,6 +128,7 @@ h1, h2, h3, h4, h5, h6 {
 /*    <GLOBAL>    */
 :root {
   --white: rgba(255,255,255,1);
+  --white50: rgba(255,255,255,.5);
   --black: rgba(0,0,0,1);
   --black10: rgba(0,0,0,.1);
   --black10-hex: #e6e6e6;
@@ -137,6 +138,8 @@ h1, h2, h3, h4, h5, h6 {
   --gray3: rgba(107,104,104,1);
   --orange: rgba(255,133,98,1);
   --dark-orange: rgba(255,43,0,1);
+  --popup-bg: rgba(196,196,196,.3);
+  --popup-shadow: rgba(0,0,0,0.2);
 }
 
 *, a {
@@ -337,6 +340,39 @@ main {
 }
 
 /*    </GLOBAL>    */
+.breadscrumb {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.breadscrumb-item {
+  opacity: .5;
+}
+
+.breadscrumb-item:not(:first-child) {
+  margin-left: 5px;
+  position: relative;
+}
+
+.breadscrumb-item:not(:first-child):before {
+  content: '/';
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.breadscrumb-item a {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
 .banner {
   margin-bottom: 15px;
 }
@@ -1359,15 +1395,22 @@ main {
   margin: 40px 0;
 }
 
+.product-line__fix-cont {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 @media (min-width: 768px) {
   .product-line__fix-cont {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
     -webkit-box-align: stretch;
     -webkit-align-items: stretch;
         -ms-flex-align: stretch;
@@ -1393,6 +1436,19 @@ main {
 @media (min-width: 1200px) {
   .product-line.wardrobe .product-card__ph {
     height: 360px;
+  }
+}
+
+.product-line.wardrobe .product-card__more {
+  margin-left: auto;
+  margin-right: auto;
+  width: 210px;
+}
+
+@media (min-width: 768px) {
+  .product-line.wardrobe .product-card__more {
+    width: 230px;
+    margin-top: auto;
   }
 }
 
@@ -1427,12 +1483,8 @@ main {
   text-align: center;
 }
 
-.product-line__product-card {
-  width: 290px;
-  margin: 0 auto;
-}
-
 .product-line .product-card {
+  width: 290px;
   margin-bottom: 30px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1651,6 +1703,395 @@ main {
   line-height: 16px;
   text-align: center;
   margin-top: 15px;
+}
+
+.fashion-ideas {
+  margin-top: 20px;
+}
+
+@media (min-width: 1200px) {
+  .fashion-ideas {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .fashion-ideas__ideas {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.fashion-ideas .idea {
+  width: 290px;
+  height: 290px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .fashion-ideas .idea {
+    margin-bottom: 30px;
+    margin-right: 0;
+    margin-left: 0;
+    width: 339px;
+    height: 355px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fashion-ideas .idea {
+    width: 379px;
+    height: 385px;
+  }
+}
+
+.fashion-ideas .idea__about {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 230px;
+  background-color: var(--white50);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  padding: 22px 0 14px 0;
+}
+
+@media (min-width: 768px) {
+  .fashion-ideas .idea__about {
+    width: 290px;
+  }
+}
+
+.fashion-ideas .idea__ph {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.fashion-ideas .idea__title {
+  font-size: 12px;
+  line-height: 22px;
+  color: var(--white);
+  background-color: var(--black);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 189px;
+  height: 25px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  padding: 0 9px;
+}
+
+.fashion-ideas .idea__description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 15px;
+  width: 210px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.fashion-ideas .idea__link {
+  height: 35px;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.week-thing {
+  margin-top: 20px;
+}
+
+@media (min-width: 1200px) {
+  .week-thing {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .week-thing__things {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+.week-thing .watch-more:after {
+  height: 0;
+}
+
+.week-thing .watch-more__link {
+  height: 40px;
+}
+
+.week-thing .thing {
+  width: 290px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid var(--gray);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .week-thing .thing {
+    margin-bottom: 30px;
+    margin-right: 0;
+    margin-left: 0;
+    width: 339px;
+  }
+  .week-thing .thing:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .week-thing .thing {
+    width: 370px;
+  }
+  .week-thing .thing:nth-child(2n) {
+    margin-right: 30px;
+  }
+  .week-thing .thing:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.week-thing .thing__ph {
+  width: 260px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .week-thing .thing__ph {
+    width: 309px;
+    height: 245px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .week-thing .thing__ph {
+    width: 340px;
+    height: 265px;
+  }
+}
+
+.week-thing .thing__description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  margin-top: 15px;
+  width: 245px;
+}
+
+.week-thing .thing__views {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.week-thing .thing__views-icon {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 10px;
+}
+
+.week-thing .thing__views-value {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.week-thing .thing__popup-text {
+  display: none;
+}
+
+.popup-cont {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--popup-bg);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  -webkit-transition: all linear .1s;
+  transition: all linear .1s;
+}
+
+.popup-cont.open {
+  opacity: 1;
+  visibility: visible;
+  z-index: 40;
+  -webkit-transition: all linear .2s;
+  transition: all linear .2s;
+}
+
+.popup-cont .popup {
+  background-color: var(--white);
+  position: relative;
+  border: 1px solid var(--gray);
+  box-shadow: 0px 0px 15px var(--popup-shadow);
+  overflow: auto;
+  max-height: 100vh;
+  width: 290px;
+}
+
+@media (min-width: 768px) {
+  .popup-cont .popup {
+    width: 462px;
+  }
+}
+
+.popup-cont .popup__close {
+  width: 16px;
+  height: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.popup-cont .popup__week-thing {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 30px 15px;
+}
+
+@media (min-width: 768px) {
+  .popup-cont .popup__week-thing {
+    padding: 70px 60px 20px;
+  }
+}
+
+.popup-cont .popup__week-thing .popup__ph {
+  width: 100%;
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .popup-cont .popup__week-thing .popup__ph {
+    width: 330px;
+    margin-bottom: 31px;
+  }
+}
+
+.popup-cont .popup__week-thing .popup__article {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .popup-cont .popup__week-thing .popup__article {
+    margin-bottom: 20px;
+  }
 }
 
 /*# sourceMappingURL=srcmaps/style.css.map */

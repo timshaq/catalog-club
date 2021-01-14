@@ -1,0 +1,18 @@
+.breadscrumb
+	display: flex
+	flex-wrap: wrap
+.breadscrumb-item
+	opacity: .5
+	&:not(:first-child)
+		margin-left: 5px
+		position: relative
+		&:before
+			content: '/'
+			font-weight: 300
+			font-size: 14px
+			line-height: 16px
+	& a
+		font-weight: 300
+		font-size: 14px
+		line-height: 16px
+		white-space: nowrap
