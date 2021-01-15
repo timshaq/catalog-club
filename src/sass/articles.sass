@@ -4,6 +4,9 @@
 		margin-top: 20px
 	@media(min-width:$xl)
 		margin-top: 25px
+	& .page-title
+		margin: 0
+		margin-bottom: 25px
 	&__fix-cont
 		@media(min-width:$xl)
 			display: flex
@@ -32,6 +35,10 @@
 		&.h2
 			font-size: 16px
 			line-height: 170%
+	&__p
+		font-weight: 300
+		font-size: 14px
+		line-height: 170%
 	&__img-cont, &__img
 		margin: 20px 0 30px 0
 	&__img-link
@@ -47,12 +54,15 @@
 		margin: 20px 0
 	&__like-cont
 		margin: 25px 0
+		display: flex
+		align-items: center
 	&__like-text
 		font-weight: 300
 		font-size: 14px
 		line-height: 150%
 		margin-right: 10px
 	&__svg-heart
+		cursor: pointer
 		&.active
 			& path
 				fill: var(--orange)
@@ -61,6 +71,24 @@
 		font-size: 14px
 		line-height: 150%
 		text-decoration-line: underline
+	&__list
+		margin-top: 25px
+		margin-bottom: 40px
+	&__li
+		margin-bottom: 20px
+		font-weight: 300
+		font-size: 14px
+		line-height: 170%
+		position: relative
+		padding-left: 15px 
+		&:before
+			content: '◼'
+			font-size: 10px
+			line-height: 170%
+			position: absolute
+			top: 5%
+			left: 0
+		& strong
 	&__post
 
 	&__aside
