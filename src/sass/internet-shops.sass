@@ -1,0 +1,147 @@
+.internet-shops
+	margin-top: 20px
+	@media(min-width:$xl)
+		margin-top: 30px
+	&__fix-cont
+
+	&__shops
+		@media(min-width:$md)
+			display: flex
+			flex-wrap: wrap
+	&__shop
+	& .watch-more
+		&__link
+			height: 40px
+
+	& .shop
+		width: 290px
+		position: relative
+		margin-right: auto
+		margin-left: auto
+		margin-bottom: 15px
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		align-items: center
+		@media(min-width:$md)
+			margin-bottom: 30px
+			margin-right: 0
+			margin-left: 0
+			width: 339px
+			&:not(:nth-child(2n))
+				margin-right: 30px
+		@media(min-width:$xl)
+			width: 370px
+			&:nth-child(2n)
+				margin-right: 30px
+			&:nth-child(3n)
+				margin-right: 0
+		&__header
+			margin-bottom: 15px
+			position: relative
+		&__ph
+			width: 100%
+			height: 189px
+			object-fit: cover
+			object-position: top
+			@media(min-width:$md)
+				height: 270px
+			@media(min-width:$xl)
+				height: 295px
+		&__title-link
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-top: auto
+		&__title
+			font-weight: 300
+			font-size: 14px
+			line-height: 150%
+			text-align: center
+		&__header-props
+			display: flex
+			justify-content: center
+			align-items: center
+			border-radius: 8px 8px 0px 0px
+			background-color: var(--white)
+			padding: 8px 10px
+			position: absolute
+			bottom: 0
+			left: 0
+			font-size: 12px
+			line-height: 18px
+			text-transform: uppercase
+		&__body
+			width: 100%
+		&__link
+			font-weight: 300
+			font-size: 14px
+			line-height: 150%
+			color: var(--black50)
+			margin-top: 10px
+			margin-bottom: 20px
+			display: block
+		&__btn-link
+			@media(min-width:$md)
+				width: 170px
+		&__description
+			display: block
+			font-weight: 300
+			font-size: 14px
+			line-height: 150%
+			margin-bottom: 10px
+
+.sort-by
+	display: none
+	@media(min-width:$md)
+		margin: 20px 0
+		display: block
+		background-color: var(--gray)
+		padding-left: 40px
+		padding-top: 5px
+		padding-bottom: 5px
+		height: 30px
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		position: relative
+		white-space: nowrap
+		&:before, &:after
+			content: ''
+			height: 100%
+			position: absolute
+			top: 0
+		&:before
+			width: 30px
+			left: 0px
+			background-color: var(--dark-red)
+		&:after
+			width: 11px
+			left: 30px
+			border-style: solid
+			border-width: 15px 0 15px 11px
+			border-color: transparent transparent transparent var(--dark-red)
+	&__title, &__link
+		font-size: 11px
+		line-height: 21px
+		text-transform: uppercase
+		color: var(--white)
+	&__title
+		margin: 0 10px
+	&__link
+		&.current
+			text-decoration-line: underline
+	&__list
+		display: flex
+	&__li
+		&:not(:last-child)
+			margin-right: 10px
+		@media(min-width:$md)
+			&:not(:nth-child(-n+4))
+				display: none
+		@media(min-width:$xl)
+			&:not(:nth-child(-n+4))
+				display: block
+
+	&__link
+

@@ -1,0 +1,175 @@
+.clothes-catalog
+	margin-top: 20px
+	@media(min-width:$xl)
+		margin-top: 30px
+	&__fix-cont
+
+	&__catalogs
+		@media(min-width:$md)
+			display: flex
+			flex-wrap: wrap
+	&__catalog
+	& .watch-more
+		&:after
+			height: 0
+		&__link
+			height: 40px
+
+	& .catalog
+		width: 290px
+		position: relative
+		margin-right: auto
+		margin-left: auto
+		margin-bottom: 15px
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		align-items: center
+		@media(min-width:$md)
+			margin-bottom: 30px
+			margin-right: 0
+			margin-left: 0
+			width: 339px
+			&:not(:nth-child(2n))
+				margin-right: 30px
+		@media(min-width:$xl)
+			width: 370px
+			&:nth-child(2n)
+				margin-right: 30px
+			&:nth-child(3n)
+				margin-right: 0
+		&__header
+			padding: 10px
+			border: 1px solid var(--gray)
+			display: flex
+			justify-content: space-between
+			margin-bottom: 15px
+		&__ph
+			width: 130px
+			height: 189px
+			object-fit: cover
+			@media(min-width:$md)
+				width: 170px
+				height: 245px
+			@media(min-width:$xl)
+				width: 185px
+				height: 265px
+		&__title-link
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-top: auto
+		&__title
+			font-weight: 300
+			font-size: 14px
+			line-height: 150%
+			text-align: center
+		&__header-props
+			display: flex
+			flex-direction: column
+			padding-left: 10px
+		&__header-controls
+			margin-top: auto
+			display: flex
+			justify-content: space-between
+			align-items: center
+		&__svg
+			cursor: pointer
+			& path
+				fill: var(--black30)
+			&.active
+				& path
+					fill: var(--orange)
+		&__views
+			display: flex
+			justify-content: flex-start
+			align-items: center
+		&__views-icon
+			width: 24px
+			height: 24px
+			object-fit: contain
+			margin-right: 10px
+		&__views-value
+			font-size: 14px
+			line-height: 18px
+		&__body
+			width: 100%
+		&__link
+			display: flex
+			justify-content: center
+			align-items: center
+			border: 1px solid var(--gray)
+			padding: 15px 0
+			font-size: 13px
+			line-height: 15px
+			@media(min-width:$md)
+				font-weight: 300
+				font-size: 14px
+				line-height: 150%
+				color: var(--black50)
+				justify-content: flex-start
+				padding: 0
+				border: 0
+				margin-top: 10px
+		&__description
+			display: none
+			@media(min-width:$md)
+				display: block
+				font-weight: 300
+				font-size: 14px
+				line-height: 150%
+
+.sort-by
+	display: none
+	@media(min-width:$md)
+		margin: 20px 0
+		display: block
+		background-color: var(--gray)
+		padding-left: 40px
+		padding-top: 5px
+		padding-bottom: 5px
+		height: 30px
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		position: relative
+		white-space: nowrap
+		&:before, &:after
+			content: ''
+			height: 100%
+			position: absolute
+			top: 0
+		&:before
+			width: 30px
+			left: 0px
+			background-color: var(--dark-red)
+		&:after
+			width: 11px
+			left: 30px
+			border-style: solid
+			border-width: 15px 0 15px 11px
+			border-color: transparent transparent transparent var(--dark-red)
+	&__title, &__link
+		font-size: 11px
+		line-height: 21px
+		text-transform: uppercase
+		color: var(--white)
+	&__title
+		margin: 0 10px
+	&__link
+		&.current
+			text-decoration-line: underline
+	&__list
+		display: flex
+	&__li
+		&:not(:last-child)
+			margin-right: 10px
+		@media(min-width:$md)
+			&:not(:nth-child(-n+4))
+				display: none
+		@media(min-width:$xl)
+			&:not(:nth-child(-n+4))
+				display: block
+
+	&__link
+

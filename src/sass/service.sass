@@ -1,0 +1,246 @@
+.service-list
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	width: 290px
+	margin: 20px auto 0 auto
+	@media(min-width:$md)
+		width: 708px
+		justify-content: space-between
+	@media(min-width:$xl)
+		width: 100%
+	&__li
+		width: 40%
+		margin-bottom: 30px
+		margin-right: 10%
+		&:nth-child(2n), &:last-child
+			margin-right: 0
+		@media(min-width:$md)
+			width: 30%
+			margin-right: 0
+	&__link-cont
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__header
+		width: 70px
+		height: 70px
+		background-color: var(--dark-orange)
+		display: flex
+		justify-content: center
+		align-items: center
+		border-radius: 50%
+		margin-bottom: 15px
+	&__ph
+		width: 38px
+		height: 38px
+		object-fit: cover
+	&__link
+	&__title
+		font-weight: 300
+		font-size: 14px
+		line-height: 150%
+		text-align: center
+.service-links
+	margin-bottom: 20px
+	white-space: nowrap
+	overflow: hidden
+	display: flex
+	@media(min-width:$md)
+		white-space: wrap
+		flex-wrap: wrap
+	&__li
+		margin-right: 10px
+		@media(min-width:$md)
+			margin-bottom: 10px
+	&__link
+		font-weight: 300
+		font-size: 15px
+		line-height: 17px
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 13px 15px
+		text-transform: uppercase
+		background-color: var(--gray4)
+		&.current
+			background-color: var(--white)
+			border: 1px solid var(--dark-orange)
+.service-instruction
+	& .instruction__list
+		display: flex
+		justify-content: flex-start
+		margin-top: 30px
+		margin-bottom: 40px
+		overflow: hidden
+		@media(min-width:$md)
+			width: 708px
+		@media(min-width:$xl)
+			width: 100%
+	& .instruction__li
+		width: 120px
+		margin-right: 27px
+		@media(min-width:$md)
+			margin-right: 0
+			&:not(:nth-child(5n))
+				margin-right: 27px
+		@media(min-width:$xl)
+			margin-right: 0
+			width: 135px
+			&:not(:nth-child(6n))
+				margin-right: 12px
+		&.current
+			& .instruction__li-header
+				&:before
+					background-color: var(--dark-orange)
+				&:after
+					content: url(../img/instruct__arrow_orange.svg)
+			& .instruction__li-header-num
+				color: var(--white)
+				background-color: var(--dark-orange)
+				border: 1px solid var(--dark-orange)
+	& .instruction__li-header
+		&:before
+			content: ''
+			width: 100%
+			height: 1px
+			background-color: var(--gray)
+			position: absolute
+			top: calc(50% - 1px)
+			left: 0
+		&:after
+			content: url(../img/instruct__arrow_gray.svg)
+			width: 7px
+			height: 12px
+			position: absolute
+			top: 50%
+			right: 0
+			transform: translateY(-50%)
+			display: flex
+			justify-content: center
+			align-items: center
+
+	& .instruction__li-header-num
+		background-color: var(--white)
+		border: 1px solid var(--gray)
+		color: var(--black)
+		font-size: 13px
+	& .instruction__subtitle
+
+
+.service-order-img
+	width: 100%
+	height: 175px
+	@media(min-width:$md)
+		height: 375px
+	@media(min-width:$xl)
+		height: 400px
+
+.service-delivery-list
+	width: 290px
+	margin-left: auto
+	margin-right: auto
+	margin-top: 30px
+	margin-bottom: 30px
+	@media(min-width:$md)
+		width: 708px
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	@media(min-width:$xl)
+		width: 100%
+	& .service-delivery-li
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-bottom: 30px
+		@media(min-width:$md)
+			width: 220px
+	& .service-delivery-ph
+		width: 60px
+		height: 60px
+		object-fit: cover
+		margin-bottom: 15px
+	& .articles__p
+		text-align: center
+
+.service-delivery-proccess
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	margin-top: 67px
+	width: 290px
+	margin-left: auto
+	margin-right: auto
+	@media(min-width:$md)
+		width: 708px
+	@media(min-width:$xl)
+		width: 100%
+		justify-content: flex-start
+		margin-left: 0
+		margin-right: 0
+		padding-left: 85px
+	&__li
+		width: 140px
+		position: relative
+		margin-bottom: 25px
+		&:not(:nth-child(2n))
+			margin-right: 10px
+		&:first-child, &:last-child
+			& .service-delivery-proccess__li-header
+				background-color: var(--dark-orange)
+		&:last-child
+			width: 60px
+			& .service-delivery-proccess__li-header
+				&:before
+					height: 0
+				&:after
+					content: ''
+					height: 0
+		@media(min-width:$md)
+			margin-right: 0
+			&:not(:last-child)
+				margin-right: 15px
+	&__li-header
+		width: 60px
+		height: 60px
+		border-radius: 50%
+		display: flex
+		justify-content: center
+		align-items: center
+		background-color: var(--gray)
+		&:before
+			content: ''
+			width: 100%
+			height: 1px
+			background-color: var(--gray)
+			position: absolute
+			top: calc(50% - 1px)
+			left: 0
+			z-index: -1
+		&:after
+			content: url(../img/instruct__arrow_gray.svg)
+			width: 7px
+			height: 12px
+			position: absolute
+			top: 50%
+			right: 0
+			transform: translateY(-50%)
+			display: flex
+			justify-content: center
+			align-items: center
+	&__icon
+		z-index: 2
+		position: relative
+		width: 38px
+		height: 38px
+		object-fit: cover
+	&__li-text
+		position: absolute
+		top: 4px
+		left: 70px
+		font-weight: 300
+		font-size: 14px
+		line-height: 150%
+		color: var(--dark-orange)
+
