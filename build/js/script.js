@@ -284,7 +284,23 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
   function srcJsScriptJs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
-    eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _saleCard_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./saleCard.js */ \"./src/js/saleCard.js\");\n/* harmony import */ var _weekThingPopups_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./weekThingPopups.js */ \"./src/js/weekThingPopups.js\");\n\r\n\r\n\r\n\r\n\r\ndocument.addEventListener(\"DOMContentLoaded\", function () {\r\n\r\n\tvar header = document.getElementById('header');\r\n\r\n\tObject(_saleCard_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n\r\n\tObject(_weekThingPopups_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n\r\n\r\n});\n\n//# sourceURL=webpack:///./src/js/script.js?");
+    eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _saleCard_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./saleCard.js */ \"./src/js/saleCard.js\");\n/* harmony import */ var _weekThingPopups_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./weekThingPopups.js */ \"./src/js/weekThingPopups.js\");\n/* harmony import */ var _serviceFaq_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./serviceFaq.js */ \"./src/js/serviceFaq.js\");\n\r\n\r\n\r\n\r\n\r\n\r\ndocument.addEventListener(\"DOMContentLoaded\", function () {\r\n\r\n\tvar header = document.getElementById('header');\r\n\r\n\tObject(_saleCard_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n\r\n\tObject(_weekThingPopups_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n\r\n\tObject(_serviceFaq_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n\r\n\r\n});\n\n//# sourceURL=webpack:///./src/js/script.js?");
+    /***/
+  },
+
+  /***/
+  "./src/js/serviceFaq.js":
+  /*!******************************!*\
+    !*** ./src/js/serviceFaq.js ***!
+    \******************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcJsServiceFaqJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () {\r\n\r\n\tconst serviceFaqLiNL = document.querySelectorAll('.service-faq .service-faq__li');\r\n\r\n\tif (!serviceFaqLiNL.length) return;\r\n\r\n\r\n\tconst serviceFaqLiList = Array.prototype.slice.call(serviceFaqLiNL);\r\n\r\n\tserviceFaqLiList.forEach(li => {\r\n\t\tli.addEventListener('click', function() {\r\n\t\t\tif(li.classList.contains('open')) {\r\n\t\t\t\tli.classList.remove('open');\r\n\t\t\t} else {\r\n\t\t\t\tli.classList.add('open');\r\n\t\t\t}\r\n\t\t})\r\n\t})\r\n\r\n});\n\n//# sourceURL=webpack:///./src/js/serviceFaq.js?");
     /***/
   },
 
@@ -306,15 +322,15 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
   /***/
   0:
-  /*!*********************************************************************************!*\
-    !*** multi ./src/js/saleCard.js ./src/js/script.js ./src/js/weekThingPopups.js ***!
-    \*********************************************************************************/
+  /*!********************************************************************************************************!*\
+    !*** multi ./src/js/saleCard.js ./src/js/script.js ./src/js/serviceFaq.js ./src/js/weekThingPopups.js ***!
+    \********************************************************************************************************/
 
   /*! no static exports found */
 
   /***/
   function _(module, exports, __webpack_require__) {
-    eval("__webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\saleCard.js */\"./src/js/saleCard.js\");\n__webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\script.js */\"./src/js/script.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\weekThingPopups.js */\"./src/js/weekThingPopups.js\");\n\n\n//# sourceURL=webpack:///multi_./src/js/saleCard.js_./src/js/script.js_./src/js/weekThingPopups.js?");
+    eval("__webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\saleCard.js */\"./src/js/saleCard.js\");\n__webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\script.js */\"./src/js/script.js\");\n__webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\serviceFaq.js */\"./src/js/serviceFaq.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\weekThingPopups.js */\"./src/js/weekThingPopups.js\");\n\n\n//# sourceURL=webpack:///multi_./src/js/saleCard.js_./src/js/script.js_./src/js/serviceFaq.js_./src/js/weekThingPopups.js?");
     /***/
   }
   /******/

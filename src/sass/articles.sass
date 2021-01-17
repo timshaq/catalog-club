@@ -39,6 +39,29 @@
 		font-weight: 300
 		font-size: 14px
 		line-height: 170%
+		&.card-img
+			display: flex
+			align-items: center
+			& img
+				width: 48px
+				height: 29px
+				object-fit: cover
+				&:first-child
+					margin-left: 10px
+				&:not(:last-child)
+					margin-right: 10px
+	&__icon-and-text
+		display: flex
+		align-items: center
+		& img
+			width: 40px
+			height: 40px
+			object-fit: cover
+			margin-right: 15px
+		& strong
+			font-weight: 500
+			font-size: 14px
+			line-height: 150%
 	&__img-cont, &__img
 		margin: 20px 0 30px 0
 	&__img-link
@@ -88,7 +111,6 @@
 			position: absolute
 			top: 5%
 			left: 0
-		& strong
 	&__post
 
 	&__aside
