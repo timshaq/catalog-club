@@ -15,14 +15,17 @@
 		padding-top: 30px
 		& p
 			font-weight: 300
-			font-size: 18px
+			font-size: 14px
 			line-height: 170%
 			text-align: center
 			margin-left: auto
 			margin-right: auto
 			@media(min-width:$md)
+				font-size: 16px
 				font-weight: 400
 				width: 480px
+			@media(min-width:$xl)
+				font-size: 18px
 	&__content
 		@media(min-width:$xl)
 			width: 870px
@@ -30,8 +33,30 @@
 		background-color: var(--black)
 		height: 300px
 	& .instruction
+		&__list
+			width: 100%
 		&__li
 			&:nth-child(6)
 				margin-right: 12px
 			&:last-child
 				margin-right: 0
+			@media(min-width:$md)
+				width: auto
+				&:nth-child(1n)
+					margin-right: 21px
+				&:last-child
+					margin-right: 0
+			@media(min-width:$xl)
+				width: 135px
+				&:nth-child(1n)
+					margin-right: 12px
+				&:last-child
+					margin-right: 0
+		&__subtitle
+			display: none
+			@media(min-width:$xl)
+				display: flex
+		&__li-header
+			width: 70px
+			@media(min-width:$xl)
+				width: 100%

@@ -1,0 +1,180 @@
+.header
+	&__contacts
+		background-color: var(--gray2)
+	&__contacts-fix-cont
+		@media(min-width:$xl)
+			position: relative
+	&__numbers
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 10px 0
+		@media(min-width:$md)
+			padding: 15px 0
+	&__numbers-icon
+		width: 27px
+		height: 27px
+		object-fit: contain
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-right: 22px
+	&__numbers-list
+		@media(min-width:$md)
+			display: flex
+	&__numbers-li
+		@media(min-width:$md)
+			&:not(:last-child)
+				margin-right: 8px
+	&__numbers-link
+		font-weight: 300
+		font-size: 12px
+		line-height: 140%
+		@media(min-width:$md)
+			font-size: 14px
+			line-height: 165%
+		@media(min-width:$xl)
+			line-height: 155%
+	&__numbers-call
+		display: none
+		@media(min-width:$xl)
+			display: flex
+			width: 200px
+			height: 38px
+			position: absolute
+			right: 0
+
+	&__controls
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding-bottom: 15px
+		@media(min-width:$md)
+			padding-bottom: 20px
+	&__controls-home-link
+
+	&__controls-logo
+		width: 50px
+		height: 84px
+		object-fit: cover
+		@media(min-width:$xl)
+			width: 400px
+			height: 119px
+	&__controls-list
+		display: flex
+		margin-top: 20px
+		@media(min-width:$md)
+			margin-top: 26px
+		@media(min-width:$xl)
+			margin-top: 60px
+	&__controls-li
+		width: 45px
+		&:not(:last-child)
+			margin-right: 10px
+		@media(min-width:$md)
+			margin: 0
+			width: 70px
+			&:not(:last-child)
+				margin-right: 30px
+	&__controls-link
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__controls-icon
+		width: 30px
+		height: 30px
+		object-fit: cover
+		margin-bottom: 7px
+		@media(min-width:$md)
+			margin-bottom: 6px
+	&__controls-name
+		font-size: 10px
+		line-height: 11px
+		text-align: center
+		margin-top: auto
+		@media(min-width:$md)
+			font-size: 11px
+			line-height: 13px
+	&__controls-tooltip
+		display: none
+	&__controls-tooltip-li
+
+	&__controls-tooltip-link
+
+	&__nav
+		display: none
+		@media(min-width:$xl)
+			display: block
+			padding: 12px 30px
+			border-top: 1px solid var(--gray)
+			border-bottom: 1px solid var(--gray)
+	&__nav-list
+		@media(min-width:$xl)
+			display: flex
+			justify-content: space-between
+			align-items: center
+	&__nav-li
+		&.contains
+			position: relative
+			padding-right: 11px
+			&:after
+				content: url('../img/nav-arrow.svg')
+				width: 6px
+				height: 5px
+				display: flex
+				justify-content: center
+				align-items: center
+				position: absolute
+				top: 50%
+				right: 0
+				transform: translate(0,-100%)
+	&__nav-link
+		font-weight: 300
+		font-size: 13px
+		line-height: 15px
+		letter-spacing: 1px
+		text-transform: uppercase
+	&__menu
+		background-color: var(--black)
+		padding: 15px 0
+		@media(min-width:$xl)
+			display: none
+	&__menu-fix-cont
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__menu-call
+		width: 190px
+		height: 38px
+		@media(min-width:$md)
+			width: 200px
+	&__menu-burger
+
+	&__menu-burger-icon
+		width: 30px
+		height: 30px
+		object-fit: contain
+	&__menu-tooltip
+		display: none
+
+.white-btn
+
+.menu-tooltip
+	&__links
+
+	&__link
+
+	&__contacts
+
+	&__contact
+
+	&__icon
+
+	&__work-hours
+
+	&__work-hours-icon
+
+	&__work-hours-list
+
+	&__work-hours-li
+
