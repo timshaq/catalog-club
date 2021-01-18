@@ -1,0 +1,79 @@
+.reviews
+	&__fix-cont
+
+	&__page-description
+
+	&__review
+
+	&__btn
+		width: 230px
+		margin-left: auto
+		margin-right: auto
+
+.page-description
+	display: flex
+	flex-direction: column
+	@media(min-width:$md)
+		flex-direction: row
+		justify-content: space-between
+	&__ph
+		width: 270px
+		height: 270px
+		object-fit: cover
+		margin-left: auto
+		margin-right: auto
+	&__content
+		@media(min-width:$xl)
+			width: 870px
+	&__p
+		font-weight: 300
+		font-size: 16px
+		line-height: 150%
+		margin-bottom: 20px
+		&.underline
+			text-decoration-line: underline
+	&__btn
+		width: 230px
+		margin-top: 30px
+.review
+	margin: 30px 0
+	&__header
+		margin-bottom: 10px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+	&__created
+		width: 50%
+	&__name
+		font-weight: 500
+		font-size: 16px
+	&__date
+		font-weight: 300
+		font-size: 16px
+	&__mark
+		display: flex
+		align-items: center
+		width: 220px
+	&__name, &__date, &__mark-text, &__reply
+		line-height: 150%
+	&__star
+		width: 24px
+		height: 24px
+		object-fit: contain
+		object-position: center
+		margin-left: 15px
+	&__mark-text, &__comment, &__reply
+		font-weight: 300
+		font-size: 16px
+	&__comment, &__reply
+		padding: 18px
+		line-height: 170%
+	&__comment
+		line-height: 170%
+		border: 1px solid var(--gray)
+	&__reply
+		background-color: var(--gray4)
+		border: 1px solid var(--gray)
+		border-top: 0
+
