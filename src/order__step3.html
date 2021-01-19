@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru" id="html">
 <head>
 
-	<title>Оформить заказ. Шаг 2</title>
+	<title>Оформить заказ. Шаг 3</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -50,7 +50,7 @@
 					
 				</li>
 				
-				<li class="instruction__li current">
+				<li class="instruction__li">
 
 					<div class="instruction__li-header">
 						<div class="instruction__li-header-num">
@@ -64,7 +64,7 @@
 					
 				</li>
 				
-				<li class="instruction__li ">
+				<li class="instruction__li current ">
 
 					<div class="instruction__li-header">
 						<div class="instruction__li-header-num">
@@ -164,7 +164,7 @@
 			<div class="page-props">
 
 				<h1 class="page-props__title page-title">
-					Новый заказ
+					Выбрать регион и способ доставки
 				</h1>
 				
 			</div>
@@ -335,125 +335,249 @@
 
 				</li>
 				
-				<li class="order__product order-product">
-
-					<div class="order-product__header">
-					
-						<img src="img/order-product.png" alt="" class="order-product__ph">
-						
-						<h2 class="order-product__name">
-							Kaschmirpullover mit Zierknoten
-						</h2>
-
-					</div>
-
-					<img src="img/popup__close.png" alt="" class="order-product__del-btn">
-
-					<div class="order-product__values">
-						
-						<h2 class="order-product__name">
-							Kaschmirpullover mit Zierknoten
-						</h2>
-
-						<span class="order-product__value">
-							Артикул: 04265423
-						</span>
-
-						<span class="order-product__value">
-							Размер: 42
-						</span>
-
-						<span class="order-product__value">
-							Цена: 329,95 €
-						</span>
-
-						<span class="order-product__value">
-							Сервисный сбор: 9 €
-						</span>
-
-					</div>
-						
-					<div class="order-product__controls">
-
-						<label class="order-product__label">
-							
-							<span class="order-product__label-text">
-								Комплект:
-							</span>
-
-							<select name="" id="" class="order-product__input">
-								
-								<option value="A">
-									0
-								</option>
-								
-								<option value="B">
-									1
-								</option>
-								
-								<option value="C">
-									2
-								</option>
-
-							</select>
-
-						</label>
-
-						<label class="order-product__label">
-							
-							<span class="order-product__label-text">
-								Кол-во:
-							</span>
-
-							<input class="order-product__input">
-
-						</label>
-
-						<div class="order-product__cost">
-							329,95 €
-						</div>
-						
-					</div>
-
-				</li>
-				
 			</ul>
 
-			<div class="order__auth-reg auth-reg">
+			<div class="order__person-info person-info">
+
+				<div class="person-info__props">
 				
-				<div class="auth-reg__card bg-gray">
+					<span class="person-info__name">
+						Фамилия, Имя,Отчество:
+					</span>
+				
+					<strong class="person-info__value">
+						Трофимова Полина Викторовна
+					</strong>
 					
-					<h2 class="auth-reg__title">
-						Я уже зарегистрирован на сайте
-					</h2>
-
-					<p class="auth-reg__article">
-						Для того чтобы отправить заказ, Вам необходимо авторизоваться
-					</p>
-
-					<a href="#" class="auth-reg__link black-btn">
-						Авторизоваться >>
-					</a>
-
 				</div>
+
+				<div class="person-info__props">
 				
-				<div class="auth-reg__card">
+					<span class="person-info__name">
+						Телефон:
+					</span>
+				
+					<strong class="person-info__value">
+						8 (999) 123 45 67
+					</strong>
 					
-					<h2 class="auth-reg__title">
-						Я впервые делаю заказ
-					</h2>
-
-					<p class="auth-reg__article">
-						Для того чтобы отправить заказ, Вам необходимо зарегистрироваться на сайте
-					</p>
-
-					<a href="#" class="auth-reg__link black-btn">
-						Зарегистрироваться >>
-					</a>
-
 				</div>
 
 			</div>
+
+			<form class="order__delivery-form delivery-form">
+				
+				<h2 class="delivery-form__title">
+					Выбрать регион и город доставки
+				</h2>
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Регион*:
+					</span>
+
+					<select class="label-2col__input">
+						
+						<option value="A">
+							Московская область
+						</option>
+						
+						<option value="B">
+							Московская область2
+						</option>
+						
+						<option value="C">
+							Московская область3
+						</option>
+
+					</select>
+
+				</label>
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Город:
+					</span>
+
+					<select class="label-2col__input">
+						
+						<option value="A">
+							Москва
+						</option>
+						
+						<option value="B">
+							Москва2
+						</option>
+						
+						<option value="C">
+							Москва3
+						</option>
+
+					</select>
+
+				</label>
+
+				<div class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Способ получения*:
+					</span>
+
+					<div class="label-2col__radio-cont">
+
+						<label class="label-2col__radio-label custom-radio">
+							
+							<input type="radio" class="label-2col__radio">
+
+							<span class="label-2col__radio-label-text">
+								пункт выдачи заказов (0.00 EUR)   
+							</span>
+
+						</label>
+
+						<label class="label-2col__radio-label custom-radio">
+							
+							<input type="radio" class="label-2col__radio">
+
+							<span class="label-2col__radio-label-text">
+								доставка курьером  (15.00 EUR)  
+							</span>
+
+						</label>
+
+					</div>
+
+				</div>
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Транспортная компания:
+					</span>
+
+					<select class="label-2col__input">
+						
+						<option value="A">
+							CDEK
+						</option>
+						
+						<option value="B">
+							CDEK2
+						</option>
+						
+						<option value="C">
+							CDEK3
+						</option>
+
+					</select>
+
+				</label>
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Пункт выдачи:
+					</span>
+
+					<select class="label-2col__input">
+						
+						<option value="A">
+							ул. Черняховского, 74, 16
+						</option>
+						
+						<option value="B">
+							ул. Черняховского, 13, 16
+						</option>
+						
+						<option value="C">
+							ул. Черняховского, 12, 16
+						</option>
+
+					</select>
+
+				</label>
+
+				<p class="delivery-form__note">
+					*СДЭК: Получение в ПВЗ или через курьера. Предоплата от 0 руб. Необходимы паспортные данные.
+				</p>
+
+				<p class="delivery-form__note">
+					**Почта России: Получение в почтовом отделении. Предоплата 100%. Паспортные данные не требуются.
+				</p>
+
+				<label class="delivery-form__check custom-checkbox">
+					
+					<input type="checkbox" class="delivery-form__check-input">
+
+					<span class="delivery-form__check-text">
+						сохранить информацию для следующих заказов
+					</span>
+
+				</label>
+				
+				<h2 class="delivery-form__title">
+					Выбрать размер предоплаты
+				</h2>
+
+				<div class="delivery-form__radio-line radio-line">
+					
+					<label class="radio-line__label custom-radio">
+						
+						<input type="radio" class="radio-line__label-input">
+
+						<span class="radio-line__label-text">
+							0%
+						</span>
+						
+					</label>
+					
+					<label class="radio-line__label custom-radio">
+						
+						<input type="radio" class="radio-line__label-input">
+
+						<span class="radio-line__label-text">
+							15%
+						</span>
+						
+					</label>
+					
+					<label class="radio-line__label custom-radio">
+						
+						<input type="radio" class="radio-line__label-input">
+
+						<span class="radio-line__label-text">
+							100%
+						</span>
+						
+					</label>
+
+				</div>
+
+				<p class="delivery-form__note-black">
+					При 100% предоплате сервисный сбор 10%.
+				</p>
+				
+				<h2 class="delivery-form__title">
+					Код акции
+				</h2>
+
+				<label class="delivery-form__label">
+					
+					<input type="text" class="delivery-form__label-input">
+
+				</label>
+
+				<div class="delivery-form__submit-cont">
+					
+					<button type="button" class="delivery-form__submit orange-btn">
+						Продолжить оформление >>
+					</button>
+
+				</div>
+
+			</form>
 			
 		</section>
 

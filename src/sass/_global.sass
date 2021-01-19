@@ -188,5 +188,55 @@ main
 	&__link
 		@media(min-width:$md)
 			width: 230px
+
+.custom-radio
+	position: relative
+	& input
+		position: absolute
+		z-index: -1
+		opacity: 0
+		&:checked + span
+			&:before
+				content: url('../img/radio__checked.svg')
+	& span
+		padding-left: 26px
+		position: relative
+		&:before
+			content: url('../img/radio__null.svg')
+			width: 16px
+			height: 16px
+			object-fit: cover
+			display: flex
+			justify-content: center
+			align-items: center
+			position: absolute
+			top: calc(50% - 6px)
+			left: 0
+
+.custom-checkbox
+	position: relative
+	& input
+		position: absolute
+		z-index: -1
+		opacity: 0
+		&:checked + span
+			&:before
+				content: url('../img/checkbox__checked.svg')
+	& span
+		padding-left: 26px
+		position: relative
+		&:before
+			content: url('../img/checkbox__null.svg')
+			width: 18px
+			height: 18px
+			object-fit: cover
+			display: flex
+			justify-content: center
+			align-items: center
+			position: absolute
+			top: calc(50% - 6px)
+			left: 0
+
+	
 	
 /*    </GLOBAL>    */
