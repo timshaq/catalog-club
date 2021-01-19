@@ -1,4 +1,9 @@
 .header
+	margin-bottom: 15px
+	@media(min-width:$md)
+		margin-bottom: 30px
+	@media(min-width:$xl)
+		margin-bottom: 25px
 	&__contacts
 		background-color: var(--gray2)
 	&__contacts-fix-cont
@@ -76,6 +81,14 @@
 			width: 70px
 			&:not(:last-child)
 				margin-right: 30px
+		@media(min-width:$xl)
+			position: relative
+			&:hover
+				& .header__controls-tooltip
+					display: block
+				& img
+					& path
+						fill: red
 	&__controls-link
 		display: flex
 		flex-direction: column
@@ -97,10 +110,41 @@
 			line-height: 13px
 	&__controls-tooltip
 		display: none
+		@media(min-width:$xl)
+			width: 220px
+			padding: 20px
+			background-color: var(--gray2)
+			position: absolute
+			left: 50%
+			bottom: -10px
+			transform: translate(-50%,100%)
+			z-index: 10
+			&:after
+				content: ''
+				width: 100%
+				height: 10px
+				border: 0
+			&:after, &:before
+				position: absolute
+				left: 50%
+				top: 0
+				transform: translate(-50%,-100%)
+			&:before
+				content: ''
+				width: 20px
+				height: 10px
+				border-style: solid
+				border-width: 0 10px 10px 10px
+				border-color: transparent transparent var(--gray2) transparent
 	&__controls-tooltip-li
-
+		@media(min-width:$xl)
+			&:not(:last-child)
+				margin-bottom: 15px
 	&__controls-tooltip-link
-
+		font-weight: 300
+		font-size: 14px
+		line-height: 16px
+		letter-spacing: 1px
 	&__nav
 		display: none
 		@media(min-width:$xl)
@@ -114,6 +158,9 @@
 			justify-content: space-between
 			align-items: center
 	&__nav-li
+		&:hover
+			& .header__nav-link
+				color: var(--orange)
 		&.contains
 			position: relative
 			padding-right: 11px
@@ -128,12 +175,21 @@
 				top: 50%
 				right: 0
 				transform: translate(0,-100%)
+			@media(min-width:$xl)
+				position: relative
+				&:hover
+					& .header__controls-tooltip
+						display: block
+						&:before
+							display: none
 	&__nav-link
 		font-weight: 300
 		font-size: 13px
 		line-height: 15px
 		letter-spacing: 1px
 		text-transform: uppercase
+		&:hover
+			color: var(--orange)
 	&__menu
 		background-color: var(--black)
 		padding: 15px 0
@@ -143,6 +199,7 @@
 		display: flex
 		justify-content: space-between
 		align-items: center
+		position: relative
 	&__menu-call
 		width: 190px
 		height: 38px
@@ -155,26 +212,67 @@
 		height: 30px
 		object-fit: contain
 	&__menu-tooltip
-		display: none
 
 .white-btn
 
 .menu-tooltip
+	padding: 15px
+	width: 240px
+	background-color: var(--gray2)
+	position: absolute
+	bottom: -6px
+	right: 15px
+	transform: translateY(100%)
+	z-index: 10
+	display: none
+	@media(min-width:$md)
+		right: 0
+	&.open
+		display: block
+		@media(min-width:$xl)
+			display: none
 	&__links
 
+	&__li
+		margin-bottom: 15px
 	&__link
+		display: block
+		font-weight: 300
+		font-size: 14px
+		line-height: 16px
+		letter-spacing: 1px
 
+	&__link, &__contact-link
+		display: flex
+		align-items: center
 	&__contacts
-
+		padding-top: 14px
+		border-top: 1px solid var(--gray)
 	&__contact
-
+		margin-bottom: 10px
+	&__contact-link
+		font-weight: 300
+		font-size: 12px
+		line-height: 140%
+		& strong
+			margin-right: 5px
 	&__icon
-
+	&__icon, &__work-hours-icon
+		width: 19px
+		height: 19px
+		object-fit: contain
+		margin-right: 7px
+		display: flex
+		justify-content: center
+		align-items: center
 	&__work-hours
-
+		display: flex
+		align-items: center
+		margin-top: 15px
 	&__work-hours-icon
-
 	&__work-hours-list
 
 	&__work-hours-li
-
+		font-weight: 300
+		font-size: 12px
+		line-height: 140%

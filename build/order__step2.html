@@ -19,11 +19,478 @@
 
 <body id="body">
 
-@@include('html/header.html')
+<header class="header" id="header">
+	
+	<div class="header__contacts">
+
+		<div class="header__contacts-fix-cont fix-cont">
+
+			<div class="header__numbers">
+				
+				<img src="img/header__tel.svg" alt="" class="header__numbers-icon">
+
+				<ul class="header__numbers-list">
+					
+					<li class="header__numbers-li">
+						
+						<a href="#" class="header__numbers-link">
+							<strong>Москва</strong>
+							8 (495) 921-33-11
+						</a>
+
+					</li>
+					
+					<li class="header__numbers-li">
+						
+						<a href="#" class="header__numbers-link">
+							<strong>Регионы</strong>
+							8 (800) 250-16-06
+						</a>
+
+					</li>
+					
+					<li class="header__numbers-li">
+						
+						<a href="#" class="header__numbers-link">
+							<strong>WhatsApp</strong>
+							8 (925) 794-70-45
+						</a>
+
+					</li>
+
+				</ul>
+
+				<button type="button" class="header__numbers-call white-btn">
+					Заказать обратный звонок
+				</button>
+
+			</div>
+			
+		</div>
+		
+	</div>
+
+	<div class="header__fix-cont fix-cont">
+
+		<div class="header__controls">
+
+			<a href="#" class="header__controls-home-link">
+
+				<picture>
+
+					<!-- DESKTOP -->
+					<source srcset="img/logo__desk.svg" media="(min-width: 1200px)">
+					<!-- DESKTOP -->
+
+					<!-- MOB -->
+					<source srcset="img/logo__mob.svg" media="(min-width: 320px)">
+					<!-- MOB -->
+
+					<!-- Internet Explorer (DESKTOP) -->
+					<img src="img/logo__desk.svg" alt="" class="header__controls-logo">
+					<!-- Internet Explorer (DESKTOP) -->
+					
+				</picture>
+
+			</a>
+
+			<ul class="header__controls-list">
+				
+				<li class="header__controls-li">
+					
+					<a href="#" class="header__controls-link">
+					
+						<img src="img/header__help.svg" alt="" class="header__controls-icon">
+
+						<span class="header__controls-name">
+							Помощь
+						</span>
+						
+					</a>
+
+					<ul class="header__controls-tooltip">
+						
+						<li class="header__controls-tooltip-li">
+							
+							<a href="#" class="header__controls-tooltip-link">
+								Таблица размеров
+							</a>
+
+						</li>
+						
+						<li class="header__controls-tooltip-li">
+							
+							<a href="#" class="header__controls-tooltip-link">
+								Словарь терминов
+							</a>
+
+						</li>
+						
+						<li class="header__controls-tooltip-li">
+							
+							<a href="#" class="header__controls-tooltip-link">
+								Вопросы-ответы
+							</a>
+
+						</li>
+
+					</ul>
+
+				</li>
+				
+				<li class="header__controls-li">
+					
+					<a href="#" class="header__controls-link">
+					
+						<img src="img/header__lk.svg" alt="" class="header__controls-icon">
+
+						<span class="header__controls-name">
+							Мой кабинет
+						</span>
+						
+					</a>
+
+					<ul class="header__controls-tooltip">
+						
+						<li class="header__controls-tooltip-li">
+							
+							<a href="#" class="header__controls-tooltip-link">
+								Заказы на выполнении
+							</a>
+
+						</li>
+						
+						<li class="header__controls-tooltip-li">
+							
+							<a href="#" class="header__controls-tooltip-link">
+								Счет клиента
+							</a>
+
+						</li>
+						
+						<li class="header__controls-tooltip-li">
+							
+							<a href="#" class="header__controls-tooltip-link">
+								Архив заказов
+							</a>
+
+						</li>
+						
+						<li class="header__controls-tooltip-li">
+							
+							<a href="#" class="header__controls-tooltip-link">
+								Возвраты
+							</a>
+
+						</li>
+						
+						<li class="header__controls-tooltip-li">
+							
+							<a href="#" class="header__controls-tooltip-link">
+								Мой профиль
+							</a>
+
+						</li>
+
+					</ul>
+
+				</li>
+				
+				<li class="header__controls-li">
+					
+					<a href="#" class="header__controls-link">
+					
+						<img src="img/header__wish.svg" alt="" class="header__controls-icon">
+
+						<span class="header__controls-name">
+							Wish-лист
+						</span>
+						
+					</a>
+
+				</li>
+				
+				<li class="header__controls-li">
+					
+					<a href="#" class="header__controls-link">
+					
+						<img src="img/header__order.svg" alt="" class="header__controls-icon">
+
+						<span class="header__controls-name">
+							Мой заказ
+						</span>
+						
+					</a>
+
+				</li>
+
+			</ul>
+			
+		</div>
+
+		<nav class="header__nav">
+
+			<ul class="header__nav-list">
+				
+				<li class="header__nav-li contains">
+
+					<a href="#" class="header__nav-link">
+						Интернет-магазины
+					</a>
+
+					<ul class="header__controls-tooltip">
+						
+						<li class="header__controls-tooltip-li">
+							
+							<a href="#" class="header__controls-tooltip-link">
+								Заказы на выполнении
+							</a>
+
+						</li>
+						
+						<li class="header__controls-tooltip-li">
+							
+							<a href="#" class="header__controls-tooltip-link">
+								Счет клиента
+							</a>
+
+						</li>
+						
+						<li class="header__controls-tooltip-li">
+							
+							<a href="#" class="header__controls-tooltip-link">
+								Архив заказов
+							</a>
+
+						</li>
+						
+						<li class="header__controls-tooltip-li">
+							
+							<a href="#" class="header__controls-tooltip-link">
+								Возвраты
+							</a>
+
+						</li>
+						
+						<li class="header__controls-tooltip-li">
+							
+							<a href="#" class="header__controls-tooltip-link">
+								Мой профиль
+							</a>
+
+						</li>
+
+					</ul>
+
+				</li>
+				
+				<li class="header__nav-li">
+
+					<a href="#" class="header__nav-link">
+						Каталоги
+					</a>
+
+				</li>
+				
+				<li class="header__nav-li">
+
+					<a href="#" class="header__nav-link">
+						Бренды
+					</a>
+
+				</li>
+				
+				<li class="header__nav-li">
+
+					<a href="#" class="header__nav-link">
+						Sale
+					</a>
+
+				</li>
+				
+				<li class="header__nav-li">
+
+					<a href="#" class="header__nav-link">
+						Модные идеи
+					</a>
+
+				</li>
+				
+				<li class="header__nav-li">
+
+					<a href="#" class="header__nav-link">
+						СЕРВИС
+					</a>
+
+				</li>
+
+			</ul>
+			
+		</nav>
+		
+	</div>
+
+	<div class="header__menu">
+
+		<div class="header__menu-fix-cont fix-cont">
+		
+			<button type="button" class="header__menu-call white-btn">
+				Заказать обратный звонок
+			</button>
+
+			<button type="button" class="header__menu-burger" id="btnBurger">
+
+				<img src="img/header__burger.svg" alt="" class="header__menu-burger-icon">
+
+			</button>
+
+			<div class="header__menu-tooltip menu-tooltip"  id="menuTooltip" tabindex="1">
+
+				<ul class="menu-tooltip__links">
+
+					<li class="menu-tooltip__li">
+
+						<a href="#" class="menu-tooltip__link">
+							Home
+						</a>
+
+					</li>
+
+					<li class="menu-tooltip__li">
+
+						<a href="#" class="menu-tooltip__link">
+							Онлайн-магазины
+						</a>
+
+					</li>
+
+					<li class="menu-tooltip__li">
+
+						<a href="#" class="menu-tooltip__link">
+							Новые каталоги
+						</a>
+
+					</li>
+
+					<li class="menu-tooltip__li">
+
+						<a href="#" class="menu-tooltip__link">
+							Оформить заказ
+						</a>
+
+					</li>
+
+					<li class="menu-tooltip__li">
+
+						<a href="#" class="menu-tooltip__link">
+							Sale
+						</a>
+
+					</li>
+
+					<li class="menu-tooltip__li">
+
+						<a href="#" class="menu-tooltip__link">
+							Модные идеи
+						</a>
+
+					</li>
+					
+				</ul>
+
+				<ul class="menu-tooltip__contacts">
+					
+					<li class="menu-tooltip__contact">
+
+						<a href="#" class="menu-tooltip__contact-link">
+							
+							<img src="img/header__tel.svg" alt="" class="menu-tooltip__icon">
+							
+							<strong>Москва</strong>
+							8 (495) 921-33-11
+							
+						</a>
+						
+					</li>
+					
+					<li class="menu-tooltip__contact">
+
+						<a href="#" class="menu-tooltip__contact-link">
+							
+							<img src="img/header__tel.svg" alt="" class="menu-tooltip__icon">
+							
+							<strong>Регионы</strong>
+							8 (800) 250-16-06
+							
+						</a>
+						
+					</li>
+					
+					<li class="menu-tooltip__contact">
+
+						<a href="#" class="menu-tooltip__contact-link">
+							
+							<img src="img/header__tel.svg" alt="" class="menu-tooltip__icon">
+							
+							<strong>WhatsApp</strong>
+							8 (925) 794-70-45
+							
+						</a>
+						
+					</li>
+					
+					<li class="menu-tooltip__contact">
+
+						<a href="#" class="menu-tooltip__contact-link">
+							
+							<img src="img/header__mail.svg" alt="" class="menu-tooltip__icon">
+							
+							Call@catalogclub.ru
+							
+						</a>
+						
+					</li>
+
+				</ul>
+
+				<div class="menu-tooltip__work-hours">
+					
+					<img src="img/header__timer.svg" alt="" class="menu-tooltip__work-hours-icon">
+
+					<ul class="menu-tooltip__work-hours-list">
+						
+						<li class="menu-tooltip__work-hours-li">
+							Пн - Пт: с 10:00 - 20:00
+						</li>
+						
+						<li class="menu-tooltip__work-hours-li">
+							Пн - Пт: с 10:00 - 20:00
+						</li>
+
+					</ul>
+				</div>
+
+			</div>
+			
+		</div>
+
+	</div>
+
+</header>
 
 <main>
 
-@@include('html/breadscrumb.html')
+<ul class="breadscrumb fix-cont">
+	<li class="breadscrumb-item">
+		<a href="#">Главная</a>
+	</li>
+	<li class="breadscrumb-item">
+		<a href="#">Каталог</a>
+	</li>
+	<li class="breadscrumb-item">
+		<a href="#">Спальня</a>
+	</li>
+</ul>
 
 
 
@@ -35,7 +502,7 @@
 
 			<ul class="instruction__list">
 				
-				<li class="instruction__li current">
+				<li class="instruction__li">
 
 					<div class="instruction__li-header">
 						<div class="instruction__li-header-num">
@@ -50,7 +517,7 @@
 					
 				</li>
 				
-				<li class="instruction__li ">
+				<li class="instruction__li current">
 
 					<div class="instruction__li-header">
 						<div class="instruction__li-header-num">
@@ -169,7 +636,7 @@
 				
 			</div>
 
-			<ul class="order__product-list">
+			<ul class="order__product-list step2">
 				
 				<li class="order__product order-product">
 
@@ -239,16 +706,6 @@
 							
 							<span class="order-product__label-text">
 								Кол-во:
-							</span>
-
-							<input class="order-product__input">
-
-						</label>
-
-						<label class="order-product__label">
-							
-							<span class="order-product__label-text">
-								Ед. измерения:
 							</span>
 
 							<input class="order-product__input">
@@ -337,16 +794,6 @@
 
 						</label>
 
-						<label class="order-product__label">
-							
-							<span class="order-product__label-text">
-								Ед. измерения:
-							</span>
-
-							<input class="order-product__input">
-
-						</label>
-
 						<div class="order-product__cost">
 							329,95 €
 						</div>
@@ -423,16 +870,6 @@
 							
 							<span class="order-product__label-text">
 								Кол-во:
-							</span>
-
-							<input class="order-product__input">
-
-						</label>
-
-						<label class="order-product__label">
-							
-							<span class="order-product__label-text">
-								Ед. измерения:
 							</span>
 
 							<input class="order-product__input">
@@ -449,9 +886,41 @@
 				
 			</ul>
 
-			<button type="button" class="order__add-btn">
-				<img src="img/order__add-btn.svg" alt="">
-			</button>
+			<div class="order__auth-reg auth-reg">
+				
+				<div class="auth-reg__card bg-gray">
+					
+					<h2 class="auth-reg__title">
+						Я уже зарегистрирован на сайте
+					</h2>
+
+					<p class="auth-reg__article">
+						Для того чтобы отправить заказ, Вам необходимо авторизоваться
+					</p>
+
+					<a href="#" class="auth-reg__link black-btn">
+						Авторизоваться >>
+					</a>
+
+				</div>
+				
+				<div class="auth-reg__card">
+					
+					<h2 class="auth-reg__title">
+						Я впервые делаю заказ
+					</h2>
+
+					<p class="auth-reg__article">
+						Для того чтобы отправить заказ, Вам необходимо зарегистрироваться на сайте
+					</p>
+
+					<a href="#" class="auth-reg__link black-btn">
+						Зарегистрироваться >>
+					</a>
+
+				</div>
+
+			</div>
 			
 		</section>
 
@@ -736,7 +1205,9 @@
 
 </main>
 
-@@include('html/footer.html')
+<footer class="footer">
+	FOOTER
+</footer>
 
 </body>
 

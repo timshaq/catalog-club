@@ -29,9 +29,10 @@
 	&__content
 		@media(min-width:$xl)
 			width: 870px
-	&__aside
-		background-color: var(--black)
-		height: 300px
+			& .page-title
+				margin-top: 0
+				margin-bottom: 40px
+
 	& .instruction
 		&__list
 			width: 100%
@@ -60,3 +61,268 @@
 			width: 70px
 			@media(min-width:$xl)
 				width: 100%
+
+	& .aside
+		display: block
+		margin-top: 30px
+		@media(min-width:$md)
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			&__order-count
+				width: 339px
+				height: 299px
+			&__list
+				width: 339px
+				height: 299px
+			&__item
+				height: 100%
+			&__faq
+				width: 100%
+		@media(min-width:$xl)
+			margin-top: 0
+			display: block
+			&__order-count, &__list
+				width: auto
+				height: auto
+			&__item
+				height: auto
+				padding-bottom: 0
+				margin-bottom: 0
+			& .service-faq
+				margin-top: 0
+
+.order-count
+	padding: 15px
+	background-color: var(--gray2)
+	margin-bottom: 20px
+	&__title
+		display: flex
+		justify-content: space-between
+		padding-bottom: 15px
+		border-bottom: 1px solid var(--gray)
+		margin-bottom: 15px
+		& span
+			font-weight: 600
+			font-size: 16px
+			line-height: 150%
+			@media(min-width:$xl)
+				font-style: italic
+	&__total
+		margin: 15px 0
+	&__total, &__tax, &__tax-li
+		font-weight: 300
+		font-size: 14px
+		line-height: 150%
+		@media(min-width:$xl)
+			font-style: italic
+	&__tax
+
+	&__tax-title
+		font-weight: 600
+		margin-bottom: 10px
+	&__tax-list
+		margin-bottom: 
+	&__tax-li
+		display: flex
+		justify-content: space-between
+		&:not(:last-child)
+			margin-bottom: 10px
+	&__link
+		margin-top: 20px
+		font-style: normal
+		@media(min-width:$xl)
+			font-style: italic
+.order
+	&__product-list
+		margin-top: 20px
+		width: 290px
+		margin-left: auto
+		margin-right: auto
+		@media(min-width:$md)
+			width: 708px
+		@media(min-width:$xl)
+			width: 100%
+		&.step2
+			& .order-product__controls
+				@media(min-width:$xl)
+					width: 100px
+	&__product
+
+	&__add-btn
+		width: 40px
+		height: 40px
+		background-color: var(--dark-orange)
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: 12px 0
+		& img
+			width: 16px
+			height: 16px
+			object-fit: cover
+.order-product
+	padding-bottom: 6px
+	display: flex
+	flex-wrap: wrap
+	position: relative
+	border-bottom: 1px solid var(--gray)
+	margin-bottom: 9px
+	@media(min-width:$md)
+		padding-right: calc(79px + 14px)
+		padding-bottom: 30px
+		margin-top: 30px
+		justify-content: space-between
+		flex-wrap: nowrap
+	@media(min-width:$xl)
+		padding-bottom: 23px
+		& *
+			font-style: italic
+	&__header
+		display: flex
+		justify-content: space-between
+		margin-bottom: 27px
+		& .order-product__name
+			display: block
+			@media(min-width:$md)
+				display: none
+		@media(min-width:$md)
+			width: 170px
+			height: 170px
+			margin: 0
+	&__ph
+		width: 90px
+		height: 90px
+		object-fit: contain
+		@media(min-width:$md)
+			width: 100%
+			height: 100%
+	&__del-btn
+		width: 14px
+		height: 14px
+		object-fit: cover
+		position: absolute
+		top: calc(70px - 14px)
+		right: 0
+		@media(min-width:$md)
+			top: calc(78px - 14px)
+	&__values
+		display: flex
+		flex-wrap: wrap
+		@media(min-width:$md)
+			width: 315px
+			flex-direction: column
+			flex-wrap: nowrap
+		@media(min-width:$xl)
+			width: 335px
+	&__name
+		width: 190px
+		font-size: 14px
+		line-height: 150%
+		display: none
+		@media(min-width:$md)
+			display: block
+			width: 100%
+			margin-bottom: 10px
+		@media(min-width:$xl)
+			font-weight: 600
+	&__value
+		font-weight: 300
+		font-size: 14px
+		line-height: 150%
+		margin-bottom: 10px
+		width: 140px
+		@media(min-width:$md)
+			width: 100%
+	&__controls
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		@media(min-width:$md)
+			width: 100px
+		@media(min-width:$xl)
+			width: 220px
+	&__label
+		width: 140px
+		display: flex
+		flex-direction: column
+		&:nth-child(3)
+			display: none
+			@media(min-width:$xl)
+				display: block
+				margin-left: 120px
+		@media(min-width:$xl)
+			width: 100px
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: space-between
+			margin-bottom: 10px
+	&__label-text
+		font-weight: 300
+		font-size: 13px
+		line-height: 150%
+		margin-bottom: 5px
+	&__input
+		background-color: var(--gray2)
+		width: 100%
+		height: 40px
+		padding: 0 15px
+	&__cost
+		font-weight: 500
+		font-size: 16px
+		line-height: 150%
+		width: 100%
+		text-align: center
+		margin-top: 15px
+		@media(min-width:$xl)
+			font-weight: 600
+			text-align: right
+.order
+	&__auth-reg
+
+.auth-reg
+	margin-top: 30px
+	width: 290px
+	margin-left: auto
+	margin-right: auto
+	@media(min-width:$md)
+		width: 708px
+		display: flex
+		justify-content: space-between
+	@media(min-width:$xl)
+		width: 100%
+	&__card
+		width: 100%
+		height: 175px
+		padding: 20px 17px 25px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: center
+		border: 1px solid var(--gray2)
+		&:not(:last-child)
+			margin-bottom: 15px
+		@media(min-width:$md)
+			width: 339px
+			height: 194px
+			padding: 30px 27px
+		@media(min-width:$xl)
+			width: 420px
+			height: 210px
+			padding: 40px 45px 33px
+		&.bg-gray
+			background-color: var(--gray2)
+	&__title
+		font-weight: 500
+		font-size: 13px
+		line-height: 18px
+		text-align: center
+	&__article
+		font-weight: 300
+		font-size: 13px
+		line-height: 18px
+		text-align: center
+	&__link
+		width: 240px
+		height: 40px
+

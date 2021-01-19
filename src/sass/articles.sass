@@ -183,110 +183,178 @@
 	@media(min-width:$xl)
 		display: block
 		width: 270px
-		& .aside__item
+	& .aside__item
+		padding-bottom: 20px
+		border: 1px solid var(--gray)
+		@media(min-width:$xl)
+			border: 0
 			border-left: 1px solid var(--gray)
-			padding-bottom: 20px
-		& .aside__item-header
-			font-size: 11px
-			line-height: 21px
-			text-transform: uppercase
-			color: var(--white)
-			background-color: var(--gray)
-			padding-left: 33px
-			height: 21px
-			display: flex
-			justify-content: flex-start
-			align-items: center
-			position: relative
-			&:before, &:after
-				content: ''
-				height: 100%
-				position: absolute
-				top: 0
-			&:before
-				width: 19px
-				left: 0px
-				background-color: var(--dark-red)
-			&:after
-				width: 8px
-				left: 19px
-				border-style: solid
-				border-width: 10.5px 0 10.5px 8px
-				border-color: transparent transparent transparent var(--dark-red)
-		& .aside__item-title
-			margin-top: 20px
-			margin-bottom: 15px
+	& .aside__item-header
+		font-size: 11px
+		line-height: 21px
+		text-transform: uppercase
+		color: var(--white)
+		background-color: var(--gray)
+		padding-left: 33px
+		height: 21px
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		position: relative
+		&:before, &:after
+			content: ''
+			height: 100%
+			position: absolute
+			top: 0
+		&:before
+			width: 19px
+			left: 0px
+			background-color: var(--dark-red)
+		&:after
+			width: 8px
+			left: 19px
+			border-style: solid
+			border-width: 10.5px 0 10.5px 8px
+			border-color: transparent transparent transparent var(--dark-red)
+	& .aside__item-title
+		margin-top: 20px
+		margin-bottom: 15px
+		font-size: 15px
+		line-height: 150%
+		text-align: center
+		text-transform: uppercase
+	& .aside__item-news
+	& .aside__item-post
+		&.post
+			padding: 10px
+			border-top: 1px solid var(--gray)
+			margin: 0
+			width: 100%
+			&:last-child
+				padding: 10px 0 0 10px
+			& .post__title
+				font-size: 13px
+	& .week-thing
+		margin-top: 0
+	& .thing
+		max-width: 100%
+		border: 0
+		margin: 0
+		&__ph
+			height: 185px
+		&__description
+			font-size: 13px
+		&__views-icon
+			width: 18px
+			height: 18px
+			margin-right: 5px
+		&__views-value
+			font-size: 10px
+	& .fashion-formuls
+		margin-top: 0
+	& .formula
+		max-width: 100%
+		margin: 0
+		&__ph
+			height: 340px
+			object-fit: contain
+		&__date, &__description
+			text-align: left
+			width: 100%
+			padding-left: 15px
+	& .fashion-ideas
+		max-width: 100%
+		margin: 0
+	& .idea
+		display: block
+		max-width: 100%
+		margin: 0
+		height: 270px
+		&__about
+			width: calc(100% - 1px)
+			padding: 10px 0
+			background-color: var(--white60)
+		&__description
+			width: 235px
+			margin: 0 auto
+		&__title2
+			font-weight: 300
 			font-size: 15px
 			line-height: 150%
-			text-align: center
 			text-transform: uppercase
-		& .aside__item-news
-		& .aside__item-post
-			&.post
-				padding: 10px
-				border-top: 1px solid var(--gray)
-				margin: 0
-				width: 100%
-				&:last-child
-					padding: 10px 0 0 10px
-				& .post__title
-					font-size: 13px
-		& .week-thing
-			margin-top: 0
-		& .thing
-			max-width: 100%
-			border: 0
-			margin: 0
-			&__ph
-				height: 185px
-			&__description
-				font-size: 13px
-			&__views-icon
-				width: 18px
-				height: 18px
-				margin-right: 5px
-			&__views-value
-				font-size: 10px
-		& .fashion-formuls
-			margin-top: 0
-		& .formula
-			max-width: 100%
-			margin: 0
-			&__ph
-				height: 340px
-				object-fit: contain
-			&__date, &__description
-				text-align: left
-				width: 100%
-				padding-left: 15px
-		& .fashion-ideas
-			max-width: 100%
-			margin: 0
-		& .idea
-			display: block
-			max-width: 100%
-			margin: 0
-			height: 270px
-			&__about
-				width: calc(100% - 1px)
-				padding: 10px 0
-				background-color: var(--white60)
-			&__description
-				width: 235px
-				margin: 0 auto
-			&__title2
-				font-weight: 300
-				font-size: 15px
-				line-height: 150%
-				text-transform: uppercase
-				text-align: center
-				margin-bottom: 5px
-		.aside__video-link
-			display: block
-			padding-left: 15px
-			margin-top: 15px
-		.aside__video-link-ph
-			width: 100%
-			height: 150px
-			object-fit: cover
-			
+			text-align: center
+			margin-bottom: 5px
+	.aside__video-link
+		display: block
+		padding-left: 15px
+		margin-top: 15px
+	.aside__video-link-ph
+		width: 100%
+		height: 150px
+		object-fit: cover
+
+.currency-converter
+	display: flex
+	flex-direction: column
+	padding: 15px
+	&__title, &__label-text, &__currency, &__note
+		font-weight: 300
+	&__title
+		font-size: 18px
+		line-height: 21px
+		color: var(--orange)
+		margin-bottom: 15px
+	&__date, &__subtitle
+		font-size: 12px
+		line-height: 130%
+	&__date
+		color: var(--gray)
+		margin-bottom: 3px
+	&__subtitle
+		margin-bottom: 10px
+	&__inputs
+		display: flex
+		flex-direction: column
+		padding-bottom: 15px
+		border-bottom: 1px solid var(--gray)
+	&__label
+		display: flex
+		&:not(:last-child)
+			margin-bottom: 10px
+	&__label-text
+		font-size: 12px
+		line-height: 150%
+		width: 55px
+		height: 28px
+		display: flex
+		justify-content: center
+		align-items: center
+		background-color: var(--gray2)
+		border: 1px solid var(--gray)
+	&__input
+		width: 200px
+		border: 1px solid var(--gray)
+		border-left: 0
+		padding-left: 10px
+		padding-right: 10px
+	&__currency
+		font-size: 13px
+		line-height: 18px
+		color: var(--gray)
+		margin-top: 5px
+		margin-bottom: 10px
+	&__note
+		font-size: 14px
+		line-height: 150%
+
+.aside-faq
+	& .service-faq
+		border: 1px solid var(--gray)
+		border-top: 0
+		border-bottom: 0
+		@media(min-width:$xl)
+			border-right: 0
+		&__arrow-cont
+			background-color: var(--white)
+		&__li
+			padding: 15px 0 15px 15px
