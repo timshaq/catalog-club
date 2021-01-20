@@ -43,11 +43,8 @@
 		text-align: center
 .service-links
 	margin-bottom: 20px
-	white-space: nowrap
-	overflow: hidden
 	display: flex
 	@media(min-width:$md)
-		white-space: wrap
 		flex-wrap: wrap
 	&__li
 		margin-right: 10px
@@ -356,7 +353,7 @@
 		& .service-about__ph
 			width: 240px
 			height: 160px
-			object-fit: cover
+			object-fit: contain
 			&:not(:last-child)
 				margin-right: 10px
 			@media(min-width:$md)

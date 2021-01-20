@@ -479,6 +479,44 @@ main {
           transform: rotate(180deg);
 }
 
+.slider-btn-prev2, .slider-btn-next2 {
+  position: absolute;
+  z-index: 10;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider-btn-prev2 {
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.slider-btn-next2 {
+  -webkit-transform: translate(50%, -50%);
+      -ms-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.slider-btn-next2 img {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 /*    </GLOBAL>    */
 .header {
   margin-bottom: 15px;
@@ -1797,7 +1835,8 @@ main {
 
 .category-line__category-card {
   width: 290px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 768px) {
@@ -1874,7 +1913,8 @@ main {
 
 @media (min-width: 768px) {
   .category-line.four .category-card {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -3987,6 +4027,17 @@ main {
 .aside .fashion-ideas {
   max-width: 100%;
   margin: 0;
+  position: relative;
+}
+
+.aside .fashion-ideas__slider-btn-prev {
+  top: 50%;
+  left: 10px;
+}
+
+.aside .fashion-ideas__slider-btn-next {
+  top: 50%;
+  right: 10px;
 }
 
 .aside .idea {
@@ -5170,8 +5221,6 @@ main {
 
 .service-links {
   margin-bottom: 20px;
-  white-space: nowrap;
-  overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5180,7 +5229,6 @@ main {
 
 @media (min-width: 768px) {
   .service-links {
-    white-space: wrap;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
@@ -5783,8 +5831,8 @@ main {
 .service-about.gallery .service-about__ph {
   width: 240px;
   height: 160px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .service-about.gallery .service-about__ph:not(:last-child) {
