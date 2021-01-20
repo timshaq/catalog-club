@@ -1,0 +1,51 @@
+.preview
+	position: relative
+	max-width: 1920px
+	min-width: 320px
+	&__fix-cont
+	&__slider
+	&__slide
+	&__slider-ph
+		width: 100%
+		height: 100%
+		object-fit: cover
+	&__slider-btn-prev, &__slider-btn-next
+		top: 45%
+	&__slider-btn-prev
+		left: 30px
+		@media(min-width:$md)
+			left: 19vw
+	&__slider-btn-next
+		right: 30px
+		@media(min-width:$md)
+			right: 19vw
+	&__slider-btn-icon
+		width: 5px
+		height: 10px
+		object-fit: contain
+
+
+
+	& .swiper-container
+		height: 100%
+		padding-bottom: 28px
+		@media(min-width:$xl)
+			padding-bottom: 52px
+	& .swiper-wrapper
+		height: 100%
+	& .swiper-slide
+		@media(min-width:$md)
+			transition: opacity linear .5s
+	& .swiper-slide-prev, & .swiper-slide-next
+		@media(min-width:$md)
+			opacity: .5
+	& .swiper-pagination-bullets
+		bottom: 0
+	& .swiper-pagination-bullet
+		&:not(:last-child)
+			margin: 0
+			margin-right: 20px
+			width: 8px
+			height: 8px
+	& .swiper-pagination-bullet-active
+		background: var(--bullet)

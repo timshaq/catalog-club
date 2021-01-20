@@ -300,7 +300,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
   function srcJsScriptJs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
-    eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _saleCard_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./saleCard.js */ \"./src/js/saleCard.js\");\n/* harmony import */ var _btnBurger_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./btnBurger.js */ \"./src/js/btnBurger.js\");\n/* harmony import */ var _weekThingPopups_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./weekThingPopups.js */ \"./src/js/weekThingPopups.js\");\n/* harmony import */ var _serviceFaq_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./serviceFaq.js */ \"./src/js/serviceFaq.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\ndocument.addEventListener(\"DOMContentLoaded\", function () {\r\n\r\n\tvar header = document.getElementById('header');\r\n\r\n\tObject(_btnBurger_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n\t\r\n\tObject(_saleCard_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n\r\n\tObject(_weekThingPopups_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n\r\n\tObject(_serviceFaq_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\r\n\r\n\r\n});\n\n//# sourceURL=webpack:///./src/js/script.js?");
+    eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sliders_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sliders.js */ \"./src/js/sliders.js\");\n/* harmony import */ var _btnBurger_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./btnBurger.js */ \"./src/js/btnBurger.js\");\n/* harmony import */ var _saleCard_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./saleCard.js */ \"./src/js/saleCard.js\");\n/* harmony import */ var _weekThingPopups_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./weekThingPopups.js */ \"./src/js/weekThingPopups.js\");\n/* harmony import */ var _serviceFaq_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./serviceFaq.js */ \"./src/js/serviceFaq.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\ndocument.addEventListener(\"DOMContentLoaded\", function () {\r\n\r\n\tvar header = document.getElementById('header');\r\n\r\n\tObject(_sliders_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n\r\n\tObject(_btnBurger_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n\t\r\n\tObject(_saleCard_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n\r\n\tObject(_weekThingPopups_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\r\n\r\n\tObject(_serviceFaq_js__WEBPACK_IMPORTED_MODULE_4__[\"default\"])();\r\n\r\n\r\n});\n\n//# sourceURL=webpack:///./src/js/script.js?");
     /***/
   },
 
@@ -317,6 +317,22 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     "use strict";
 
     eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () {\r\n\r\n\tconst serviceFaqLiNL = document.querySelectorAll('.service-faq .service-faq__li');\r\n\r\n\tif (!serviceFaqLiNL.length) return;\r\n\r\n\r\n\tconst serviceFaqLiList = Array.prototype.slice.call(serviceFaqLiNL);\r\n\r\n\tserviceFaqLiList.forEach(li => {\r\n\t\tli.addEventListener('click', function() {\r\n\t\t\tif(li.classList.contains('open')) {\r\n\t\t\t\tli.classList.remove('open');\r\n\t\t\t} else {\r\n\t\t\t\tli.classList.add('open');\r\n\t\t\t}\r\n\t\t})\r\n\t})\r\n\r\n});\n\n//# sourceURL=webpack:///./src/js/serviceFaq.js?");
+    /***/
+  },
+
+  /***/
+  "./src/js/sliders.js":
+  /*!***************************!*\
+    !*** ./src/js/sliders.js ***!
+    \***************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcJsSlidersJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () {\r\n\r\n\tconst previewSlider = new Swiper('#previewSlider', {\r\n\t\tloop: true,\r\n\t\tcenteredSlides: true,\r\n\t\tpagination: {\r\n\t\t\tel: '#previewPagination',\r\n\t\t\ttype: 'bullets',\r\n\t\t\tclickable: true,\r\n\t\t},\r\n\t\tnavigation: {\r\n\t\t\tnextEl: '#previewNextBtn',\r\n\t\t\tprevEl: '#previewPrevBtn'\r\n\t\t},\r\n\t\tbreakpoints: {\r\n\t\t\t320: {\r\n\t\t\t\tslidesPerView: 1,\r\n\t\t\t\tspaceBetween: 0,\r\n\t\t\t},\r\n\t\t\t768: {\r\n\t\t\t\tslidesPerView: 1.58,\r\n\t\t\t\tspaceBetween: 30,\r\n\t\t\t},\r\n\t\t\t1200: {\r\n\t\t\t\tslidesPerView: 1.622,\r\n\t\t\t\tspaceBetween: 30,\r\n\t\t\t},\r\n\t\t},\r\n\r\n\t})\r\n\r\n\tconst brandsSlider = new Swiper('#brandsSlider', {\r\n\t\tpagination: {\r\n\t\t\tel: '#previewPagination',\r\n\t\t\ttype: 'bullets',\r\n\t\t\tclickable: true,\r\n\t\t},\r\n\t\tnavigation: {\r\n\t\t\tnextEl: '#brandsNextBtn',\r\n\t\t\tprevEl: '#brandsPrevBtn'\r\n\t\t},\r\n\t\tbreakpoints: {\r\n\t\t\t320: {\r\n\t\t\t\tslidesPerView: 2,\r\n\t\t\t\tspaceBetween: 10,\r\n\t\t\t},\r\n\t\t\t768: {\r\n\t\t\t\tslidesPerView: 5,\r\n\t\t\t\tspaceBetween: 23,\r\n\t\t\t},\r\n\t\t\t1200: {\r\n\t\t\t\tslidesPerView: 7,\r\n\t\t\t\tspaceBetween: 20,\r\n\t\t\t},\r\n\t\t},\r\n\r\n\t})\r\n\r\n});\n\n//# sourceURL=webpack:///./src/js/sliders.js?");
     /***/
   },
 
@@ -338,15 +354,15 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
   /***/
   0:
-  /*!******************************************************************************************************************************!*\
-    !*** multi ./src/js/btnBurger.js ./src/js/saleCard.js ./src/js/script.js ./src/js/serviceFaq.js ./src/js/weekThingPopups.js ***!
-    \******************************************************************************************************************************/
+  /*!**************************************************************************************************************************************************!*\
+    !*** multi ./src/js/btnBurger.js ./src/js/saleCard.js ./src/js/script.js ./src/js/serviceFaq.js ./src/js/sliders.js ./src/js/weekThingPopups.js ***!
+    \**************************************************************************************************************************************************/
 
   /*! no static exports found */
 
   /***/
   function _(module, exports, __webpack_require__) {
-    eval("__webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\btnBurger.js */\"./src/js/btnBurger.js\");\n__webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\saleCard.js */\"./src/js/saleCard.js\");\n__webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\script.js */\"./src/js/script.js\");\n__webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\serviceFaq.js */\"./src/js/serviceFaq.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\weekThingPopups.js */\"./src/js/weekThingPopups.js\");\n\n\n//# sourceURL=webpack:///multi_./src/js/btnBurger.js_./src/js/saleCard.js_./src/js/script.js_./src/js/serviceFaq.js_./src/js/weekThingPopups.js?");
+    eval("__webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\btnBurger.js */\"./src/js/btnBurger.js\");\n__webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\saleCard.js */\"./src/js/saleCard.js\");\n__webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\script.js */\"./src/js/script.js\");\n__webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\serviceFaq.js */\"./src/js/serviceFaq.js\");\n__webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\sliders.js */\"./src/js/sliders.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\weekThingPopups.js */\"./src/js/weekThingPopups.js\");\n\n\n//# sourceURL=webpack:///multi_./src/js/btnBurger.js_./src/js/saleCard.js_./src/js/script.js_./src/js/serviceFaq.js_./src/js/sliders.js_./src/js/weekThingPopups.js?");
     /***/
   }
   /******/

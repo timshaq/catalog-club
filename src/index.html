@@ -8,12 +8,12 @@
 
 	<link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css">
 
-	<script src="lib/swiper/swiper-bundle.min.js"></script>
+	
 
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
 
 
-	<script src="js/script.min.js"></script>
+	
 
 </head>
 
@@ -53,36 +53,104 @@
 			<strong>Заказ без предоплаты.</strong>  Оплата картой на сайте или наличными в клиент-центре при получении заказа.
 		</h3>
 	</a>
+
 </section>
 
 <div class="preview">
-	<div class="preview__fix-cont fix-cont">
 		<div class="preview__slider">
+			<div class="swiper-container" id="previewSlider">
+				<div class="swiper-wrapper">
 
-			<div class="preview__slide">
-				<picture>
+					<a href="#" class="preview__slide swiper-slide">
 
-					<!-- DESKTOP -->
-					<source srcset="img/slider-banner__desktop.png" media="(min-width: 1200px)">
- 					<!-- DESKTOP -->
+						<picture>
 
-					<!-- TAB -->
-					<source srcset="img/slider-banner__tab.png" media="(min-width: 576px)">
- 					<!-- TAB -->
+							<!-- DESKTOP -->
+							<source srcset="img/slider-banner__desktop.png" media="(min-width: 1200px)">
+		 					<!-- DESKTOP -->
 
-					<!-- MOB -->
-					<source srcset="img/slider-banner__mob.png" media="(min-width: 320px)">
- 					<!-- MOB -->
+							<!-- TAB -->
+							<source srcset="img/slider-banner__tab.png" media="(min-width: 576px)">
+		 					<!-- TAB -->
 
- 					<!-- Internet Explorer (DESKTOP) -->
- 					<img src="img/slider-banner__desktop.png" alt="">
- 					<!-- Internet Explorer (DESKTOP) -->
+							<!-- MOB -->
+							<source srcset="img/slider-banner__mob.png" media="(min-width: 320px)">
+		 					<!-- MOB -->
 
-				</picture>
+		 					<!-- Internet Explorer (DESKTOP) -->
+		 					<img src="img/slider-banner__desktop.png" alt="" class="preview__slider-ph">
+		 					<!-- Internet Explorer (DESKTOP) -->
+
+						</picture>
+
+					</a>
+
+					<a href="#" class="preview__slide swiper-slide">
+
+						<picture>
+
+							<!-- DESKTOP -->
+							<source srcset="img/slider-banner__desktop.png" media="(min-width: 1200px)">
+		 					<!-- DESKTOP -->
+
+							<!-- TAB -->
+							<source srcset="img/slider-banner__tab.png" media="(min-width: 576px)">
+		 					<!-- TAB -->
+
+							<!-- MOB -->
+							<source srcset="img/slider-banner__mob.png" media="(min-width: 320px)">
+		 					<!-- MOB -->
+
+		 					<!-- Internet Explorer (DESKTOP) -->
+		 					<img src="img/slider-banner__desktop.png" alt=""class="preview__slider-ph">
+		 					<!-- Internet Explorer (DESKTOP) -->
+
+						</picture>
+
+					</a>
+
+					<a href="#" class="preview__slide swiper-slide">
+
+						<picture>
+
+							<!-- DESKTOP -->
+							<source srcset="img/slider-banner__desktop.png" media="(min-width: 1200px)">
+		 					<!-- DESKTOP -->
+
+							<!-- TAB -->
+							<source srcset="img/slider-banner__tab.png" media="(min-width: 576px)">
+		 					<!-- TAB -->
+
+							<!-- MOB -->
+							<source srcset="img/slider-banner__mob.png" media="(min-width: 320px)">
+		 					<!-- MOB -->
+
+		 					<!-- Internet Explorer (DESKTOP) -->
+		 					<img src="img/slider-banner__desktop.png" alt="" class="preview__slider-ph">
+		 					<!-- Internet Explorer (DESKTOP) -->
+
+						</picture>
+
+					</a>
+
+				</div>
+
+			    <div class="swiper-pagination" id="previewPagination"></div>
+
 			</div>
 
 		</div>
-	</div>
+
+
+		<button class="preview__slider-btn-prev slider-btn-prev" id="previewPrevBtn">
+			<img src="img/slider-arrow.svg" alt="" class="preview__slider-btn-icon">
+		</button>
+
+		<button class="preview__slider-btn-next slider-btn-next" id="previewNextBtn">
+			<img src="img/slider-arrow.svg" alt="" class="preview__slider-btn-icon">
+		</button>
+
+
 </div>
 
 <section class="category-line three">
@@ -175,10 +243,68 @@
 <div class="brands">
 	<div class="brands__fix-cont fix-cont">
 		<div class="brands__slider">
+			<div class="swiper-container" id="brandsSlider">
+				<div class="swiper-wrapper">
 
-			<div class="brands__slide">
-				
+					<div class="brands__slide swiper-slide">
+						<img src="img/index-brands__01.png" alt="" class="brands__slider-ph">
+					</div>
+
+					<div class="brands__slide swiper-slide">
+						<img src="img/index-brands__02.png" alt="" class="brands__slider-ph">
+					</div>
+
+					<div class="brands__slide swiper-slide">
+						<img src="img/index-brands__03.png" alt="" class="brands__slider-ph">
+					</div>
+
+					<div class="brands__slide swiper-slide">
+						<img src="img/index-brands__04.png" alt="" class="brands__slider-ph">
+					</div>
+
+					<div class="brands__slide swiper-slide">
+						<img src="img/index-brands__05.png" alt="" class="brands__slider-ph">
+					</div>
+
+					<div class="brands__slide swiper-slide">
+						<img src="img/index-brands__06.png" alt="" class="brands__slider-ph">
+					</div>
+
+					<div class="brands__slide swiper-slide">
+						<img src="img/index-brands__01.png" alt="" class="brands__slider-ph">
+					</div>
+
+					<div class="brands__slide swiper-slide">
+						<img src="img/index-brands__02.png" alt="" class="brands__slider-ph">
+					</div>
+
+					<div class="brands__slide swiper-slide">
+						<img src="img/index-brands__03.png" alt="" class="brands__slider-ph">
+					</div>
+
+					<div class="brands__slide swiper-slide">
+						<img src="img/index-brands__04.png" alt="" class="brands__slider-ph">
+					</div>
+
+					<div class="brands__slide swiper-slide">
+						<img src="img/index-brands__05.png" alt="" class="brands__slider-ph">
+					</div>
+
+					<div class="brands__slide swiper-slide">
+						<img src="img/index-brands__06.png" alt="" class="brands__slider-ph">
+					</div>
+
+				</div>
 			</div>
+
+
+			<button class="brands__slider-btn-prev slider-btn-prev" id="brandsPrevBtn">
+				<img src="img/slider-arrow.svg" alt="" class="preview__slider-btn-icon">
+			</button>
+
+			<button class="brands__slider-btn-next slider-btn-next" id="brandsNextBtn">
+				<img src="img/slider-arrow.svg" alt="" class="preview__slider-btn-icon">
+			</button>
 
 		</div>
 
