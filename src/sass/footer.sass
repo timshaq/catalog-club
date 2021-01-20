@@ -1,0 +1,252 @@
+.prefooter
+	background-color: var(--gray2)
+	padding: 15px 0
+	@media(min-width:$md)
+		padding: 30px 15px
+	@media(min-width:$xl)
+		padding: 30px 0
+	&__fix-cont
+
+	&__article
+		font-weight: 300
+		font-size: 14px
+		line-height: 180%
+		margin: 10px 0
+.fix-cont
+
+.link
+
+.footer
+	margin-top: 40px
+	@media(min-width:$md)
+		margin-top: 50px
+	@media(min-width:$xl)
+		margin-top: 60px
+	&__features
+
+	&__subscribe
+
+	&__btn-cont
+
+	&__nav
+
+.features
+	background-color: var(--gray3)
+	padding: 15px 0
+	@media(min-width:$xl)
+		padding: 10px 0
+	&__fix-cont
+		width: 320px
+		@media(min-width:$md)
+			width: 708px
+		@media(min-width:$xl)
+			width: 100%
+	&__list
+		display: flex
+		justify-content: space-between
+	&__li
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 58px
+		@media(min-width:$md)
+			width: 86px
+		@media(min-width:$xl)
+			width: 160px
+			flex-direction: row
+	&__li-icon
+		width: 30px
+		height: 30px
+		object-fit: contain
+		margin-bottom: 5px
+		@media(min-width:$xl)
+			margin-bottom: 0
+			margin-right: 10px
+	&__text
+		font-size: 8px
+		line-height: 150%
+		text-align: center
+		color: var(--gray2)
+		@media(min-width:$md)
+			font-size: 12px
+			line-height: 140%
+		@media(min-width:$xl)
+			text-align: left
+
+.subscribe
+	background-color: var(--gray2)
+	padding: 15px 0 20px
+	&__fix-cont
+		width: 320px
+		@media(min-width:$md)
+			width: 708px
+		@media(min-width:$xl)
+			width: 100%
+			display: flex
+	&__header
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 20px
+		@media(min-width:$xl)
+			width: 570px
+	&__header-icon
+		width: 50px
+		height: 50px
+		object-fit: contain
+		@media(min-width:$md)
+			width: 60px
+			height: 60px
+	&__text
+		font-weight: 300
+		font-size: 12px
+		line-height: 150%
+		text-align: center
+		@media(min-width:$md)
+			font-size: 19px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			width: 620px
+		@media(min-width:$xl)
+			width: 500px
+	&__body
+		display: flex
+		flex-direction: column
+		@media(min-width:$md)
+			flex-wrap: wrap
+			flex-direction: row
+			justify-content: space-between
+		@media(min-width:$xl)
+			width: 570px
+	&__body-input
+		background-color: var(--white)
+		height: 40px
+		margin-bottom: 15px
+		padding: 0 15px
+		@media(min-width:$md)
+			width: 462px
+		@media(min-width:$xl)
+			width: 370px
+	&__body-submit
+		height: 40px
+		margin-bottom: 15px
+		@media(min-width:$md)
+			width: 216px
+		@media(min-width:$xl)
+			width: 170px
+	&__body-text
+		font-weight: 300
+		font-size: 13px
+		line-height: 20px
+		text-align: center
+		@media(min-width:$md)
+			font-size: 15px
+			width: 100%
+		@media(min-width:$xl)
+			text-align: left
+.btn-cont
+	padding: 15px 0
+	@media(min-width:$md)
+		padding: 30px 0
+	&__fix-cont
+
+	&__btn-link
+		display: block
+		font-style: normal
+		text-align: center
+		line-height: 150%
+		padding: 10px 25px
+		@media(min-width:$xl)
+			width: 770px
+			margin: 0 auto
+
+.footer-nav
+	background-color: var(--gray2)
+	padding: 30px 0 15px
+	&__fix-cont
+		@media(min-width:$md)
+			position: relative
+		@media(min-width:$xl)
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+	&__inside
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		@media(min-width:$md)
+			width: 625px
+		@media(min-width:$xl)
+			width: 735px
+	&__inside-list
+		margin-bottom: 20px
+		width: 48%
+		&:nth-child(2)
+			order: 5
+			width: 100%
+			@media(min-width:$md)
+				width: auto
+				order: 0
+		@media(min-width:$md)
+			margin-bottom: 0
+			width: auto
+	&__inside-li-head
+		margin-bottom: 14px
+	&__inside-title
+		font-size: 15px
+		line-height: 150%
+		color: var(--footer-links)
+		text-align: center
+		@media(min-width:$md)
+			text-align: left
+	&__inside-li
+		&:not(:last-child)
+			margin-bottom: 10px
+	&__inside-link
+		font-weight: 300
+		font-size: 13px
+		line-height: 15px
+		text-decoration-line: underline
+		text-align: center
+		color: var(--footer-links)
+		display: block
+		@media(min-width:$md)
+			text-align: left
+	&__social-links
+		display: flex
+		justify-content: center
+		margin: 30px 0
+		@media(min-width:$md)
+			position: absolute
+			bottom: -5px
+			right: 0
+			margin: 0
+		@media(min-width:$xl)
+			position: static
+			justify-content: flex-end
+			align-items: flex-end
+	&__social-li
+		&:not(:last-child)
+			margin-right: 10px
+	&__social-link
+
+	&__social-link-icon
+		width: 30px
+		height: 30px
+		object-fit: cover
+	&__copyright
+		width: 100%
+		display: flex
+		justify-content: center
+		@media(min-width:$md)
+			justify-content: flex-start
+			margin-top: 56px
+			margin-bottom: 25px
+		@media(min-width:$xl)
+			margin-top: 30px
+			margin-bottom: 0
+	&__copyright-small
+		font-size: 11px
+		line-height: 19px
+		color: var(--footer-links)

@@ -4,6 +4,17 @@
 			@media(min-width:$xl)
 				display: flex
 				justify-content: space-between
+			&.order-step5
+				& .order__content
+					@media(min-width:$xl)
+						width: 670px
+				& .order__aside
+					padding-top: 20px 
+					border-top: 1px solid var(--gray)
+					@media(min-width:$xl)
+						width: 370px
+						border: 0
+						padding-top: 0
 	&__p
 		font-weight: 300
 		font-size: 16px
@@ -341,11 +352,11 @@
 			flex-direction: row
 	&__name
 		margin-bottom: 5px
-		font-weight: 500
+		font-weight: 300
 		@media(min-width:$md)
 			margin-right: 7px
 	&__value
-		font-weight: 300
+		font-weight: 500
 	&__name, &__value
 		font-size: 14px
 		line-height: 150%
@@ -525,4 +536,36 @@
 		font-weight: 300
 		font-size: 14px
 		line-height: 150%
+
+.delivery-form
+	&__several-inputs
+	&__final-black
+		margin: 20px 0
+		text-align: center
+
+.several-inputs
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	margin: 20px 0
+	@media(min-width:$md)
+		flex-direction: row
+	&__inputs
+		display: flex
+		justify-content: space-between
+		@media(min-width:$md)
+			width: 462px
+		@media(min-width:$xl)
+			width: 470px
+	&__input
+		padding: 0 15px
+		border: 1px solid var(--gray2)
+		background-color: var(--gray4)
+		height: 40px
+		&.per20
+			width: 20%
+		&.per40
+			width: 40%
+.label-2col
+	&__text
 
