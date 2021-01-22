@@ -273,6 +273,22 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
   },
 
   /***/
+  "./src/js/printTable.js":
+  /*!******************************!*\
+    !*** ./src/js/printTable.js ***!
+    \******************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcJsPrintTableJs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () {\r\n\r\nconst printBtn = document.getElementById('printBtn');\r\n\r\nif(!printBtn) return;\r\n\r\nconst tableForPrint = document.getElementById('tableForPrint');\r\n\r\n\r\nprintBtn.addEventListener('click', CallPrint(tableForPrint))\r\n\r\nfunction CallPrint(el) {\r\n\tvar prtContent = el;\r\n\tvar WinPrint = window.open('','','left=50,top=50,width=800,height=640,toolbar=0,scrollbars=1,status=0');\r\n\tWinPrint.document.write('');\r\n\tWinPrint.document.write(prtContent.innerHTML);\r\n\tWinPrint.document.write('');\r\n\tWinPrint.document.close();\r\n\tWinPrint.focus();\r\n\tWinPrint.print();\r\n\tWinPrint.close();\r\n\tprtContent.innerHTML=strOldOne;\r\n}\r\n\r\n});\n\n//# sourceURL=webpack:///./src/js/printTable.js?");
+    /***/
+  },
+
+  /***/
   "./src/js/saleCard.js":
   /*!****************************!*\
     !*** ./src/js/saleCard.js ***!
@@ -300,7 +316,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
   function srcJsScriptJs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
-    eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sliders_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sliders.js */ \"./src/js/sliders.js\");\n/* harmony import */ var _btnBurger_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./btnBurger.js */ \"./src/js/btnBurger.js\");\n/* harmony import */ var _saleCard_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./saleCard.js */ \"./src/js/saleCard.js\");\n/* harmony import */ var _weekThingPopups_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./weekThingPopups.js */ \"./src/js/weekThingPopups.js\");\n/* harmony import */ var _serviceFaq_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./serviceFaq.js */ \"./src/js/serviceFaq.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\ndocument.addEventListener(\"DOMContentLoaded\", function () {\r\n\r\n\tvar header = document.getElementById('header');\r\n\r\n\tObject(_sliders_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n\r\n\tObject(_btnBurger_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n\t\r\n\tObject(_saleCard_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n\r\n\tObject(_weekThingPopups_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\r\n\r\n\tObject(_serviceFaq_js__WEBPACK_IMPORTED_MODULE_4__[\"default\"])();\r\n\r\n\r\n});\n\n//# sourceURL=webpack:///./src/js/script.js?");
+    eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sliders_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sliders.js */ \"./src/js/sliders.js\");\n/* harmony import */ var _btnBurger_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./btnBurger.js */ \"./src/js/btnBurger.js\");\n/* harmony import */ var _saleCard_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./saleCard.js */ \"./src/js/saleCard.js\");\n/* harmony import */ var _weekThingPopups_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./weekThingPopups.js */ \"./src/js/weekThingPopups.js\");\n/* harmony import */ var _serviceFaq_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./serviceFaq.js */ \"./src/js/serviceFaq.js\");\n/* harmony import */ var _printTable_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./printTable.js */ \"./src/js/printTable.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\ndocument.addEventListener(\"DOMContentLoaded\", function () {\r\n\r\n\tvar header = document.getElementById('header');\r\n\r\n\tObject(_sliders_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n\r\n\tObject(_btnBurger_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n\t\r\n\tObject(_saleCard_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n\r\n\tObject(_weekThingPopups_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\r\n\r\n\tObject(_serviceFaq_js__WEBPACK_IMPORTED_MODULE_4__[\"default\"])();\r\n\r\n\tObject(_printTable_js__WEBPACK_IMPORTED_MODULE_5__[\"default\"])();\r\n\r\n\r\n});\n\n//# sourceURL=webpack:///./src/js/script.js?");
     /***/
   },
 
@@ -354,15 +370,15 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
   /***/
   0:
-  /*!**************************************************************************************************************************************************!*\
-    !*** multi ./src/js/btnBurger.js ./src/js/saleCard.js ./src/js/script.js ./src/js/serviceFaq.js ./src/js/sliders.js ./src/js/weekThingPopups.js ***!
-    \**************************************************************************************************************************************************/
+  /*!*************************************************************************************************************************************************************************!*\
+    !*** multi ./src/js/btnBurger.js ./src/js/printTable.js ./src/js/saleCard.js ./src/js/script.js ./src/js/serviceFaq.js ./src/js/sliders.js ./src/js/weekThingPopups.js ***!
+    \*************************************************************************************************************************************************************************/
 
   /*! no static exports found */
 
   /***/
   function _(module, exports, __webpack_require__) {
-    eval("__webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\btnBurger.js */\"./src/js/btnBurger.js\");\n__webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\saleCard.js */\"./src/js/saleCard.js\");\n__webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\script.js */\"./src/js/script.js\");\n__webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\serviceFaq.js */\"./src/js/serviceFaq.js\");\n__webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\sliders.js */\"./src/js/sliders.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\weekThingPopups.js */\"./src/js/weekThingPopups.js\");\n\n\n//# sourceURL=webpack:///multi_./src/js/btnBurger.js_./src/js/saleCard.js_./src/js/script.js_./src/js/serviceFaq.js_./src/js/sliders.js_./src/js/weekThingPopups.js?");
+    eval("__webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\btnBurger.js */\"./src/js/btnBurger.js\");\n__webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\printTable.js */\"./src/js/printTable.js\");\n__webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\saleCard.js */\"./src/js/saleCard.js\");\n__webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\script.js */\"./src/js/script.js\");\n__webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\serviceFaq.js */\"./src/js/serviceFaq.js\");\n__webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\sliders.js */\"./src/js/sliders.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\timur\\Desktop\\catalog-club\\src\\js\\weekThingPopups.js */\"./src/js/weekThingPopups.js\");\n\n\n//# sourceURL=webpack:///multi_./src/js/btnBurger.js_./src/js/printTable.js_./src/js/saleCard.js_./src/js/script.js_./src/js/serviceFaq.js_./src/js/sliders.js_./src/js/weekThingPopups.js?");
     /***/
   }
   /******/

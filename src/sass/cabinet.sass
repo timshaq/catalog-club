@@ -63,6 +63,9 @@
 		@media(min-width:$xl)
 			display: flex
 			justify-content: space-between
+		&.reverse
+			@media(min-width:$xl)
+				flex-direction: row-reverse
 	& .cabinet
 		&__content
 			@media(min-width:$xl)
@@ -408,3 +411,161 @@
 
 
 
+.cabinet
+	&__balance-controls
+
+.balance-controls
+	display: flex
+	flex-direction: column
+	align-items: flex-end
+	@media(min-width:$md)
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+	@media(min-width:$xl)
+		flex-direction: column
+		flex-wrap: nowrap
+		justify-content: flex-start
+		align-items: flex-end
+	&__print
+		width: 100%
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		margin-bottom: 24px
+		margin-top: 20px
+	&__print-icon
+		width: 24px
+		height: 24px
+		object-fit: contain
+		margin-right: 10px
+	&__print-text
+		font-weight: 300
+		font-size: 16px
+		line-height: 150%
+		text-decoration-line: underline
+		color: var(--black40)
+	&__link
+		display: flex
+		align-items: center
+		&:not(:last-child)
+			margin-bottom: 24px
+		@media(min-width:$md)
+			width: 30%
+			margin: 0
+			&:not(:last-child)
+				margin-bottom: 0
+		@media(min-width:$xl)
+			width: 100%
+			&:not(:last-child)
+				margin-bottom: 24px
+	&__link-icon
+		width: 29px
+		height: 29px
+		object-fit: contain
+		margin-right: 15px
+		@media(min-width:$md)
+			display: none
+		@media(min-width:$xl)
+			display: block
+	&__link-btn
+		font-size: 16px
+		line-height: 18px
+		font-style: normal
+		width: 240px
+.cabinet
+	&__balance-table
+
+.balance-table
+	margin-top: 30px
+	&__headers
+		display: flex
+		width: 100%
+	&__headers-item
+		font-weight: 300
+		font-size: 13px
+		line-height: 150%
+		color: var(--white)
+		background-color: var(--black)
+		width: 25%
+		height: 30px
+		display: flex
+		justify-content: center
+		align-items: center
+		&:nth-child(3), &:first-child
+			padding-right: 5px
+			position: relative
+			&:after
+				content: '/'
+				position: absolute
+				right: 0
+				font-weight: 300
+				font-size: 13px
+				line-height: 150%
+				@media(min-width:$md)
+					display: none
+		&:nth-child(2)
+			border-right: 1px solid var(--gray)
+		@media(min-width:$md)
+			&:not(:last-child)
+				border-right: 1px solid var(--gray)
+			&:first-child
+				width: 20%
+			&:nth-child(2)
+				width: 40%
+			&:nth-child(3), &:nth-child(4)
+				width: 20%
+	&__row
+		display: flex
+		border-bottom: 1px solid var(--gray)
+	&__row-col
+		display: flex
+		flex-wrap: wrap
+		width: 50%
+		padding-top: 12px
+		padding-bottom: 12px
+		&:first-child
+			border-right: 1px solid var(--gray)
+			@media(min-width:$md)
+				border: 0
+		&:nth-child(2)
+			& .balance-table__row-col-text
+				display: flex
+				justify-content: flex-end
+		@media(min-width:$md)
+			&:first-child
+				width: 60%
+				& .balance-table__row-col-text
+					border-right: 1px solid var(--gray)
+					padding-right: 10px
+					padding-left: 10px
+					&:first-child
+						width: 33.5%
+					&:nth-child(2)
+						width: 66.5%
+			&:nth-child(2)
+				width: 40%
+				& .balance-table__row-col-text
+					width: 50%
+					padding-right: 30px
+					padding-left: 30px
+					&:first-child
+						border-right: 1px solid var(--gray)
+			padding-top: 0
+			padding-bottom: 0
+	&__row-col-text
+		font-weight: 300
+		line-height: 120%
+		width: 100%
+		&_bold
+			font-weight: 600
+		&.balance-minus
+			color: var(--orange)
+		&:first-child
+			margin-bottom: 7px
+			@media(min-width:$md)
+				margin: 0
+		@media(min-width:$md)
+			padding-top: 12px
+			padding-bottom: 12px

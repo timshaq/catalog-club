@@ -1,0 +1,374 @@
+﻿<!DOCTYPE html>
+<html lang="ru" id="html">
+<head>
+
+	<title>Счет клиента</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css">
+
+	
+
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+
+
+	
+
+</head>
+
+<body id="body">
+
+@@include('html/header.html')
+
+<main>
+
+@@include('html/breadscrumb.html')
+
+<div class="cabinet">
+
+	<div class="cabinet__fix-cont fix-cont">
+
+		<div class="page-props">
+
+			<h1 class="page-props__title page-title">
+				Счет клиента
+			</h1>
+			
+		</div>
+
+		<div class="cabinet__row">
+
+			<ul class="service-links cabinet__service-links">
+				<div class="swiper-container" id="serviceLinksSlider">
+
+					<div class="swiper-wrapper">
+
+						<li class="service-links__li swiper-slide">
+							
+							<a href="#" class="service-links__link">
+								заказ на выполнении
+							</a>
+							
+						</li>
+
+						<li class="service-links__li swiper-slide">
+							
+							<a href="#" class="service-links__link current">
+								счет клиента
+							</a>
+							
+						</li>
+
+						<li class="service-links__li swiper-slide">
+							
+							<a href="#" class="service-links__link">
+								Архив заказов
+							</a>
+							
+						</li>
+
+						<li class="service-links__li swiper-slide">
+							
+							<a href="#" class="service-links__link">
+								Возвраты
+							</a>
+							
+						</li>
+
+						<li class="service-links__li swiper-slide">
+							
+							<a href="#" class="service-links__link">
+								Посылки
+							</a>
+							
+						</li>
+
+						<li class="service-links__li swiper-slide">
+							
+							<a href="#" class="service-links__link">
+								Мой профиль
+							</a>
+							
+						</li>
+
+					</div>
+
+				</div>
+				
+			</ul>
+
+			<div class="cabinet__banner banner">
+
+				
+				<img src="img/cabinet__banner.png" alt="" class="banner__bg">
+
+				<h2 class="cabinet__title banner__title white-text">
+					Декабрь 2020 Время зимней распродажи!
+				</h2>
+
+				<h3 class="cabinet__subtitle banner__subtitle">
+					Оплата картой на сайте или наличными в клиент-центре
+				</h3>
+
+			</div>
+			
+		</div>
+
+	</div>
+
+	<div class="cabinet__content2col cab-content2col">
+
+		<div class="cab-content2col__fix-cont fix-cont reverse">
+			
+			
+			<aside class="cabinet__aside">
+
+				<div class="cabinet__balance-controls balance-controls">
+
+					<button type="button" class="balance-controls__print" id="printBtn">
+
+						<img src="img/cab__balance-icon_print.svg" alt="" class="balance-controls__print-icon">
+
+						<span class="balance-controls__print-text">
+							Напечатать
+						</span>
+						
+					</button>
+
+					<a href="#" class="balance-controls__link">
+
+						<img src="img/cab__balance-icon__01.svg" alt="" class="balance-controls__link-icon">
+
+						<button type="button" class="balance-controls__link-btn balance-controls__link-btn gray-btn">
+							Внести оплату
+						</button>
+						
+					</a>
+
+					<a href="#" class="balance-controls__link">
+
+						<img src="img/cab__balance-icon__02.svg" alt="" class="balance-controls__link-icon">
+
+						<button type="button" class="balance-controls__link-btn orange-btn">
+							Заявка на возврат денег
+						</button>
+						
+					</a>
+
+					<a href="#" class="balance-controls__link">
+
+						<img src="img/cab__balance-icon__03.svg" alt="" class="balance-controls__link-icon">
+
+						<button type="button" class="balance-controls__link-btn orange-btn">
+							Подробная выписка
+						</button>
+						
+					</a>
+
+				</div>
+				
+			</aside>
+
+			<section class="cabinet__content">
+				
+				<div class="cabinet__balance-table balance-table" id="tableForPrint">
+
+					<div class="balance-table__headers">
+
+						<div class="balance-table__headers-item">
+
+								Дата
+							
+						</div>
+
+						<div class="balance-table__headers-item">
+
+								Операция
+							
+						</div>
+
+						<div class="balance-table__headers-item">
+
+								Сумма, €
+							
+						</div>
+
+						<div class="balance-table__headers-item">
+
+								Баланс, €
+							
+						</div>
+						
+
+					</div>
+
+					<div class="balance-table__row">
+
+						<div class="balance-table__row-col">
+
+							<div class="balance-table__row-col-text">
+								2020-10-19
+							</div>
+
+							<div class="balance-table__row-col-text">
+								Пополнение счета
+							</div>
+							
+						</div>
+
+						<div class="balance-table__row-col">
+
+							<div class="balance-table__row-col-text">
+								55.86
+							</div>
+
+							<div class="balance-table__row-col-text balance-table__row-col-text_bold">
+								0.00
+							</div>
+							
+						</div>
+						
+					</div>
+
+					<div class="balance-table__row">
+
+						<div class="balance-table__row-col">
+
+							<div class="balance-table__row-col-text">
+								2020-10-16
+							</div>
+
+							<div class="balance-table__row-col-text">
+								Заказ № 27407: поступление артикулов
+							</div>
+							
+						</div>
+
+						<div class="balance-table__row-col">
+
+							<div class="balance-table__row-col-text balance-minus">
+								-219.95
+							</div>
+
+							<div class="balance-table__row-col-text balance-table__row-col-text_bold balance-minus">
+								-44.86
+							</div>
+							
+						</div>
+						
+					</div>
+
+					<div class="balance-table__row">
+
+						<div class="balance-table__row-col">
+
+							<div class="balance-table__row-col-text">
+								2020-10-09
+							</div>
+
+							<div class="balance-table__row-col-text">
+								Заказ № 26959: возврат артикулов
+							</div>
+							
+						</div>
+
+						<div class="balance-table__row-col">
+
+							<div class="balance-table__row-col-text">
+								158.15
+							</div>
+
+							<div class="balance-table__row-col-text balance-table__row-col-text_bold">
+								175.09
+							</div>
+							
+						</div>
+						
+					</div>
+
+					<div class="balance-table__row">
+
+						<div class="balance-table__row-col">
+
+							<div class="balance-table__row-col-text">
+								2020-10-07
+							</div>
+
+							<div class="balance-table__row-col-text">
+								Заказ № 26959: поступление артикулов
+							</div>
+							
+						</div>
+
+						<div class="balance-table__row-col">
+
+							<div class="balance-table__row-col-text balance-minus">
+								-164.74
+							</div>
+
+							<div class="balance-table__row-col-text balance-table__row-col-text_bold">
+								16.94
+							</div>
+							
+						</div>
+						
+					</div>
+
+					<div class="balance-table__row">
+
+						<div class="balance-table__row-col">
+
+							<div class="balance-table__row-col-text">
+								2020-09-08
+							</div>
+
+							<div class="balance-table__row-col-text">
+								Заказ № 25879: возврат артикулов
+							</div>
+							
+						</div>
+
+						<div class="balance-table__row-col">
+
+							<div class="balance-table__row-col-text">
+								153.55
+							</div>
+
+							<div class="balance-table__row-col-text balance-table__row-col-text_bold ">
+								181.68
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+
+			</section>
+
+		</div>
+
+	</div>
+
+	<div class="fix-cont">
+
+			<div class="order__footer">
+
+				<p>
+					Если у вас есть вопросы – свяжитесь с нашим менеджером по телефону +7 (495) 921-33-11 или в чате.
+				</p>
+				
+			</div>
+		
+	</div>
+
+</div>
+
+</main>
+
+@@include('html/footer.html')
+
+</body>
+
+</html>
