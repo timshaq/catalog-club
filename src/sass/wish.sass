@@ -1,0 +1,46 @@
+.wish-header
+	@media(min-width:$md)
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 20px
+	&__count
+		display: flex
+		align-items: center
+		justify-content: center
+		@media(min-width:$md)
+			justify-content: flex-start
+	&__count-num
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 35px
+		height: 35px
+		position: relative
+	&__count-num-icon
+		width: 100%
+		height: 100%
+		object-fit: contain
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+	&__count-num-value
+		font-size: 12px
+		line-height: 150%
+		color: var(--white)
+		position: relative
+		z-index: 2
+	&__count-text
+		font-size: 16px
+		line-height: 150%
+		margin-left: 10px
+	&__description
+		font-weight: 300
+		font-size: 14px
+		line-height: 150%
+		margin-top: 15px
+		text-align: center
+		@media(min-width:$md)
+			width: 68%
+			text-align: right

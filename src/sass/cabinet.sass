@@ -307,6 +307,49 @@
 		@media(min-width:$md)
 			font-size: 24px
 	&__order-list
+		&.wish
+			& .cab-orders__order-link-cont
+				@media(min-width:$md)
+					display: flex
+					flex-direction: column
+					width: 214px
+				@media(min-width:$xl)
+					width: 270px
+			& .cab-order-info
+				@media(min-width:$md)
+					width: 370px
+					margin-right: 15px
+				@media(min-width:$xl)
+					width: 370px
+					margin-right: 30px
+			& .cab-order-info__param
+				@media(min-width:$xl)
+					margin: 0
+					&:not(:last-child)
+						margin-right: 0
+			& .cab-order-info__body
+				@media(min-width:$xl)
+					display: flex
+					justify-content: space-between
+			& .cab-order-info
+				@media(min-width:$md)
+					padding: 0
+			& .cab-orders__order-li
+				@media(min-width:$xl)
+					display: flex
+					justify-content: flex-start
+			& .cab-orders__order-ph
+				@media(min-width:$md)
+					margin-right: 15px
+				@media(min-width:$xl)
+					margin-right: 30px
+			& .cab-orders__order-link
+				width: 100%
+				&:first-child
+					margin-bottom: 20px
+				@media(min-width:$md)
+					position: static
+					width: 100%
 
 	&__order-li
 		padding-bottom: 30px
@@ -337,6 +380,7 @@
 			justify-content: center
 			align-items: center
 			width: 170px
+
 
 	&__order-link
 		height: 40px
@@ -475,6 +519,9 @@
 		font-style: normal
 		width: 240px
 .cabinet
+	&__content
+		&.print
+			width: 100%
 	&__balance-table
 
 .balance-table
@@ -503,11 +550,11 @@
 				font-weight: 300
 				font-size: 13px
 				line-height: 150%
-				@media(min-width:$md)
+				@media(min-width:$md), print
 					display: none
 		&:nth-child(2)
 			border-right: 1px solid var(--gray)
-		@media(min-width:$md)
+		@media(min-width:$md), print
 			&:not(:last-child)
 				border-right: 1px solid var(--gray)
 			&:first-child
@@ -527,13 +574,13 @@
 		padding-bottom: 12px
 		&:first-child
 			border-right: 1px solid var(--gray)
-			@media(min-width:$md)
+			@media(min-width:$md), print
 				border: 0
 		&:nth-child(2)
 			& .balance-table__row-col-text
 				display: flex
 				justify-content: flex-end
-		@media(min-width:$md)
+		@media(min-width:$md), print
 			&:first-child
 				width: 60%
 				& .balance-table__row-col-text
@@ -564,8 +611,20 @@
 			color: var(--orange)
 		&:first-child
 			margin-bottom: 7px
-			@media(min-width:$md)
+			@media(min-width:$md), print
 				margin: 0
-		@media(min-width:$md)
+		@media(min-width:$md), print
 			padding-top: 12px
 			padding-bottom: 12px
+@media print
+	body
+		& *
+			visibility: hidden
+		& #tableForPrint
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			visibility: visible
+		& #tableForPrint *
+			visibility: visible
