@@ -2,7 +2,7 @@
 <html lang="ru" id="html">
 <head>
 
-	<title>Сервис (Оформление заказа)</title>
+	<title>Мой профиль</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -492,535 +492,343 @@
 	</li>
 </ul>
 
-<div class="articles">
+<div class="cabinet">
 
-	<div class="articles__fix-cont fix-cont">
+	<div class="cabinet__fix-cont fix-cont">
 
-	
+		<div class="page-props">
 
-		<section class="articles__news">
+			<h1 class="page-props__title page-title">
+				Мой профиль
+			</h1>
+			
+		</div>
 
-			<ul class="service-links">
+		<div class="cabinet__row">
+
+			<ul class="service-links cabinet__service-links">
 				<div class="swiper-container" id="serviceLinksSlider">
 
 					<div class="swiper-wrapper">
 
 						<li class="service-links__li swiper-slide">
 							
+							<a href="#" class="service-links__link">
+								заказ на выполнении
+							</a>
+							
+						</li>
+
+						<li class="service-links__li swiper-slide">
+							
+							<a href="#" class="service-links__link">
+								счет клиента
+							</a>
+							
+						</li>
+
+						<li class="service-links__li swiper-slide">
+							
+							<a href="#" class="service-links__link">
+								Архив заказов
+							</a>
+							
+						</li>
+
+						<li class="service-links__li swiper-slide">
+							
+							<a href="#" class="service-links__link">
+								Возвраты
+							</a>
+							
+						</li>
+
+						<li class="service-links__li swiper-slide">
+							
+							<a href="#" class="service-links__link">
+								Посылки
+							</a>
+							
+						</li>
+
+						<li class="service-links__li swiper-slide">
+							
 							<a href="#" class="service-links__link current">
-								Оформление заказа
+								Мой профиль
 							</a>
 							
 						</li>
 
-						<li class="service-links__li swiper-slide">
-							
-							<a href="#" class="service-links__link">
-								Доставка
-							</a>
-							
-						</li>
-
-						<li class="service-links__li swiper-slide">
-							
-							<a href="#" class="service-links__link">
-								Оплата
-							</a>
-							
-						</li>
-
-						<li class="service-links__li swiper-slide">
-							
-							<a href="#" class="service-links__link">
-								Возврат
-							</a>
-							
-						</li>
-
-						<li class="service-links__li swiper-slide">
-							
-							<a href="#" class="service-links__link">
-								О нас
-							</a>
-							
-						</li>
-
-						<li class="service-links__li swiper-slide">
-							
-							<a href="#" class="service-links__link">
-								Вопросы-ответы
-							</a>
-							
-						</li>
-
-						<li class="service-links__li swiper-slide">
-							
-							<a href="#" class="service-links__link">
-								Контакты
-							</a>
-							
-						</li>
-
-						<li class="service-links__li swiper-slide">
-							
-							<a href="#" class="service-links__link">
-								Таблица размеров
-							</a>
-							
-						</li>
-
-						<li class="service-links__li swiper-slide">
-							
-							<a href="#" class="service-links__link">
-								Словарь терминов
-							</a>
-							
-						</li>
 					</div>
 
 				</div>
 				
 			</ul>
 
-			<div class="page-props">
+			<div class="cabinet__banner banner" style="position: relative">
 
-				<h1 class="page-props__title page-title">
-					Как оформить заказ?
-				</h1>
+				
+				<img src="img/cabinet__banner.png" alt="" class="banner__bg">
 
-				<p class="page-props__article plain-text">
-					Заказ оформляется в несколько шагов. Ничего сложного!
+				<h2 class="cabinet__title banner__title white-text">
+					Декабрь 2020 Время зимней распродажи!
+				</h2>
+
+				<h3 class="cabinet__subtitle banner__subtitle">
+					Оплата картой на сайте или наличными в клиент-центре
+				</h3>
+
+			</div>
+			
+		</div>
+
+	</div>
+	
+	<div class="order__fix-cont fix-cont columns order-step5 cabinet__profile">
+
+		<section class="order__content">
+
+			<form class="order__delivery-form delivery-form">
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Фамилия*:
+					</span>
+
+					<input type="text" class="label-2col__input">
+
+				</label>
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Имя*:
+					</span>
+
+					<input type="text" class="label-2col__input">
+
+				</label>
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Отчество:
+					</span>
+
+					<input type="text" class="label-2col__input">
+
+				</label>
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Пол:
+					</span>
+
+					<select class="label-2col__input">
+						
+						<option value="A">
+							Мужской
+						</option>
+						
+						<option value="B">
+							Женский
+						</option>
+
+					</select>
+
+				</label>
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Дата рождения:
+					</span>
+
+					<input type="text" class="label-2col__input">
+
+				</label>
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Мобильный телефон*:
+					</span>
+
+					<input type="text" class="label-2col__input">
+
+				</label>
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Домашний телефон:
+					</span>
+
+					<input type="text" class="label-2col__input">
+
+				</label>
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Регион*:
+					</span>
+
+					<input type="text" class="label-2col__input">
+
+				</label>
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Город:
+					</span>
+
+					<input type="text" class="label-2col__input">
+
+				</label>
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Населенный пункт:
+					</span>
+
+					<input type="text" class="label-2col__input">
+
+				</label>
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Почтовый индекс:
+					</span>
+
+					<input type="text" class="label-2col__input">
+
+				</label>
+
+				<div class="delivery-form__several-inputs several-inputs">
+					
+					<span class="several-inputs__text label-2col__text">
+						Дом*/­Корп./­Стр./­Кв.:
+					</span>
+
+					<div class="several-inputs__inputs">
+						
+						<input type="text" class="several-inputs__input per20">
+						
+						<input type="text" class="several-inputs__input per20">
+						
+						<input type="text" class="several-inputs__input per20">
+						
+						<input type="text" class="several-inputs__input per20">
+
+					</div>
+					
+				</div>
+
+				<div class="delivery-form__several-inputs several-inputs">
+					
+					<span class="label-2col__text">
+						Паспортные данные:
+					</span>
+
+					<div class="several-inputs__inputs">
+						
+						<input type="text" class="several-inputs__input per40" placeholder="Серия">
+						
+						<input type="text" class="several-inputs__input per40" placeholder="Номер">
+
+					</div>
+					
+				</div>
+
+				<label class="delivery-form__check custom-checkbox">
+					
+					<input type="checkbox" class="delivery-form__check-input">
+
+					<span class="delivery-form__check-text">
+						Сохранить паспортные данные для следующих заказов
+					</span>
+
+				</label>
+
+				<label class="delivery-form__check custom-checkbox">
+					
+					<input type="checkbox" class="delivery-form__check-input">
+
+					<span class="delivery-form__check-text">
+						Загрузить скан паспорта
+					</span>
+
+				</label>
+
+				<p class="delivery-form__note">
+					* Поля, обязательные для заполнения.
+				</p>
+				
+
+				<div class="delivery-form__submit-cont">
+					
+					<button type="button" class="delivery-form__submit orange-btn">
+						Подтвердить >>
+					</button>
+
+				</div>
+				
+
+				<p class="delivery-form__note-black delivery-form__final-black">
+					Нажимая на кнопку «Подтвердить», я соглашаюсь с условиями работы Каталог Клуба.
+				</p>
+
+
+			</form>
+			
+		</section>
+
+		<aside class="order__aside aside">
+
+			<p class="aside__article">
+				Просим Вас указывать реальные данные. Корректные ФИО необходимы для оформления заказа и получения международного отправления.
+
+			</p>
+
+			<p class="aside__article">
+				Адрес электронной почты необходим для авторизации на сайте, подтверждения заказа, а также для получения информации о статусе вашего заказа.
+
+			</p>
+
+			<p class="aside__article">
+				Номер телефона необходим для получения вами оперативной информации о поступившем заказе, а также, с вашего согласия, вы можете получать смс-уведомления о специальных предложениях.
+
+			</p>
+
+			<p class="aside__article">
+				Серия и номер паспорта необходимы для отправки международной посылки в адрес частного лица, согласно таможенным требованиям.
+			</p>
+
+			<p class="aside__article">
+				<strong>
+					Мы гарантируем соблюдение условий конфиденциальности
+				</strong>
+			</p>
+			
+		</aside>
+
+	</div>
+
+	<div class="fix-cont">
+
+			<div class="order__footer">
+
+				<p>
+					Если у вас есть вопросы – свяжитесь с нашим менеджером по телефону +7 (495) 921-33-11 или в чате.
 				</p>
 				
 			</div>
-
-
-			<div class="service-instruction instruction">
-
-				<ul class="instruction__list">
-					<div class="swiper-container" id="instructionSlider">
-
-						<div class="swiper-wrapper">
-							<li class="instruction__li current swiper-slide">
-
-								<div class="instruction__li-header">
-									<div class="instruction__li-header-num">
-										1
-									</div>
-								</div>
-
-								<p class="instruction__subtitle">
-									Заполнить
-				бланк
-								</p>
-								
-							</li>
-							
-							<li class="instruction__li swiper-slide">
-
-								<div class="instruction__li-header">
-									<div class="instruction__li-header-num">
-										2
-									</div>
-								</div>
-
-								<p class="instruction__subtitle">
-									Авторизоваться
-								</p>
-								
-							</li>
-							
-							<li class="instruction__li swiper-slide">
-
-								<div class="instruction__li-header">
-									<div class="instruction__li-header-num">
-										3
-									</div>
-								</div>
-
-								<p class="instruction__subtitle">
-									Выбрать способ доставки
-								</p>
-								
-							</li>
-							
-							<li class="instruction__li swiper-slide">
-
-								<div class="instruction__li-header">
-									<div class="instruction__li-header-num">
-										4
-									</div>
-								</div>
-
-								<p class="instruction__subtitle">
-									Выбрать размер предоплаты
-								</p>
-								
-							</li>
-							
-							<li class="instruction__li swiper-slide">
-
-								<div class="instruction__li-header">
-									<div class="instruction__li-header-num">
-										5
-									</div>
-								</div>
-
-								<p class="instruction__subtitle">
-									Внести
-		данные
-								</p>
-								
-							</li>
-							
-							<li class="instruction__li swiper-slide">
-
-								<div class="instruction__li-header">
-									<div class="instruction__li-header-num">
-										6
-									</div>
-								</div>
-
-								<p class="instruction__subtitle">
-									Отправить заказ
-		на согласование
-								</p>
-								
-							</li>
-							
-							<li class="instruction__li swiper-slide">
-
-								<div class="instruction__li-header">
-									<div class="instruction__li-header-num">
-										7
-									</div>
-								</div>
-
-								<p class="instruction__subtitle">
-									Подтвердить заказ после согласования
-								</p>
-								
-							</li>
-							
-							<li class="instruction__li swiper-slide">
-
-								<div class="instruction__li-header">
-									<div class="instruction__li-header-num">
-										8
-									</div>
-								</div>
-
-								<p class="instruction__subtitle">
-									Внести
-		предоплату
-								</p>
-								
-							</li>
-
-						</div>
-
-					</div>
-
-				</ul>
-				
-			</div>
-
-			<h2 class="articles__title h2">
-				ШАГ 1.  Заполните бланка заказа. 
-			</h2>
-
-			<p class="articles__p plain-text">
-
-				<strong>Автоматическое заполнение:</strong>
-
-			</p>
-
-			<img src="img/service-order__01.png" alt="" class="articles__img service-order-img">
-
-			<ul class="articles__list">
-
-				<li class="articles__li">
-					Делая покупки в любом немецком интернет-магазине, складывайте понравившиеся вещи в Корзину, для этого просто выбирайте цвет, свой размер и нажимайте на розовую кнопку «Добавить в бланк заказа».
-
-				</li>
-
-				<li class="articles__li">
-					Вы можете переходить из магазина в магазин – корзина при этом сохранит все артикулы, отложенные вами. 
-				</li>
-
-				<li class="articles__li">
-					Для оформления заказа нажмите оранжевую кнопку «Оформить заказ» в корзине. Бланк будет заполнен автоматически.
-				</li>
-
-				<li class="articles__li">
-					Вы можете удалять артикулы из бланка или добавлять их до тех пор, пока не нажали кнопку «Отправить заказ».
-
-				</li>
-
-			</ul>
-
-			<p class="articles__p plain-text">
-
-				<strong>Заполнение вручную:</strong>
-
-			</p>
-
-			<img src="img/service-order__02.png" alt="" class="articles__img service-order-img">
-
-			<ul class="articles__list">
-
-				<li class="articles__li">
-					Нажмите на Корзину «Мой заказ» и начните заполнять бланк заказа.  
-				</li>
-
-				<li class="articles__li">
-					Выбирая каталог, имейте в виду, что это обозначение каталожного направления, включающего все каталоги группы. Например, выбирайте ОТТО, если делаете заказ по следующим каталогам: ОТТО, Avendro, Heine, Brandneu, Modenschau, Fair Lady, Kidsworld, Chic & Charme, Sheego, Baur, Männermode, Creation L.
-				</li>
-
-				<li class="articles__li">
-					Введите Наименование товара на немецком языке, как обозначено в каталоге или интернет магазине.
-				</li>
-
-				<li class="articles__li">
-					Чтобы зафиксировать артикул в бланке, нажмите <strong>Сохранить.</strong>
-				</li>
-
-				<li class="articles__li">
-					Вы можете удалять артикулы из заказа или добавлять их до тех пор, пока не нажали кнопку «Отправить заказ».
-				</li>
-
-				<li class="articles__li">
-					Если Вы хотите получить несколько вещей комплектом, укажите это в строке «комплект», поставив цифру 1. Вы можете сформировать несколько комплектов, дав им номера: 2, 3 и т.д. Комплект может состоять из 3 и менее артикулов. Помните: если хотя бы одного артикула не будет на складе каталога в Германии, то весь комплект поставлен не будет.
-				</li>
-
-			</ul>
-
-			<h2 class="articles__title h2">
-				ШАГ 2. Авторизуйтесь  
-			</h2>
-
-			<p class="articles__p">
-				Если Вы у нас впервые, зарегистрируйтесь, заполнив указанные поля. Эти сведения нужны для правильного оформления заказа и доставки посылки из Германии. Вы получите персональный клиентский номер и номер текущего заказа, теперь Вы сможете участвовать в нашей программе лояльности, накапливать скидки и бонусы. Подробнее читайте
-				<strong>
-					<a href="#" class="link">
-						> Условия оформления заказа
-					</a>
-				</strong>
-
-			</p>
-
-			<h2 class="articles__title h2">
-				ШАГ 3. Выберите способ доставки 
-			</h2>
-
-			<p class="articles__p">
-				Выберите регион и город, куда необходимо доставить ваш заказ.
-			</p>
-
-			<img src="img/service-order__03.png" alt="" class="articles__img service-order-img">
-
-			<ul class="articles__list">
-
-				<li class="articles__li">
-					В графе Пункт выдачи будут указаны адреса всех пунктов выдачи транспортной компании в вашем городе;
-выберите удобный вам.
-				</li>
-
-				<li class="articles__li">
-					Жители Москвы могут выбрать: пункт выдачи Клиент-Центр или курьерскую доставку. Жители регионов России могут выбрать: ПВЗ транспортной компании (заказать курьерскую доставку в своем городе в этой транспортной компании)
-				</li>
-
-			</ul>
-
-			<h2 class="articles__title h2">
-				ШАГ 4. Выберите размер предоплаты
-			</h2>
-
-			<p class="articles__p">
-				Выберите возможный размер предоплаты.
-			</p>
-
-			<img src="img/service-order__04.png" alt="" class="articles__img service-order-img">
-
-			<ul class="articles__list">
-
-				<li class="articles__li">
-					Если Вы оформляете заказ в период действия какой-либо акции и хотите принять в ней участие, укажите ее код.
-				</li>
-
-			</ul>
-
-			<h2 class="articles__title h2">
-				ШАГ 5. Внесите данные  
-			</h2>
-
-			<p class="articles__p">
-				Внесите в форму точные ФИО, адрес, контактный телефон и другие данные. Эти сведения необходимы для процедуры таможенной обработки вашего товара и доставки посылки из Европы, а также для осуществления возврата денежных средств в случае рекламации. Конфиденциальность гарантируем.
-			</p>
-
-			<h2 class="articles__title h2">
-				ШАГ 6. Отправьте заказ на согласование  
-			</h2>
-
-			<p class="articles__p">
-				Подтвердите свое согласие с условиями работы Каталог Клуба и отправьте ваш бланк заказа на согласование. Оператор Каталог Клуба в течение 1 часа проверит корректность оформления заказа и наличие указанных вами вещей на складе в Германии. Если вы корректно оформили заказ – он автоматически будет отправлен в Германию.
-			</p>
-
-			<h2 class="articles__title h2">
-				ШАГ 7. Подтвердите заказ  
-			</h2>
-
-			<p class="articles__p">
-				В случае внесения изменений в заказ оператором клиент-центра (корректировка цены и т.д.), вы получите сообщение на ваш электронный адрес. Вам необходимо будет пройти по ссылке в свой Личный кабинет, чтобы подтвердить заказ. Посмотрите изменения и подтвердите заказ.
-			</p>
-
-			<p class="articles__p">
-				Отслеживайте информацию о выполнении вашего заказа в Личном кабинете или связывайтесь с оператором по тел. 8 (800) 250-16-06 (Регионы РФ), 8 (495) 921-33-11, 8 (925) 794-7045 (Москва)
-			</p>
-
-		</section>
-
-
-		<aside class="articles__aside aside">
-
-			<ul class="aside__list">
-
-				<li class="aside__item">
-
-					<div class="aside__item-header">
-						ВАЖНАЯ ИНФОРМАЦИЯ
-					</div>
-
-					<div class="aside__faq aside-faq">
-						
-
-						<ul class="service-faq">
-							
-							<li class="service-faq__li">
-
-								<div class="service-faq__header">
-
-									<h2 class="service-faq__title">
-										Как я узнаю о поступлении заказа?
-									</h2>
-
-									<div class="service-faq__arrow-cont">
-
-										<img src="img/arrow.svg" alt="" class="service-faq__arrow">
-
-									</div>
-									
-								</div>
-
-								<div class="service-faq__body">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur totam corrupti, dolor culpa reprehenderit perferendis autem repellendus mollitia beatae, laboriosam. Nisi voluptas aperiam incidunt culpa tempore, dolores, aut debitis fuga.
-								</div>
-								
-							</li>
-							
-							<li class="service-faq__li">
-
-								<div class="service-faq__header">
-
-									<h2 class="service-faq__title">
-										Можно ли заказать габаритные и тяжелые вещи?
-									</h2>
-
-									<div class="service-faq__arrow-cont">
-
-										<img src="img/arrow.svg" alt="" class="service-faq__arrow">
-
-									</div>
-									
-								</div>
-
-								<div class="service-faq__body">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur totam corrupti, dolor culpa reprehenderit perferendis autem repellendus mollitia beatae, laboriosam. Nisi voluptas aperiam incidunt culpa tempore, dolores, aut debitis fuga.
-								</div>
-								
-							</li>
-							
-							<li class="service-faq__li">
-
-								<div class="service-faq__header">
-
-									<h2 class="service-faq__title">
-										В течение какого времени будет исполнен заказ?
-									</h2>
-
-									<div class="service-faq__arrow-cont">
-
-										<img src="img/arrow.svg" alt="" class="service-faq__arrow">
-
-									</div>
-									
-								</div>
-
-								<div class="service-faq__body">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur totam corrupti, dolor culpa reprehenderit perferendis autem repellendus mollitia beatae, laboriosam. Nisi voluptas aperiam incidunt culpa tempore, dolores, aut debitis fuga.
-								</div>
-								
-							</li>
-							
-							<li class="service-faq__li">
-
-								<div class="service-faq__header">
-
-									<h2 class="service-faq__title">
-										По какой причине могут задержать заказ?
-									</h2>
-
-									<div class="service-faq__arrow-cont">
-
-										<img src="img/arrow.svg" alt="" class="service-faq__arrow">
-
-									</div>
-									
-								</div>
-
-								<div class="service-faq__body">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur totam corrupti, dolor culpa reprehenderit perferendis autem repellendus mollitia beatae, laboriosam. Nisi voluptas aperiam incidunt culpa tempore, dolores, aut debitis fuga.
-								</div>
-								
-							</li>
-
-						</ul>
-
-					</div>
-
-				</li>
-
-				<li class="aside__item">
-
-					<div class="aside__item-header">
-						ВИДЕО ГИД
-					</div>
-
-					<a href="#" class="aside__video-link">
-
-						<img src="img/aside-video__01.png" alt="" class="aside__video-link-ph">
-					
-					</a>
-
-					<a href="#" class="aside__video-link">
-
-						<img src="img/aside-video__02.png" alt="" class="aside__video-link-ph">
-					
-					</a>
-
-					<a href="#" class="aside__video-link">
-
-						<img src="img/aside-video__03.png" alt="" class="aside__video-link-ph">
-					
-					</a>
-					
-				</li>
-
-			</ul>
-
-			
-		</aside>
-			
 		
 	</div>
 

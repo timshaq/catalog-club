@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru" id="html">
+<head>
+
+	<title>Мой профиль</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css">
+
+	
+
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+
+
+	
+
+</head>
+
+<body id="body">
+
+@@include('html/header.html')
+
+<main>
+
+@@include('html/breadscrumb.html')
+
+<div class="cabinet">
+
+	<div class="cabinet__fix-cont fix-cont">
+
+		<div class="page-props">
+
+			<h1 class="page-props__title page-title">
+				Мой профиль
+			</h1>
+			
+		</div>
+
+		<div class="cabinet__row">
+
+			<ul class="service-links cabinet__service-links">
+				<div class="swiper-container" id="serviceLinksSlider">
+
+					<div class="swiper-wrapper">
+
+						<li class="service-links__li swiper-slide">
+							
+							<a href="#" class="service-links__link">
+								заказ на выполнении
+							</a>
+							
+						</li>
+
+						<li class="service-links__li swiper-slide">
+							
+							<a href="#" class="service-links__link">
+								счет клиента
+							</a>
+							
+						</li>
+
+						<li class="service-links__li swiper-slide">
+							
+							<a href="#" class="service-links__link">
+								Архив заказов
+							</a>
+							
+						</li>
+
+						<li class="service-links__li swiper-slide">
+							
+							<a href="#" class="service-links__link">
+								Возвраты
+							</a>
+							
+						</li>
+
+						<li class="service-links__li swiper-slide">
+							
+							<a href="#" class="service-links__link">
+								Посылки
+							</a>
+							
+						</li>
+
+						<li class="service-links__li swiper-slide">
+							
+							<a href="#" class="service-links__link current">
+								Мой профиль
+							</a>
+							
+						</li>
+
+					</div>
+
+				</div>
+				
+			</ul>
+
+			<div class="cabinet__banner banner" style="position: relative">
+
+				
+				<img src="img/cabinet__banner.png" alt="" class="banner__bg">
+
+				<h2 class="cabinet__title banner__title white-text">
+					Декабрь 2020 Время зимней распродажи!
+				</h2>
+
+				<h3 class="cabinet__subtitle banner__subtitle">
+					Оплата картой на сайте или наличными в клиент-центре
+				</h3>
+
+			</div>
+			
+		</div>
+
+	</div>
+	
+	<div class="order__fix-cont fix-cont columns order-step5 cabinet__profile">
+
+		<section class="order__content">
+
+			<form class="order__delivery-form delivery-form">
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Фамилия*:
+					</span>
+
+					<input type="text" class="label-2col__input">
+
+				</label>
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Имя*:
+					</span>
+
+					<input type="text" class="label-2col__input">
+
+				</label>
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Отчество:
+					</span>
+
+					<input type="text" class="label-2col__input">
+
+				</label>
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Пол:
+					</span>
+
+					<select class="label-2col__input">
+						
+						<option value="A">
+							Мужской
+						</option>
+						
+						<option value="B">
+							Женский
+						</option>
+
+					</select>
+
+				</label>
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Дата рождения:
+					</span>
+
+					<input type="text" class="label-2col__input">
+
+				</label>
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Мобильный телефон*:
+					</span>
+
+					<input type="text" class="label-2col__input">
+
+				</label>
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Домашний телефон:
+					</span>
+
+					<input type="text" class="label-2col__input">
+
+				</label>
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Регион*:
+					</span>
+
+					<input type="text" class="label-2col__input">
+
+				</label>
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Город:
+					</span>
+
+					<input type="text" class="label-2col__input">
+
+				</label>
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Населенный пункт:
+					</span>
+
+					<input type="text" class="label-2col__input">
+
+				</label>
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text">
+						Почтовый индекс:
+					</span>
+
+					<input type="text" class="label-2col__input">
+
+				</label>
+
+				<div class="delivery-form__several-inputs several-inputs">
+					
+					<span class="several-inputs__text label-2col__text">
+						Дом*/­Корп./­Стр./­Кв.:
+					</span>
+
+					<div class="several-inputs__inputs">
+						
+						<input type="text" class="several-inputs__input per20">
+						
+						<input type="text" class="several-inputs__input per20">
+						
+						<input type="text" class="several-inputs__input per20">
+						
+						<input type="text" class="several-inputs__input per20">
+
+					</div>
+					
+				</div>
+
+				<div class="delivery-form__several-inputs several-inputs">
+					
+					<span class="label-2col__text">
+						Паспортные данные:
+					</span>
+
+					<div class="several-inputs__inputs">
+						
+						<input type="text" class="several-inputs__input per40" placeholder="Серия">
+						
+						<input type="text" class="several-inputs__input per40" placeholder="Номер">
+
+					</div>
+					
+				</div>
+
+				<label class="delivery-form__check custom-checkbox">
+					
+					<input type="checkbox" class="delivery-form__check-input">
+
+					<span class="delivery-form__check-text">
+						Сохранить паспортные данные для следующих заказов
+					</span>
+
+				</label>
+
+				<label class="delivery-form__check custom-checkbox">
+					
+					<input type="checkbox" class="delivery-form__check-input">
+
+					<span class="delivery-form__check-text">
+						Загрузить скан паспорта
+					</span>
+
+				</label>
+
+				<p class="delivery-form__note">
+					* Поля, обязательные для заполнения.
+				</p>
+				
+
+				<div class="delivery-form__submit-cont">
+					
+					<button type="button" class="delivery-form__submit orange-btn">
+						Подтвердить >>
+					</button>
+
+				</div>
+				
+
+				<p class="delivery-form__note-black delivery-form__final-black">
+					Нажимая на кнопку «Подтвердить», я соглашаюсь с условиями работы Каталог Клуба.
+				</p>
+
+
+			</form>
+			
+		</section>
+
+		<aside class="order__aside aside">
+
+			<p class="aside__article">
+				Просим Вас указывать реальные данные. Корректные ФИО необходимы для оформления заказа и получения международного отправления.
+
+			</p>
+
+			<p class="aside__article">
+				Адрес электронной почты необходим для авторизации на сайте, подтверждения заказа, а также для получения информации о статусе вашего заказа.
+
+			</p>
+
+			<p class="aside__article">
+				Номер телефона необходим для получения вами оперативной информации о поступившем заказе, а также, с вашего согласия, вы можете получать смс-уведомления о специальных предложениях.
+
+			</p>
+
+			<p class="aside__article">
+				Серия и номер паспорта необходимы для отправки международной посылки в адрес частного лица, согласно таможенным требованиям.
+			</p>
+
+			<p class="aside__article">
+				<strong>
+					Мы гарантируем соблюдение условий конфиденциальности
+				</strong>
+			</p>
+			
+		</aside>
+
+	</div>
+
+	<div class="fix-cont">
+
+			<div class="order__footer">
+
+				<p>
+					Если у вас есть вопросы – свяжитесь с нашим менеджером по телефону +7 (495) 921-33-11 или в чате.
+				</p>
+				
+			</div>
+		
+	</div>
+
+</div>
+
+</main>
+
+@@include('html/footer.html')
+
+</body>
+
+</html>

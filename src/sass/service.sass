@@ -69,7 +69,6 @@
 		justify-content: flex-start
 		margin-top: 30px
 		margin-bottom: 40px
-		overflow: hidden
 		@media(min-width:$md)
 			width: 708px
 		@media(min-width:$xl)
@@ -242,14 +241,14 @@
 		color: var(--dark-orange)
 	&.refund
 		display: flex
-		overflow: hidden
 		flex-wrap: nowrap
 		justify-content: flex-start
+		& .swiper-container
+			padding-top: 25px
 		@media(min-width:$md)
 			flex-wrap: wrap
 			justify-content: center
-			overflow: visible
-		margin-bottom: 100px
+			margin-bottom: 100px
 		& .service-proccess__li
 			&:last-child
 				& .service-proccess__li-name

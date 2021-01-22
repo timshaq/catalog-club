@@ -75,8 +75,9 @@ export default function () {
 
 	})
 
-	const serviceAboutGalleriesEl = document.querySelectorAll('.service-about__gallery .swiper-container')
-
+	const serviceAboutGalleriesNl = document.querySelectorAll('.service-about__gallery .swiper-container')
+	const serviceAboutGalleriesEl = Array.prototype.slice.call(serviceAboutGalleriesNl);
+		
 	const serviceAboutGallery = new Swiper(serviceAboutGalleriesEl, {
 		slidesPerView: 1.2,
 		spaceBetween: 10,
@@ -89,13 +90,23 @@ export default function () {
 		slidesPerView: 1.3,
 		spaceBetween: 10,
 	})
-	const serviceLinksSliderCont = serviceLinksSlider.el
-	const serviceLinksSliderWrap = serviceLinksSlider.wrapperEl
-	// const serviceLinksSliderLiNL = serviceLinksSliderCont.querySelectorAll('.service-links__li');
-	const serviceLinksSliderLiList = serviceLinksSlider.slides;
+
+	const instructionSliderEl = document.getElementById('instructionSlider')
+
+	const instructionSlider = new Swiper(instructionSliderEl, {
+		slidesPerView: 2.1,
+		spaceBetween: 10,
+	})
+
+	const serviceRefundSliderEl = document.getElementById('serviceRefundSlider')
+
+	const serviceRefundSlider = new Swiper(serviceRefundSliderEl, {
+		slidesPerView: 2,
+		spaceBetween: 10,
+	})
 
 	var mobSlidersArray = []
-
+	
 	if(serviceAboutGalleriesEl.length) {
 		serviceAboutGallery.forEach(slider => {
 			mobSlidersArray.push(slider)
@@ -106,21 +117,28 @@ export default function () {
 		mobSlidersArray.push(serviceLinksSlider)
 	}
 
+	if(instructionSliderEl) {
+		mobSlidersArray.push(instructionSlider)
+	}
+
+	if(serviceRefundSliderEl) {
+		mobSlidersArray.push(serviceRefundSlider)
+	}
+
 	function destroySliders(vw, mob = mobSlidersArray) {
 		if(vw >= 768) {
 			mob.forEach(slider => {
-				console.log(slider.el.parentElement.className)
 				slider.destroy(false,true)
 				slider.el.removeAttribute('class')
 
 				slider.wrapperEl.removeAttribute('class')
-				slider.wrapperEl.classList.add(slider.el.parentElement.className)
+				slider.wrapperEl.classList.add(slider.el.parentElement.classList[0])
 
 				slider.slides.forEach(li => {
 					var className = li.classList[0]
-					li.removeAttribute('class')
+					li.classList.remove('swiper-slide')
 					li.removeAttribute('style')
-					li.classList.add(className)
+					// li.classList.add(className)
 				})
 			})
 
@@ -128,6 +146,7 @@ export default function () {
 			mob.forEach(slider => {
 				slider.el.classList.add('swiper-container')
 
+				slider.wrapperEl.removeAttribute('class')
 				slider.wrapperEl.classList.add('swiper-wrapper')
 
 				slider.slides.forEach(li => {
@@ -135,12 +154,13 @@ export default function () {
 				})
 
 				slider.init()
+				slider.update()
 			})
 			
 		}
 	}
 
-	if(!serviceLinksSliderCont) return;
+	if(!mobSlidersArray.length) return;
 
 	window.onresize = function() {
 	    destroySliders(window.innerWidth)
