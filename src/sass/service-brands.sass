@@ -1,0 +1,66 @@
+.service-brands
+	margin-top: 20px
+	&__fix-cont
+
+	&__words-line
+
+	&__alphabet
+
+	&__p
+		font-weight: 300
+		font-size: 14px
+		line-height: 150%
+
+.alphabet
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	&__word
+		margin-bottom: 30px
+		width: 48%
+		@media(min-width:$md)
+			width: 30%
+		@media(min-width:$xl)
+			width: 15%
+	&__word-header-text
+		font-size: 12px
+		line-height: 21px
+		letter-spacing: 0.5em
+		text-transform: uppercase
+		position: relative
+		z-index: 2
+		color: var(--white)
+	&__word-header
+		width: 40px
+		height: 30px
+		display: flex
+		justify-content: center
+		align-items: center
+		position: relative
+		margin-bottom: 10px
+		&:before, &:after
+			content: ''
+			height: 100%
+			position: absolute
+			top: 0
+		&:before
+			width: 30px
+			left: 0px
+			background-color: var(--dark-red)
+		&:after
+			width: 11px
+			left: 30px
+			border-style: solid
+			border-width: 15px 0 15px 11px
+			border-color: transparent transparent transparent var(--dark-red)
+
+	&__word-list
+
+	&__word-li
+		&:not(:last-child)
+			margin-bottom: 10px
+	&__word-link
+		font-weight: 300
+		font-size: 14px
+		line-height: 180%
+		text-transform: uppercase
