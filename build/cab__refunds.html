@@ -2,7 +2,7 @@
 <html lang="ru" id="html">
 <head>
 
-	<title>Оформить заказ. Шаг 3</title>
+	<title>Личный кабинет</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -492,824 +492,961 @@
 	</li>
 </ul>
 
+<div class="cabinet">
 
+	<div class="cabinet__fix-cont fix-cont">
 
-<div class="order">
+		<div class="page-props">
 
-	<div class="order__fix-cont fix-cont">
-
-		<div class="service-instruction instruction">
-
-			<ul class="instruction__list">
-				
-				<li class="instruction__li">
-
-					<div class="instruction__li-header">
-						<div class="instruction__li-header-num">
-							1
-						</div>
-					</div>
-
-					<p class="instruction__subtitle">
-						Заполнить
-	бланк
-					</p>
-					
-				</li>
-				
-				<li class="instruction__li">
-
-					<div class="instruction__li-header">
-						<div class="instruction__li-header-num">
-							2
-						</div>
-					</div>
-
-					<p class="instruction__subtitle">
-						Авторизоваться
-					</p>
-					
-				</li>
-				
-				<li class="instruction__li current ">
-
-					<div class="instruction__li-header">
-						<div class="instruction__li-header-num">
-							3
-						</div>
-					</div>
-
-					<p class="instruction__subtitle">
-						Выбрать способ доставки
-					</p>
-					
-				</li>
-				
-				<li class="instruction__li ">
-
-					<div class="instruction__li-header">
-						<div class="instruction__li-header-num">
-							4
-						</div>
-					</div>
-
-					<p class="instruction__subtitle">
-						Выбрать размер предоплаты
-					</p>
-					
-				</li>
-				
-				<li class="instruction__li ">
-
-					<div class="instruction__li-header">
-						<div class="instruction__li-header-num">
-							5
-						</div>
-					</div>
-
-					<p class="instruction__subtitle">
-						Внести
-	данные
-					</p>
-					
-				</li>
-				
-				<li class="instruction__li ">
-
-					<div class="instruction__li-header">
-						<div class="instruction__li-header-num">
-							6
-						</div>
-					</div>
-
-					<p class="instruction__subtitle">
-						Отправить заказ
-	на согласование
-					</p>
-					
-				</li>
-				
-				<li class="instruction__li ">
-
-					<div class="instruction__li-header">
-						<div class="instruction__li-header-num">
-							7
-						</div>
-					</div>
-
-					<p class="instruction__subtitle">
-						Подтвердить заказ после согласования
-					</p>
-					
-				</li>
-				
-				<li class="instruction__li ">
-
-					<div class="instruction__li-header">
-						<div class="instruction__li-header-num">
-							8
-						</div>
-					</div>
-
-					<p class="instruction__subtitle">
-						Внести
-	предоплату
-					</p>
-					
-				</li>
-
-			</ul>
+			<h1 class="page-props__title page-title">
+				Личный кабинет
+			</h1>
 			
 		</div>
-		
+
+		<div class="cabinet__row">
+
+			<ul class="service-links cabinet__service-links">
+				<div class="swiper-container" id="serviceLinksSlider">
+
+					<div class="swiper-wrapper">
+
+						<li class="service-links__li swiper-slide">
+							
+							<a href="#" class="service-links__link">
+								заказ на выполнении
+							</a>
+							
+						</li>
+
+						<li class="service-links__li swiper-slide">
+							
+							<a href="#" class="service-links__link">
+								счет клиента
+							</a>
+							
+						</li>
+
+						<li class="service-links__li swiper-slide">
+							
+							<a href="#" class="service-links__link">
+								Архив заказов
+							</a>
+							
+						</li>
+
+						<li class="service-links__li swiper-slide">
+							
+							<a href="#" class="service-links__link current">
+								Возвраты
+							</a>
+							
+						</li>
+
+						<li class="service-links__li swiper-slide">
+							
+							<a href="#" class="service-links__link">
+								Посылки
+							</a>
+							
+						</li>
+
+						<li class="service-links__li swiper-slide">
+							
+							<a href="#" class="service-links__link">
+								Мой профиль
+							</a>
+							
+						</li>
+
+					</div>
+
+				</div>
+				
+			</ul>
+
+			<div class="cabinet__banner banner">
+
+				
+				<img src="img/cabinet__banner.png" alt="" class="banner__bg">
+
+				<h2 class="cabinet__title banner__title white-text">
+					Декабрь 2020 Время зимней распродажи!
+				</h2>
+
+				<h3 class="cabinet__subtitle banner__subtitle">
+					Оплата картой на сайте или наличными в клиент-центре
+				</h3>
+
+			</div>
+			
+		</div>
+
 	</div>
-	
-	<div class="order__fix-cont fix-cont columns">
 
-		<section class="order__content">
+	<div class="cabinet__table-content">
 
-			<div class="page-props">
+		<div class="cabinet__fix-cont fix-cont">
 
-				<h1 class="page-props__title page-title">
-					Выбрать регион и способ доставки
-				</h1>
+			<table class="table-content__table cab-table">
+
+				<!-- Заголовки -->
+
+				<tr class="cab-table__tr">
+
+					<th class="cab-table__th cab-table__w120">
+						Каталог
+					</th>
+
+					<th class="cab-table__th cab-table__w120">
+						Артикул
+					</th>
+
+					<th class="cab-table__th cab-table__w200">
+						Наименование
+					</th>
+
+					<th class="cab-table__th cab-table__w80">
+						Размер
+					</th>
+
+					<th class="cab-table__th cab-table__w80">
+						Цена, €
+					</th>
+
+					<th class="cab-table__th cab-table__w80">
+						СС, €
+					</th>
+
+					<th class="cab-table__th cab-table__w80">
+						ДТС, €
+					</th>
+
+					<th class="cab-table__th cab-table__w100">
+						Пошлина, €
+					</th>
+
+					<th class="cab-table__th cab-table__w90">
+						Сумма, €
+					</th>
+
+					<th class="cab-table__th cab-table__w90">
+						Ансамбль
+					</th>
+
+					<th class="cab-table__th cab-table__w130">
+						Причина
+					</th>
+					
+				</tr>
+
+				<!-- Заголовки - конец -->
+
+
+
+				<!-- Один заказ -->
+
+				<tr class="cab-table__tr cab-table__tr_title">
+
+					<td class="cab-table__td cab-table__td_left" colspan="8">
+						<strong>
+							Заказ №36 от 24.08.2018
+						</strong>
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						<strong>
+							91.94
+						</strong>
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+					</td>
+					
+				</tr>
+
+				<tr class="cab-table__tr">
+
+					<td class="cab-table__td cab-table__td_left">
+						Peter Hahn
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						60516288
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						брюки
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						40
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						79.95
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						11.99
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						0.00
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						0.00
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						91.94
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						
+					</td>
+					
+				</tr>
+
+				<!-- Один заказ - конец -->
+
+				<tr class="cab-table__tr cab-table__tr_title">
+
+					<td class="cab-table__td cab-table__td_left" colspan="8">
+						<strong>
+							Заказ №36 от 24.08.2018
+						</strong>
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						<strong>
+							91.94
+						</strong>
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+					</td>
+					
+				</tr>
+
+				<tr class="cab-table__tr">
+
+					<td class="cab-table__td cab-table__td_left">
+						Peter Hahn
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						60516288
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						брюки
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						40
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						79.95
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						11.99
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						0.00
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						0.00
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						91.94
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						
+					</td>
+					
+				</tr>
+
+				<tr class="cab-table__tr cab-table__tr_title">
+
+					<td class="cab-table__td cab-table__td_left" colspan="8">
+						<strong>
+							Заказ №36 от 24.08.2018
+						</strong>
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						<strong>
+							91.94
+						</strong>
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+					</td>
+					
+				</tr>
+
+				<tr class="cab-table__tr">
+
+					<td class="cab-table__td cab-table__td_left">
+						Peter Hahn
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						60516288
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						брюки
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						40
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						79.95
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						11.99
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						0.00
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						0.00
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						91.94
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						
+					</td>
+					
+				</tr>
+
+				<tr class="cab-table__tr cab-table__tr_title">
+
+					<td class="cab-table__td cab-table__td_left" colspan="8">
+						<strong>
+							Заказ №36 от 24.08.2018
+						</strong>
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						<strong>
+							91.94
+						</strong>
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+					</td>
+					
+				</tr>
+
+				<tr class="cab-table__tr">
+
+					<td class="cab-table__td cab-table__td_left">
+						Peter Hahn
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						60516288
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						брюки
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						40
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						79.95
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						11.99
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						0.00
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						0.00
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						91.94
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						
+					</td>
+					
+				</tr>
+
+				<tr class="cab-table__tr cab-table__tr_title">
+
+					<td class="cab-table__td cab-table__td_left" colspan="8">
+						<strong>
+							Заказ №36 от 24.08.2018
+						</strong>
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						<strong>
+							91.94
+						</strong>
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+					</td>
+					
+				</tr>
+
+				<tr class="cab-table__tr">
+
+					<td class="cab-table__td cab-table__td_left">
+						Peter Hahn
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						60516288
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						брюки
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						40
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						79.95
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						11.99
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						0.00
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						0.00
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						91.94
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						
+					</td>
+					
+				</tr>
+
+				<tr class="cab-table__tr cab-table__tr_title">
+
+					<td class="cab-table__td cab-table__td_left" colspan="8">
+						<strong>
+							Заказ №36 от 24.08.2018
+						</strong>
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						<strong>
+							91.94
+						</strong>
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+					</td>
+					
+				</tr>
+
+				<tr class="cab-table__tr">
+
+					<td class="cab-table__td cab-table__td_left">
+						OTTO
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						00108584
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						Spaghettitop
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						40
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						9.99
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						1.50
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						0.00
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						0.00
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						11.49
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						Отказ клиента
+					</td>
+					
+				</tr>
+
+				<tr class="cab-table__tr">
+
+					<td class="cab-table__td cab-table__td_left">
+						Peter Hahn
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						60516288
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						брюки
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						40
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						79.95
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						11.99
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						0.00
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						0.00
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						91.94
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						Отказ клиента
+					</td>
+					
+				</tr>
+
+				<tr class="cab-table__tr cab-table__tr_title">
+
+					<td class="cab-table__td cab-table__td_left" colspan="8">
+						<strong>
+							Заказ №36 от 24.08.2018
+						</strong>
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						<strong>
+							91.94
+						</strong>
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+					</td>
+					
+				</tr>
+
+				<tr class="cab-table__tr">
+
+					<td class="cab-table__td cab-table__td_left">
+						Peter Hahn
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						60516288
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						брюки
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						40
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						79.95
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						11.99
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						0.00
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						0.00
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						91.94
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						
+					</td>
+					
+				</tr>
+
+				<tr class="cab-table__tr cab-table__tr_title">
+
+					<td class="cab-table__td cab-table__td_left" colspan="8">
+						<strong>
+							Заказ №36 от 24.08.2018
+						</strong>
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						<strong>
+							91.94
+						</strong>
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+					</td>
+					
+				</tr>
+
+				<tr class="cab-table__tr">
+
+					<td class="cab-table__td cab-table__td_left">
+						OTTO
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						00108584
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						Spaghettitop
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						40
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						9.99
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						1.50
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						0.00
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						0.00
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						11.49
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						
+					</td>
+					
+				</tr>
+
+				<tr class="cab-table__tr cab-table__tr_title">
+
+					<td class="cab-table__td cab-table__td_left" colspan="8">
+						<strong>
+							Заказ №36 от 24.08.2018
+						</strong>
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						<strong>
+							103.43
+						</strong>
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+					</td>
+					
+				</tr>
+
+				<tr class="cab-table__tr">
+
+					<td class="cab-table__td cab-table__td_left">
+						OTTO
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						00108584
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						Spaghettitop
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						40
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						9.99
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						1.50
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						0.00
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						0.00
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						11.49
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						
+					</td>
+					
+				</tr>
+
+				<tr class="cab-table__tr">
+
+					<td class="cab-table__td cab-table__td_left">
+						Peter Hahn
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						60516288
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						брюки
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						40
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						79.95
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						11.99
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						0.00
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						0.00
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						91.94
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						
+					</td>
+					
+				</tr>
+
+				<tr class="cab-table__tr cab-table__tr_title">
+
+					<td class="cab-table__td cab-table__td_left" colspan="8">
+						<strong>
+							Заказ №36 от 24.08.2018
+						</strong>
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						<strong>
+							91.94
+						</strong>
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+					</td>
+					
+				</tr>
+
+				<tr class="cab-table__tr">
+
+					<td class="cab-table__td cab-table__td_left">
+						Peter Hahn
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						60516288
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						брюки
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						40
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						79.95
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						11.99
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						0.00
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						0.00
+					</td>
+
+					<td class="cab-table__td cab-table__td_right">
+						91.94
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						
+					</td>
+
+					<td class="cab-table__td cab-table__td_left">
+						
+					</td>
+					
+				</tr>
 				
-			</div>
-
-			<ul class="order__product-list step2">
-				
-				<li class="order__product order-product">
-
-					<div class="order-product__header">
-					
-						<img src="img/order-product.png" alt="" class="order-product__ph">
-						
-						<h2 class="order-product__name">
-							Kaschmirpullover mit Zierknoten
-						</h2>
-
-					</div>
-
-					<img src="img/popup__close.png" alt="" class="order-product__del-btn">
-
-					<div class="order-product__values">
-						
-						<h2 class="order-product__name">
-							Kaschmirpullover mit Zierknoten
-						</h2>
-
-						<span class="order-product__value">
-							Артикул: 04265423
-						</span>
-
-						<span class="order-product__value">
-							Размер: 42
-						</span>
-
-						<span class="order-product__value">
-							Цена: 329,95 €
-						</span>
-
-						<span class="order-product__value">
-							Сервисный сбор: 9 €
-						</span>
-
-					</div>
-						
-					<div class="order-product__controls">
-
-						<label class="order-product__label">
-							
-							<span class="order-product__label-text">
-								Комплект:
-							</span>
-
-							<select name="" id="" class="order-product__input">
-								
-								<option value="A">
-									0
-								</option>
-								
-								<option value="B">
-									1
-								</option>
-								
-								<option value="C">
-									2
-								</option>
-
-							</select>
-
-						</label>
-
-						<label class="order-product__label">
-							
-							<span class="order-product__label-text">
-								Кол-во:
-							</span>
-
-							<input class="order-product__input">
-
-						</label>
-
-						<div class="order-product__cost">
-							329,95 €
-						</div>
-						
-					</div>
-
-				</li>
-				
-				<li class="order__product order-product">
-
-					<div class="order-product__header">
-					
-						<img src="img/order-product.png" alt="" class="order-product__ph">
-						
-						<h2 class="order-product__name">
-							Kaschmirpullover mit Zierknoten
-						</h2>
-
-					</div>
-
-					<img src="img/popup__close.png" alt="" class="order-product__del-btn">
-
-					<div class="order-product__values">
-						
-						<h2 class="order-product__name">
-							Kaschmirpullover mit Zierknoten
-						</h2>
-
-						<span class="order-product__value">
-							Артикул: 04265423
-						</span>
-
-						<span class="order-product__value">
-							Размер: 42
-						</span>
-
-						<span class="order-product__value">
-							Цена: 329,95 €
-						</span>
-
-						<span class="order-product__value">
-							Сервисный сбор: 9 €
-						</span>
-
-					</div>
-						
-					<div class="order-product__controls">
-
-						<label class="order-product__label">
-							
-							<span class="order-product__label-text">
-								Комплект:
-							</span>
-
-							<select name="" id="" class="order-product__input">
-								
-								<option value="A">
-									0
-								</option>
-								
-								<option value="B">
-									1
-								</option>
-								
-								<option value="C">
-									2
-								</option>
-
-							</select>
-
-						</label>
-
-						<label class="order-product__label">
-							
-							<span class="order-product__label-text">
-								Кол-во:
-							</span>
-
-							<input class="order-product__input">
-
-						</label>
-
-						<div class="order-product__cost">
-							329,95 €
-						</div>
-						
-					</div>
-
-				</li>
-				
-			</ul>
-
-			<div class="order__person-info person-info">
-
-				<div class="person-info__props">
-				
-					<span class="person-info__name">
-						Фамилия, Имя,Отчество:
-					</span>
-				
-					<strong class="person-info__value">
-						Трофимова Полина Викторовна
-					</strong>
-					
-				</div>
-
-				<div class="person-info__props">
-				
-					<span class="person-info__name">
-						Телефон:
-					</span>
-				
-					<strong class="person-info__value">
-						8 (999) 123 45 67
-					</strong>
-					
-				</div>
-
-			</div>
-
-			<form class="order__delivery-form delivery-form">
-				
-				<h2 class="delivery-form__title">
-					Выбрать регион и город доставки
-				</h2>
-
-				<label class="delivery-form__label label-2col">
-					
-					<span class="label-2col__text">
-						Регион*:
-					</span>
-
-					<select class="label-2col__input">
-						
-						<option value="A">
-							Московская область
-						</option>
-						
-						<option value="B">
-							Московская область2
-						</option>
-						
-						<option value="C">
-							Московская область3
-						</option>
-
-					</select>
-
-				</label>
-
-				<label class="delivery-form__label label-2col">
-					
-					<span class="label-2col__text">
-						Город:
-					</span>
-
-					<select class="label-2col__input">
-						
-						<option value="A">
-							Москва
-						</option>
-						
-						<option value="B">
-							Москва2
-						</option>
-						
-						<option value="C">
-							Москва3
-						</option>
-
-					</select>
-
-				</label>
-
-				<div class="delivery-form__label label-2col">
-					
-					<span class="label-2col__text">
-						Способ получения*:
-					</span>
-
-					<div class="label-2col__radio-cont">
-
-						<label class="label-2col__radio-label custom-radio">
-							
-							<input type="radio" class="label-2col__radio">
-
-							<span class="label-2col__radio-label-text">
-								пункт выдачи заказов (0.00 EUR)   
-							</span>
-
-						</label>
-
-						<label class="label-2col__radio-label custom-radio">
-							
-							<input type="radio" class="label-2col__radio">
-
-							<span class="label-2col__radio-label-text">
-								доставка курьером  (15.00 EUR)  
-							</span>
-
-						</label>
-
-					</div>
-
-				</div>
-
-				<label class="delivery-form__label label-2col">
-					
-					<span class="label-2col__text">
-						Транспортная компания:
-					</span>
-
-					<select class="label-2col__input">
-						
-						<option value="A">
-							CDEK
-						</option>
-						
-						<option value="B">
-							CDEK2
-						</option>
-						
-						<option value="C">
-							CDEK3
-						</option>
-
-					</select>
-
-				</label>
-
-				<label class="delivery-form__label label-2col">
-					
-					<span class="label-2col__text">
-						Пункт выдачи:
-					</span>
-
-					<select class="label-2col__input">
-						
-						<option value="A">
-							ул. Черняховского, 74, 16
-						</option>
-						
-						<option value="B">
-							ул. Черняховского, 13, 16
-						</option>
-						
-						<option value="C">
-							ул. Черняховского, 12, 16
-						</option>
-
-					</select>
-
-				</label>
-
-				<p class="delivery-form__note">
-					*СДЭК: Получение в ПВЗ или через курьера. Предоплата от 0 руб. Необходимы паспортные данные.
-				</p>
-
-				<p class="delivery-form__note">
-					**Почта России: Получение в почтовом отделении. Предоплата 100%. Паспортные данные не требуются.
-				</p>
-
-				<label class="delivery-form__check custom-checkbox">
-					
-					<input type="checkbox" class="delivery-form__check-input">
-
-					<span class="delivery-form__check-text">
-						сохранить информацию для следующих заказов
-					</span>
-
-				</label>
-				
-				<h2 class="delivery-form__title">
-					Выбрать размер предоплаты
-				</h2>
-
-				<div class="delivery-form__radio-line radio-line">
-					
-					<label class="radio-line__label custom-radio">
-						
-						<input type="radio" class="radio-line__label-input">
-
-						<span class="radio-line__label-text">
-							0%
-						</span>
-						
-					</label>
-					
-					<label class="radio-line__label custom-radio">
-						
-						<input type="radio" class="radio-line__label-input">
-
-						<span class="radio-line__label-text">
-							15%
-						</span>
-						
-					</label>
-					
-					<label class="radio-line__label custom-radio">
-						
-						<input type="radio" class="radio-line__label-input">
-
-						<span class="radio-line__label-text">
-							100%
-						</span>
-						
-					</label>
-
-				</div>
-
-				<p class="delivery-form__note-black">
-					При 100% предоплате сервисный сбор 10%.
-				</p>
-				
-				<h2 class="delivery-form__title">
-					Код акции
-				</h2>
-
-				<label class="delivery-form__label">
-					
-					<input type="text" class="delivery-form__label-input">
-
-				</label>
-
-				<div class="delivery-form__submit-cont">
-					
-					<button type="button" class="delivery-form__submit orange-btn">
-						Продолжить оформление >>
-					</button>
-
-				</div>
-
-			</form>
+			</table>
 			
-		</section>
-
-		<aside class="order__aside aside">
-
-			<div class="aside__order-count order-count">
-				
-				<h2 class="order-count__title">
-
-					<span>
-						Всего позиций:
-					</span>
-
-					<span>
-						2
-					</span>
-
-				</h2>
-
-				<div class="order-count__total">
-					
-					<span>
-						На сумму:
-					</span>
-
-					<span>
-						551,90 €
-					</span>
-
-				</div>
-
-				<div class="order-count__tax">
-
-					<h3 class="order-count__tax-title">
-						В том числе:
-					</h3>
-					
-					<ul class="order-count__tax-list">
-						
-						<li class="order-count__tax-li">
-
-							<span>
-								Каталожная стоимость
-							</span>
-
-							<span>
-								9 €
-							</span>
-							
-						</li>
-						
-						<li class="order-count__tax-li">
-
-							<span>
-								Сервисный сбор
-							</span>
-
-							<span>
-								9 €
-							</span>
-							
-						</li>
-						
-						<li class="order-count__tax-li">
-
-							<span>
-								ДТС
-							</span>
-
-							<span>
-								9 €
-							</span>
-							
-						</li>
-
-					</ul>
-
-				</div>
-
-				<a href="#" class="order-count__link orange-btn">
-					Продолжить >>
-				</a>
-
-			</div>
-
-			<ul class="aside__list">
-
-				<li class="aside__item">
-
-					<div class="aside__item-header">
-						Быстрая помощь
-					</div>
-
-					<div class="currency-converter">
-						
-						<h2 class="currency-converter__title">
-							Конвертер валюты
-						</h2>
-
-						<span class="currency-converter__date">
-							24.11.2020*
-						</span>
-
-						<h3 class="currency-converter__subtitle">
-							Пересчитать сумму в евро
-						</h3>
-
-						<div class="currency-converter__inputs">
-							
-							<label class="currency-converter__label">
-								
-								<span class="currency-converter__label-text">
-									EUR
-								</span>
-
-								<input type="text" class="currency-converter__input">
-
-							</label>
-							
-							<label class="currency-converter__label">
-								
-								<span class="currency-converter__label-text">
-									RUB
-								</span>
-
-								<input type="text" class="currency-converter__input">
-
-							</label>
-
-						</div>
-
-						<span class="currency-converter__currency">
-							1 EUR = 90.83 RUB
-						</span>
-
-						<span class="currency-converter__note">
-							* Курс установлен на текущую дату по курсу Центробанка + 1%
-						</span>
-
-					</div>
-
-				</li>
-
-			</ul>
-
-			<div class="aside__faq aside-faq">
-				
-
-				<ul class="service-faq">
-					
-					<li class="service-faq__li">
-
-						<div class="service-faq__header">
-
-							<h2 class="service-faq__title">
-								Что такое артикул?
-							</h2>
-
-							<div class="service-faq__arrow-cont">
-
-								<img src="img/arrow.svg" alt="" class="service-faq__arrow">
-
-							</div>
-							
-						</div>
-
-						<div class="service-faq__body">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur totam corrupti, dolor culpa reprehenderit perferendis autem repellendus mollitia beatae, laboriosam. Nisi voluptas aperiam incidunt culpa tempore, dolores, aut debitis fuga.
-						</div>
-						
-					</li>
-					
-					<li class="service-faq__li">
-
-						<div class="service-faq__header">
-
-							<h2 class="service-faq__title">
-								Какой размер указывать при оформлении?
-							</h2>
-
-							<div class="service-faq__arrow-cont">
-
-								<img src="img/arrow.svg" alt="" class="service-faq__arrow">
-
-							</div>
-							
-						</div>
-
-						<div class="service-faq__body">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur totam corrupti, dolor culpa reprehenderit perferendis autem repellendus mollitia beatae, laboriosam. Nisi voluptas aperiam incidunt culpa tempore, dolores, aut debitis fuga.
-						</div>
-						
-					</li>
-					
-					<li class="service-faq__li">
-
-						<div class="service-faq__header">
-
-							<h2 class="service-faq__title">
-								Что такое комплект?
-							</h2>
-
-							<div class="service-faq__arrow-cont">
-
-								<img src="img/arrow.svg" alt="" class="service-faq__arrow">
-
-							</div>
-							
-						</div>
-
-						<div class="service-faq__body">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur totam corrupti, dolor culpa reprehenderit perferendis autem repellendus mollitia beatae, laboriosam. Nisi voluptas aperiam incidunt culpa tempore, dolores, aut debitis fuga.
-						</div>
-						
-					</li>
-					
-					<li class="service-faq__li">
-
-						<div class="service-faq__header">
-
-							<h2 class="service-faq__title">
-								Какие каталоги относятся к группе ОТТО?
-							</h2>
-
-							<div class="service-faq__arrow-cont">
-
-								<img src="img/arrow.svg" alt="" class="service-faq__arrow">
-
-							</div>
-							
-						</div>
-
-						<div class="service-faq__body">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur totam corrupti, dolor culpa reprehenderit perferendis autem repellendus mollitia beatae, laboriosam. Nisi voluptas aperiam incidunt culpa tempore, dolores, aut debitis fuga.
-						</div>
-						
-					</li>
-					
-					<li class="service-faq__li">
-
-						<div class="service-faq__header">
-
-							<h2 class="service-faq__title">
-								Что такое ДТС? 
-							</h2>
-
-							<div class="service-faq__arrow-cont">
-
-								<img src="img/arrow.svg" alt="" class="service-faq__arrow">
-
-							</div>
-							
-						</div>
-
-						<div class="service-faq__body">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur totam corrupti, dolor culpa reprehenderit perferendis autem repellendus mollitia beatae, laboriosam. Nisi voluptas aperiam incidunt culpa tempore, dolores, aut debitis fuga.
-						</div>
-						
-					</li>
-
-				</ul>
-
-			</div>
-			
-		</aside>
+		</div>
 
 	</div>
 

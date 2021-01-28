@@ -60,7 +60,7 @@
 
 				</ul>
 
-				<button type="button" class="header__numbers-call white-btn">
+				<button id="callbackOpen" type="button" class="header__numbers-call white-btn">
 					Заказать обратный звонок
 				</button>
 
@@ -520,7 +520,7 @@
 					Мы будем рады любым отзывам положительным и негативным, так как они помогут улучшить работу Каталог Клуба именно для Вас.
 				</p>
 
-				<button type="button" class="page-description__btn black-btn">
+				<button id="reviewsPopupOpen" type="button" class="page-description__btn black-btn">
 					Оставить отзыв
 				</button>
 
@@ -958,9 +958,179 @@
 
 </footer>
 
+<div id="callbackPopup" class="popup-cont">
+	
+	<form class="callback-popup">
+
+		<h2 class="callback-popup__title">
+			Обратный звонок
+		</h2>
+
+		<label class="callback-popup__label">
+
+			<span class="callback-popup__label-text">
+				Имя:
+			</span>
+			
+			<input type="text" class="callback-popup__label-input">
+
+		</label>
+
+		<label class="callback-popup__label">
+
+			<span class="callback-popup__label-text">
+				Фамилия:
+			</span>
+			
+			<input type="text" class="callback-popup__label-input">
+
+		</label>
+
+		<label class="callback-popup__label">
+
+			<span class="callback-popup__label-text">
+				Отчество:
+			</span>
+			
+			<input type="text" class="callback-popup__label-input">
+
+		</label>
+
+		<label class="callback-popup__label">
+
+			<span class="callback-popup__label-text">
+				Телефон:
+			</span>
+			
+			<input type="text" class="callback-popup__label-input">
+
+		</label>
+
+		<label class="callback-popup__label">
+
+			<span class="callback-popup__label-text">
+				Удобное время:
+			</span>
+			
+			<input type="text" class="callback-popup__label-input">
+
+		</label>
+
+		<div class="callback-popup__captcha-cont">
+			
+			<img src="img/captcha.png" alt="">
+
+		</div>
+
+		<div class="callback-popup__submit-cont">
+
+			<button type="submit" class="callback-popup__submit orange-btn">
+				Добавить >>
+			</button>
+
+		</div>
+
+		<button id="callbackClose" type="button" class="callback-popup__close">
+			<img src="img/popup__close.png" alt="" class="callback-popup__close-icon">
+		</button>
+		
+	</form>
+
+</div>
+
 <script src="lib/swiper/swiper-bundle.min.js"></script>
 
 <script src="js/script.min.js"></script>
+
+<div class="popup-cont" id="reviewsPopup">
+
+	<form class="review-popup">
+
+		<h2 class="review-popup__title">
+			Добавить отзыв
+		</h2>
+
+		<div class="review-popup__row">
+
+			<label class="review-popup__label">
+
+				<span class="review-popup__label-text">
+					Имя:
+				</span>
+				
+				<input type="text" class="review-popup__label-input">
+
+			</label>
+
+			<label class="review-popup__label">
+
+				<span class="review-popup__label-text">
+					Email:
+				</span>
+				
+				<input type="email" required class="review-popup__label-input">
+
+			</label>
+
+			<label class="review-popup__label select-label">
+
+				<span class="review-popup__label-text">
+					Оценка:
+				</span>
+				
+				<select class="review-popup__label-input select">
+					
+					<option value="5">5</option>
+					
+					<option value="4">4</option>
+					
+					<option value="3">3</option>
+					
+					<option value="2">2</option>
+					
+					<option value="1">1</option>
+
+				</select>
+
+			</label>
+			
+		</div>
+
+		<div class="review-popup__row">
+
+			<label class="review-popup__label textarea-label">
+
+				<span class="review-popup__label-text">
+					Ваш отзыв:
+				</span>
+				
+				<textarea class="review-popup__label-input textarea"></textarea>
+
+			</label>
+			
+		</div>
+
+		<div class="review-popup__submit-cont">
+
+			<button type="submit" class="review-popup__submit black-btn">
+				Оставить отзыв >>
+			</button>
+			
+		</div>
+
+		<p class="review-popup__note">
+			Данная страница модерируется. Мы оставляем за собой право оставлять или удалять комментарии пользователей по своему усмотрению.
+		</p>
+
+		<button type="button" id="reviewsPopupClose" class="review-popup__close">
+
+			<img src="img/popup__close.png" alt="" class="review-popup__close-icon">
+
+		</button>
+		
+	</form>
+	
+</div>
 
 </body>
 

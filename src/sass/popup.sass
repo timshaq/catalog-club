@@ -58,3 +58,106 @@
 				@media(min-width:$md)
 					margin-bottom: 20px
 			& .sale-card__social-links
+
+.review-popup
+	position: relative
+	margin: 20px auto
+	background-color: var(--white)
+	width: 290px
+	padding-top: 40px
+	padding-bottom: 20px
+	padding-left: 15px
+	padding-right: 15px
+	box-shadow: 0px 0px 15px var(--popup-shadow)
+	@media(min-width:$md)
+		width: 708px
+		padding-left: 30px
+		padding-right: 30px
+	@media(min-width:$xl)
+		width: 770px
+		padding-left: 100px
+		padding-right: 100px
+		padding-top: 50px
+		padding-bottom: 50px
+	&__title
+		font-weight: 300
+		font-size: 28px
+		line-height: 32px
+		color: var(--orange)
+		text-align: center
+		margin-bottom: 20px
+		@media(min-width:$md)
+			margin-bottom: 30px
+	&__row
+		display: flex
+		flex-direction: column
+		margin: 20px 0
+		@media(min-width:$md)
+			flex-direction: row
+			justify-content: space-between
+	&__label
+		display: flex
+		flex-direction: column
+		&:not(:last-child)
+			margin-bottom: 15px
+		@media(min-width:$md)
+			width: 220px
+		&.select-label
+			@media(min-width:$md)
+				width: 70px
+		&.textarea-label
+			@media(min-width:$md)
+				width: 100%
+	&__label-text
+		font-weight: 300
+		font-size: 14px
+		line-height: 150%
+		margin-bottom: 5px
+	&__label-input
+		font-weight: 300
+		font-size: 14px
+		line-height: 150%
+		padding: 0 15px
+		background-color: var(--gray4)
+		border: 1px solid var(--input-border)
+		width: 100%
+		height: 40px
+		&.select
+		&.textarea
+			resize: none
+			height: 80px
+			padding: 5px 15px
+			@media(min-width:$xl)
+				height: 160px
+	&__submit-cont
+		display: flex
+		justify-content: center
+		margin: 20px 0
+		@media(min-width:$md)
+			margin-top: 40px
+			margin-bottom: 20px
+	&__submit
+		width: 100%
+		height: 40px
+		@media(min-width:$md)
+			width: 230px
+	&__note
+		font-weight: 300
+		font-size: 14px
+		line-height: 150%
+		color: var(--black40)
+		text-align: center
+	&__close
+		width: 20px
+		height: 20px
+		position: absolute
+		top: 15px
+		right: 15px
+		@media(min-width:$xl)
+			top: 30px
+			right: 30px
+	&__close-icon
+		width: 100%
+		height: 100%
+		object-fit: cover
+
