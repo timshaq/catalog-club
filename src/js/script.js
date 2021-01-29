@@ -8,7 +8,7 @@ import reviews from './reviews.js';
 import weekThingPopups from './weekThingPopups.js';
 import serviceFaq from './serviceFaq.js';
 import printTable from './printTable.js';
-import brandsAutoHeight from './brandsAutoHeight.js';
+import orderAddPopup from './orderAddPopup.js';
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -30,7 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	printTable();
 
-	brandsAutoHeight();
+	orderAddPopup();
+
 
 
 

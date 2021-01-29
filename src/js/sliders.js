@@ -127,6 +127,39 @@ export default function () {
 		spaceBetween: 10,
 	})
 
+
+// ORDER STEP 1
+
+	const addProductSliderNextBtn = document.getElementById('addProductSliderNextBtn')
+	const addProductSliderPrevBtn = document.getElementById('addProductSliderPrevBtn')
+	
+
+	const addProductPopupPaginationSliderEl = document.getElementById('addProductPopupPaginationSlider')
+
+	const addProductPopupPaginationSlider = new Swiper(addProductPopupPaginationSliderEl, {
+		slidesPerView: 1,
+		spaceBetween: 0,
+		allowTouchMove: false,
+		navigation: {
+			nextEl: addProductSliderNextBtn,
+			prevEl: addProductSliderPrevBtn
+		},
+	})
+
+	const addProductPopupProductsSliderEl = document.getElementById('addProductPopupProductsSlider')
+
+	const addProductPopupProductsSlider = new Swiper(addProductPopupProductsSliderEl, {
+		slidesPerView: 1,
+		spaceBetween: 0,
+		allowTouchMove: false,
+		navigation: {
+			nextEl: addProductSliderNextBtn,
+			prevEl: addProductSliderPrevBtn
+		},
+	})
+
+// ORDER STEP 1
+
 	var mobSlidersArray = []
 	
 	if(serviceAboutGalleriesEl.length) {
@@ -145,6 +178,14 @@ export default function () {
 
 	if(serviceRefundSliderEl) {
 		mobSlidersArray.push(serviceRefundSlider)
+	}
+
+	if(addProductPopupProductsSliderEl) {
+		mobSlidersArray.push(addProductPopupProductsSlider)
+	}
+
+	if(addProductPopupPaginationSliderEl) {
+		mobSlidersArray.push(addProductPopupPaginationSlider)
 	}
 
 	function destroySliders(vw, mob = mobSlidersArray) {
@@ -176,6 +217,7 @@ export default function () {
 				})
 
 				slider.init()
+				slider.navigation.init()
 				slider.update()
 			})
 			

@@ -449,7 +449,7 @@
 				
 			</ul>
 
-			<button type="button" class="order__add-btn">
+			<button type="button" class="order__add-btn" id="orderAddProduct">
 				<img src="img/order__add-btn.svg" alt="">
 			</button>
 			
@@ -736,23 +736,291 @@
 
 </main>
 
-<div class="popup-cont">
+<div class="popup-cont" id="orderAddProductPopup">
 
-	<div class="add-product-popup">
+	<form class="add-product-popup">
 
-		<h2 class="add-product-popup__title">
-			
+		<h2 class="add-product-popup__title link">
+			Добавить позицию
 		</h2>
 
-		<div class="add-product-popup__controls-page">
+		<div class="add-product-popup__pagination">
 			
-			<button class="add-product-popup__controls-page-prev">
+			<button type="button" class="add-product-popup__pagination-prev slider-btn-prev" id="addProductSliderPrevBtn">
+				<img src="img/slider-arrow.svg" alt="" class="preview__slider-btn-icon">
+			</button>
+
+			<div class="add-product-popup__pagination-slider">
+
+				<div class="swiper-container" id="addProductPopupPaginationSlider">
+
+					<div class="swiper-wrapper">
+
+						<h3 class="add-product-popup__pagination-title link swiper-slide">
+							Товар 1
+						</h3>
+
+						<h3 class="add-product-popup__pagination-title link swiper-slide">
+							Товар 2
+						</h3>
+
+					</div>
+
+				</div>
 				
+			</div>
+
+			<button type="button" class="add-product-popup__pagination-next slider-btn-next" id="addProductSliderNextBtn">
+				<img src="img/slider-arrow.svg" alt="" class="preview__slider-btn-icon">
+			</button>
+
+		</div>
+
+		<div class="add-product-popup__products order-products">
+
+			<div class="swiper-container" id="addProductPopupProductsSlider">
+
+				<div class="swiper-wrapper">
+
+					<!-- Строка одного товара -->
+					<div class="order-products__item swiper-slide">
+						
+						<div class="order-products__item-col">
+
+							<div class="order-products__item-head">
+								Каталог
+							</div>
+
+							<div class="order-products__item-value">
+
+								<select class="order-products__item-value-select">
+									
+									<option value="Madeleine">Madeleine</option>
+									<option value="Madeleine2">Madeleine2</option>
+									<option value="Madeleine3">Madeleine3</option>
+
+								</select>
+								
+							</div>
+							
+						</div>
+						
+						<div class="order-products__item-col">
+
+							<div class="order-products__item-head">
+								Артикул
+							</div>
+
+							<div class="order-products__item-value">
+								03795681
+							</div>
+							
+						</div>
+						
+						<div class="order-products__item-col">
+
+							<div class="order-products__item-head">
+								Название
+							</div>
+
+							<div class="order-products__item-value">
+
+								<p class="order-products__item-value-article">
+									kaschmirpullover mit zikaschmirpullover mit zi kaschmirpullover mit zi kaschmirpullover mit zi kaschmirpullover mit zi kaschmirpullover mit zi kaschmirpullover mit zi kaschmirpullover mit zi kaschmirpullover mit zi
+								</p>
+								
+							</div>
+							
+						</div>
+						
+						<div class="order-products__item-col">
+
+							<div class="order-products__item-head">
+								Размер
+							</div>
+
+							<div class="order-products__item-value">
+								40/42
+							</div>
+							
+						</div>
+						
+						<div class="order-products__item-col">
+
+							<div class="order-products__item-head">
+								Цена
+							</div>
+
+							<div class="order-products__item-value">
+								165.67
+							</div>
+							
+						</div>
+						
+						<div class="order-products__item-col">
+
+							<div class="order-products__item-head">
+								Сбор
+							</div>
+
+							<div class="order-products__item-value">
+								0
+							</div>
+							
+						</div>
+						
+						<div class="order-products__item-col">
+
+							<div class="order-products__item-head">
+								Комплект
+							</div>
+
+							<div class="order-products__item-value">
+
+								<select class="order-products__item-value-select">
+									
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+
+								</select>
+								
+							</div>
+							
+						</div>
+
+					</div>
+					<!-- Строка одного товара - конец -->
+
+					<div class="order-products__item swiper-slide">
+						
+						<div class="order-products__item-col">
+
+							<div class="order-products__item-head">
+								Каталог
+							</div>
+
+							<div class="order-products__item-value">
+
+								<select class="order-products__item-value-select">
+									
+									<option value="Sela">Sela</option>
+									<option value="Sela2">Sela2</option>
+									<option value="Sela3">Sela3</option>
+
+								</select>
+								
+							</div>
+							
+						</div>
+						
+						<div class="order-products__item-col">
+
+							<div class="order-products__item-head">
+								Артикул
+							</div>
+
+							<div class="order-products__item-value">
+								04395682
+							</div>
+							
+						</div>
+						
+						<div class="order-products__item-col">
+
+							<div class="order-products__item-head">
+								Название
+							</div>
+
+							<div class="order-products__item-value">
+
+								<p class="order-products__item-value-article">
+									lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis harum ex illo assumenda nulla dolor rem eveniet quos laudantium? Accusantium labore temporibus nobis perferendis rem facilis earum exercitationem optio quos.
+								</p>
+
+							</div>
+							
+						</div>
+						
+						<div class="order-products__item-col">
+
+							<div class="order-products__item-head">
+								Размер
+							</div>
+
+							<div class="order-products__item-value">
+								43/43.5
+							</div>
+							
+						</div>
+						
+						<div class="order-products__item-col">
+
+							<div class="order-products__item-head">
+								Цена
+							</div>
+
+							<div class="order-products__item-value">
+								435.67
+							</div>
+							
+						</div>
+						
+						<div class="order-products__item-col">
+
+							<div class="order-products__item-head">
+								Сбор
+							</div>
+
+							<div class="order-products__item-value">
+								0
+							</div>
+							
+						</div>
+						
+						<div class="order-products__item-col">
+
+							<div class="order-products__item-head">
+								Комплект
+							</div>
+
+							<div class="order-products__item-value">
+
+								<select class="order-products__item-value-select">
+									
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+
+								</select>
+								
+							</div>
+							
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+			
+		</div>
+
+		<div class="add-product-popup__btn-row">
+			
+			<button type="button" class="add-product-popup__add-btn">
+
+				<img src="img/add-black.svg" alt="" class="add-product-popup__add-btn-icon">
+
+			</button>
+
+			<button type="submit" class="add-product-popup__submit orange-btn">
+				Добавить >>
 			</button>
 
 		</div>
 		
-	</div>
+	</form>
 	
 </div>
 

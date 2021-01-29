@@ -574,3 +574,140 @@
 .label-2col
 	&__text
 
+
+
+.add-product-popup
+	width: 290px
+	background-color: var(--white)
+	margin: 20px auto
+	padding: 30px
+	@media(min-width:$md)
+		width: 708px
+		padding: 40px 15px
+	@media(min-width:$xl)
+		width: 969px
+		padding: 60px 70px
+	&__title
+		font-weight: 300
+		font-size: 20px
+		line-height: 23px
+		text-align: center
+		margin-bottom: 20px
+		@media(min-width:$md)
+			margin-bottom: 30px
+	&__products
+
+	&__btn-row
+		margin-top: 30px
+		display: flex
+		@media(min-width:$md)
+			justify-content: center
+			position: relative
+	&__add-btn
+		width: 47px
+		height: 47px
+		background-color: var(--gray2)
+		margin-right: 15px
+		@media(min-width:$md)
+			position: absolute
+			top: 0
+			left: 0
+	&__add-btn-icon
+		width: 19px
+		height: 19px
+		object-fit: contain
+	&__submit
+		height: 47px
+		width: 168px
+		font-style: normal
+		@media(min-width:$md)
+			width: 216px
+		@media(min-width:$xl)
+			width: 170px
+	&__pagination
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin: 20px 0
+		@media(min-width:$md)
+			display: none
+	&__pagination-slider
+		width: 130px
+	&__pagination-title
+		font-weight: 300
+		font-size: 16px
+		line-height: 18px
+		text-align: center
+	&__pagination-prev, &__pagination-next
+		position: static
+		border-radius: 0
+		transform: none
+	&__pagination-prev
+
+	&__pagination-next
+
+
+.order-products
+	margin-top: 20px
+	&__item
+		@media(min-width:$md)
+			display: flex
+			justify-content: center
+			&:not(:first-child)
+				& .order-products__item-head
+					display: none
+			&:not(:last-child)
+				margin-bottom: 15px
+	&__item-col
+		width: 100%
+		margin-bottom: 15px
+		@media(min-width:$md)
+			margin-bottom: 0
+			& .order-products__item-value
+				margin-left: 2.5px
+				margin-right: 2.5px
+			&:first-child
+				width: 120px
+				& .order-products__item-value
+					margin-left: 0
+					margin-right: 2.5px
+			&:nth-child(2)
+				width: 100px
+			&:nth-child(3)
+				width: 260px
+			&:nth-child(4), &:nth-child(5), &:last-child
+				width: 90px
+			&:nth-child(6)
+				width: 60px
+			&:last-child
+				& .order-products__item-value
+					margin-left: 2.5px
+					margin-right: 0
+	&__item-head
+		font-weight: 300
+		font-size: 13px
+		line-height: 150%
+		color: var(--white)
+		background-color: var(--black)
+		text-align: center
+		margin-bottom: 5px
+	&__item-value, &__item-value-select
+		font-weight: 300
+		font-size: 14px
+		line-height: 150%
+	&__item-value
+		background-color: var(--gray2)
+		padding: 13px
+	&__item-value-article
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+		width: 203px
+		@media(min-width:$md)
+			width: 120px
+		@media(min-width:$xl)
+			width: 230px
+	&__item-value-select
+		width: 100%
+		background-color: var(--gray2)
+
