@@ -51,6 +51,28 @@ export default function () {
 
 	})
 
+	const shopLineSlider = new Swiper('#shopLineSlider', {
+		navigation: {
+			nextEl: '#shopLineNextBtn',
+			prevEl: '#shopLinePrevBtn'
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 2,
+				spaceBetween: 10,
+			},
+			768: {
+				slidesPerView: 3,
+				spaceBetween: 30,
+			},
+			1200: {
+				slidesPerView: 5,
+				spaceBetween: 80,
+			},
+		},
+
+	})
+
 	const asideFashionIdeasSlider = new Swiper('#fashionIdeasSlider', {
 		slidesPerView: 1,
 		spaceBetween: 0,
