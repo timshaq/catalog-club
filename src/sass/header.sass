@@ -118,7 +118,7 @@
 			left: 50%
 			bottom: -10px
 			transform: translate(-50%,100%)
-			z-index: 10
+			z-index: 20
 			&:after
 				content: ''
 				width: 100%
@@ -136,6 +136,22 @@
 				border-style: solid
 				border-width: 0 10px 10px 10px
 				border-color: transparent transparent var(--gray2) transparent
+			&.white
+				background-color: var(--white)
+				width: max-content
+				padding: 30px
+				border: 1px solid var(--gray)
+				&:before
+					display: none
+				& .header__controls-tooltip-link
+					text-transform: uppercase
+					font-size: 12px
+					line-height: 14px
+					&:hover
+						color: var(--dark-orange)
+				& .header__controls-tooltip-li
+					&.ender
+						margin-top: 30px
 	&__controls-tooltip-li
 		@media(min-width:$xl)
 			&:not(:last-child)
@@ -217,16 +233,19 @@
 
 .menu-tooltip
 	padding: 15px
-	width: 240px
 	background-color: var(--gray2)
 	position: absolute
-	bottom: -6px
-	right: 15px
 	transform: translateY(100%)
-	z-index: 10
+	z-index: 20
 	display: none
+	height: calc(100vh - 235px)
+	overflow-y: auto
+	z-index: 50
+	width: 100vw
+	bottom: -15px
+	right: 0
 	@media(min-width:$md)
-		right: 0
+		transform: translate(30px,100%)
 	&.open
 		display: block
 		@media(min-width:$xl)
@@ -235,13 +254,26 @@
 
 	&__li
 		margin-bottom: 15px
+		&.hidden
+			display: none
+		&.contains.open
+			position: relative
+			padding-left: 20px
+			&:before
+				content: url(../img/mob-list-arrow.svg)
+				position: absolute
+				top: 0
+				left: 0
+				width: 10px
+				height: 9px
+			& .subtooltip
+				display: block
 	&__link
 		display: block
 		font-weight: 300
 		font-size: 14px
 		line-height: 16px
 		letter-spacing: 1px
-
 	&__link, &__contact-link
 		display: flex
 		align-items: center
@@ -276,3 +308,18 @@
 		font-weight: 300
 		font-size: 12px
 		line-height: 140%
+
+.subtooltip
+	margin-top: 20px
+	display: none
+	&__li
+		margin: 15px 0
+		&.ender
+			margin-top: 30px
+	&__a
+		font-weight: 300
+		font-size: 12px
+		line-height: 14px
+		text-transform: uppercase
+
+

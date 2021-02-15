@@ -10,11 +10,10 @@
 			flex-wrap: wrap
 	&__catalog
 	& .watch-more
-		&:after
-			height: 0
 		&__link
 			height: 40px
-
+	& .seo-text
+		margin-top: 20px
 	& .catalog
 		width: 290px
 		position: relative
@@ -94,6 +93,10 @@
 			line-height: 18px
 		&__body
 			width: 100%
+			@media(min-width:$md)
+				flex-basis: 100%
+				display: flex
+				flex-direction: column
 		&__link
 			display: flex
 			justify-content: center
@@ -110,7 +113,7 @@
 				justify-content: flex-start
 				padding: 0
 				border: 0
-				margin-top: 10px
+				margin-top: auto
 		&__description
 			display: none
 			@media(min-width:$md)
@@ -118,6 +121,7 @@
 				font-weight: 300
 				font-size: 14px
 				line-height: 150%
+				margin-bottom: 10px
 
 .sort-by
 	display: none
@@ -172,4 +176,3 @@
 				display: block
 
 	&__link
-

@@ -352,14 +352,14 @@
 		& .service-about__ph
 			width: 240px
 			height: 160px
-			object-fit: contain
+			object-fit: cover
 			&:not(:last-child)
 				margin-right: 10px
 			@media(min-width:$md)
 				width: 216px
 				margin-right: 0
 				&:not(:last-child)
-					margin-right: 30px
+					margin-right: 10px
 			@media(min-width:$xl)
 				width: 270px
 		& .service-about__link
@@ -483,7 +483,7 @@
 		font-weight: 300
 		font-size: 14px
 		line-height: 150%
-
+		text-decoration: underline
 .service-termins
 	&__words
 		display: none

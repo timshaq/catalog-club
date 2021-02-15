@@ -27,10 +27,15 @@ export default function() {
 	}
 
 
-	const callbackOpen = document.getElementById('callbackOpen');
+	
+
+	const callbackOpenNL = document.querySelectorAll('.callback-btn');
+	const callbackOpen = Array.prototype.slice.call(callbackOpenNL);;
 	const callbackClose = document.getElementById('callbackClose');
 
-	callbackOpen.addEventListener('click', () => openEl(callbackPopup));
+	callbackOpen.forEach(btn => {
+		btn.addEventListener('click', () => openEl(callbackPopup));
+	})
 
 	callbackClose.addEventListener('click', function() {
 		closeEl(callbackPopup);

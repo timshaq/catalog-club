@@ -169,7 +169,7 @@
 						Фамилия*:
 					</span>
 
-					<input type="text" class="label-2col__input">
+					<input type="text" class="label-2col__input" required>
 
 				</label>
 
@@ -179,7 +179,7 @@
 						Имя*:
 					</span>
 
-					<input type="text" class="label-2col__input">
+					<input type="text" class="label-2col__input" required>
 
 				</label>
 
@@ -219,7 +219,16 @@
 						Дата рождения:
 					</span>
 
-					<input type="text" class="label-2col__input">
+
+					<div class="several-inputs__inputs">
+
+						<input type="number" class="several-inputs__input per30" placeholder="ДД" min="1" max="31">
+
+						<input type="number" class="several-inputs__input per30" placeholder="ММ" min="1" max="12">
+
+						<input type="number" class="several-inputs__input per30" placeholder="ГГ" min="1900" max="2021">
+
+					</div>
 
 				</label>
 
@@ -229,7 +238,7 @@
 						Мобильный телефон*:
 					</span>
 
-					<input type="text" class="label-2col__input">
+					<input type="text" class="label-2col__input" required>
 
 				</label>
 
@@ -316,8 +325,17 @@
 						<input type="text" class="several-inputs__input per40" placeholder="Номер">
 
 					</div>
+
 					
 				</div>
+
+				<label class="delivery-form__label label-2col">
+					
+					<span class="label-2col__text"></span>
+
+					<input type="text" class="label-2col__input"  placeholder="Когда, кем выдан">
+
+				</label>
 
 				<label class="delivery-form__check custom-checkbox">
 					
@@ -346,7 +364,7 @@
 
 				<div class="delivery-form__submit-cont">
 					
-					<button type="button" class="delivery-form__submit orange-btn">
+					<button type="submit" class="delivery-form__submit orange-btn">
 						Подтвердить >>
 					</button>
 

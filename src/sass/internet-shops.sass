@@ -73,6 +73,10 @@
 			text-transform: uppercase
 		&__body
 			width: 100%
+			@media(min-width:$md)
+				flex-basis: 100%
+				display: flex
+				flex-direction: column
 		&__link
 			font-weight: 300
 			font-size: 14px
@@ -84,6 +88,7 @@
 		&__btn-link
 			@media(min-width:$md)
 				width: 170px
+				margin-top: auto
 		&__description
 			display: block
 			font-weight: 300

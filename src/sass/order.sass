@@ -122,16 +122,17 @@
 			font-weight: 600
 			font-size: 16px
 			line-height: 150%
-			@media(min-width:$xl)
-				font-style: italic
 	&__total
 		margin: 15px 0
+		display: flex
+		justify-content: space-between
+		& *
+			&:last-child
+				font-weight: 600
 	&__total, &__tax, &__tax-li
 		font-weight: 300
 		font-size: 14px
 		line-height: 150%
-		@media(min-width:$xl)
-			font-style: italic
 	&__tax
 
 	&__tax-title
@@ -147,8 +148,6 @@
 	&__link
 		margin-top: 20px
 		font-style: normal
-		@media(min-width:$xl)
-			font-style: italic
 .order
 	&__product-list
 		margin-top: 20px
@@ -162,7 +161,7 @@
 		&.step2
 			& .order-product__controls
 				@media(min-width:$xl)
-					width: 100px
+					width: 155px
 	&__product
 
 	&__add-btn
@@ -185,15 +184,13 @@
 	border-bottom: 1px solid var(--gray)
 	margin-bottom: 9px
 	@media(min-width:$md)
-		padding-right: calc(79px + 14px)
+		padding-right: 40px
 		padding-bottom: 30px
 		margin-top: 30px
 		justify-content: space-between
 		flex-wrap: nowrap
 	@media(min-width:$xl)
 		padding-bottom: 23px
-		& *
-			font-style: italic
 	&__header
 		display: flex
 		justify-content: space-between
@@ -253,22 +250,26 @@
 	&__controls
 		display: flex
 		flex-wrap: wrap
+		flex-direction: column
 		justify-content: space-between
+		width: 100%
 		@media(min-width:$md)
-			width: 100px
+			width: 155px
 		@media(min-width:$xl)
 			width: 220px
 	&__label
-		width: 140px
+		width: 100%
 		display: flex
 		flex-direction: column
+		margin-bottom: 5px
 		&:nth-child(3)
 			display: none
 			@media(min-width:$xl)
 				display: block
-				margin-left: 120px
+				margin-left: 0
+		@media(min-width:$md)
+			width: 100%
 		@media(min-width:$xl)
-			width: 100px
 			flex-direction: row
 			flex-wrap: wrap
 			justify-content: space-between
@@ -569,6 +570,8 @@
 		height: 40px
 		&.per20
 			width: 20%
+		&.per30
+			width: 30%
 		&.per40
 			width: 40%
 .label-2col
