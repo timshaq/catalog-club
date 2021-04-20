@@ -1600,7 +1600,7 @@ Madeleine за 19,49 € >>
 
 		</div>
 
-		<button id="callbackClose" type="button" class="callback-popup__close">
+		<button id="callbackClose" onclick="closeCallbackPopup()" type="button" class="callback-popup__close">
 			<img src="img/popup__close.png" alt="" class="callback-popup__close-icon">
 		</button>
 		
@@ -1612,7 +1612,12 @@ Madeleine за 19,49 € >>
 
 <script src="js/script.min.js"></script>
 
-<div class="popup-cont">
+<script>
+function closeCallbackPopup(){document.getElementById('callbackPopup').classList.remove('open');html.style.overflowX = 'hidden';html.style.overflowY = 'scroll'}
+</script>
+
+
+<div class="popup-cont" id="week-thing-popup">
 	
 	<div class="popup popup__week-thing">
 

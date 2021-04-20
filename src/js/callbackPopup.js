@@ -37,9 +37,9 @@ export default function() {
 		btn.addEventListener('click', () => openEl(callbackPopup));
 	})
 
-	callbackClose.addEventListener('click', function() {
-		closeEl(callbackPopup);
-	})
+	// callbackClose.addEventListener('click', function() {
+	// 	closeEl(callbackPopup);
+	// })
 
 	callbackPopup.addEventListener('click', function(ev) {
 		if(ev.target === this) closeEl(callbackPopup);

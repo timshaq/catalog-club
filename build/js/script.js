@@ -90,14 +90,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     }
 
     var o = document.querySelectorAll(".callback-btn"),
-        r = Array.prototype.slice.call(o),
-        s = document.getElementById("callbackClose");
+        r = Array.prototype.slice.call(o);
+    document.getElementById("callbackClose");
     r.forEach(function (t) {
       t.addEventListener("click", function () {
         return i(e);
       });
-    }), s.addEventListener("click", function () {
-      n(e);
     }), e.addEventListener("click", function (t) {
       t.target === this && n(e);
     });
@@ -320,7 +318,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
   "use strict";
 
   n.r(t), t["default"] = function () {
-    var e = document.querySelectorAll("li.week-thing__thing.thing");
+    var e = document.querySelectorAll(".week-thing__thing.thing");
     if (!e.length) return;
     var t = Array.prototype.slice.call(e),
         n = document.getElementById("html");
@@ -333,18 +331,18 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       e.classList.add("open"), n.style.overflowX = "hidden", n.style.overflowY = "hidden";
     }
 
-    var r = document.querySelector(".popup-cont"),
+    var r = document.getElementById("week-thing-popup"),
         s = r.querySelector(".popup__close"),
         l = r.querySelector(".popup__ph"),
         c = r.querySelector(".popup__article");
     t.forEach(function (e) {
-      e.addEventListener("click", function () {
+      console.log("clicl"), e.addEventListener("click", function () {
         if (r.classList.contains("open")) i(r);else {
           var _n = e.querySelector(".thing__ph").getAttribute("src");
 
           l.setAttribute("src", _n);
           var t = e.querySelector(".thing__popup-text").innerText;
-          console.log(t), t || (t = "Описание не найдено"), c.innerText = t, o(r);
+          t || (t = "Описание не найдено"), c.innerText = t, o(r);
         }
       });
     }), s.addEventListener("click", function () {

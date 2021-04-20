@@ -978,7 +978,7 @@
 						16 ноября 2020
 					</span>
 
-					<h2>
+					<h2 class="lastest-article__title">
 						КАК НОВЫЙ ГОД ВСТРЕТИШЬ, ТАК ЕГО И…
 					</h2>
 					
@@ -1804,7 +1804,7 @@
 
 		</div>
 
-		<button id="callbackClose" type="button" class="callback-popup__close">
+		<button id="callbackClose" onclick="closeCallbackPopup()" type="button" class="callback-popup__close">
 			<img src="img/popup__close.png" alt="" class="callback-popup__close-icon">
 		</button>
 		
@@ -1815,6 +1815,11 @@
 <script src="lib/swiper/swiper-bundle.min.js"></script>
 
 <script src="js/script.min.js"></script>
+
+<script>
+function closeCallbackPopup(){document.getElementById('callbackPopup').classList.remove('open');html.style.overflowX = 'hidden';html.style.overflowY = 'scroll'}
+</script>
+
 
 </body>
 

@@ -974,7 +974,7 @@
 
 		<div class="week-thing__things">
 			
-			<a href="#" class="week-thing__thing thing">
+			<div class="week-thing__thing thing">
 
 				<img src="img/fashion-tips__01.png" alt="" class="thing__ph">
 
@@ -1000,9 +1000,9 @@
 					текст 1. Инновационный прибор из салонов красоты Голливуда! 540 иголок из нержавеющей хирургической стали мягко проникают в верхний слой кожи и растворяют мертвые клетки, а также стимулируют выработку коллагена. Результат: морщины менее заметны, кожа выглядит более ровной и сияющей. 49,90 €. Promondo, арт. 41031
 				</div>
 				
-			</a>
+			</div>
 			
-			<a href="#" class="week-thing__thing thing">
+			<div class="week-thing__thing thing">
 
 				<img src="img/fashion-tips__02.png" alt="" class="thing__ph">
 
@@ -1028,9 +1028,9 @@
 					текст 2. Инновационный прибор из салонов красоты Голливуда! 540 иголок из нержавеющей хирургической стали мягко проникают в верхний слой кожи и растворяют мертвые клетки, а также стимулируют выработку коллагена. Результат: морщины менее заметны, кожа выглядит более ровной и сияющей. 49,90 €. Promondo, арт. 41031
 				</div>
 				
-			</a>
+			</div>
 			
-			<a href="#" class="week-thing__thing thing">
+			<div class="week-thing__thing thing">
 
 				<img src="img/fashion-tips__03.png" alt="" class="thing__ph">
 
@@ -1056,9 +1056,9 @@
 					текст 3. Инновационный прибор из салонов красоты Голливуда! 540 иголок из нержавеющей хирургической стали мягко проникают в верхний слой кожи и растворяют мертвые клетки, а также стимулируют выработку коллагена. Результат: морщины менее заметны, кожа выглядит более ровной и сияющей. 49,90 €. Promondo, арт. 41031
 				</div>
 				
-			</a>
+			</div>
 			
-			<a href="#" class="week-thing__thing thing">
+			<div class="week-thing__thing thing">
 
 				<img src="img/fashion-tips__04.png" alt="" class="thing__ph">
 
@@ -1084,9 +1084,9 @@
 					текст 4. Инновационный прибор из салонов красоты Голливуда! 540 иголок из нержавеющей хирургической стали мягко проникают в верхний слой кожи и растворяют мертвые клетки, а также стимулируют выработку коллагена. Результат: морщины менее заметны, кожа выглядит более ровной и сияющей. 49,90 €. Promondo, арт. 41031
 				</div>
 				
-			</a>
+			</div>
 			
-			<a href="#" class="week-thing__thing thing">
+			<div class="week-thing__thing thing">
 
 				<img src="img/fashion-tips__05.png" alt="" class="thing__ph">
 
@@ -1112,9 +1112,9 @@
 					текст 5. Инновационный прибор из салонов красоты Голливуда! 540 иголок из нержавеющей хирургической стали мягко проникают в верхний слой кожи и растворяют мертвые клетки, а также стимулируют выработку коллагена. Результат: морщины менее заметны, кожа выглядит более ровной и сияющей. 49,90 €. Promondo, арт. 41031
 				</div>
 				
-			</a>
+			</div>
 			
-			<a href="#" class="week-thing__thing thing">
+			<div class="week-thing__thing thing">
 
 				<img src="img/fashion-tips__06.png" alt="" class="thing__ph">
 
@@ -1140,7 +1140,7 @@
 					текст 6. Инновационный прибор из салонов красоты Голливуда! 540 иголок из нержавеющей хирургической стали мягко проникают в верхний слой кожи и растворяют мертвые клетки, а также стимулируют выработку коллагена. Результат: морщины менее заметны, кожа выглядит более ровной и сияющей. 49,90 €. Promondo, арт. 41031
 				</div>
 				
-			</a>
+			</div>
 
 		</div>
 
@@ -1619,7 +1619,7 @@
 
 		</div>
 
-		<button id="callbackClose" type="button" class="callback-popup__close">
+		<button id="callbackClose" onclick="closeCallbackPopup()" type="button" class="callback-popup__close">
 			<img src="img/popup__close.png" alt="" class="callback-popup__close-icon">
 		</button>
 		
@@ -1631,7 +1631,11 @@
 
 <script src="js/script.min.js"></script>
 
-<div class="popup-cont">
+<script>
+function closeCallbackPopup(){document.getElementById('callbackPopup').classList.remove('open');html.style.overflowX = 'hidden';html.style.overflowY = 'scroll'}
+</script>
+
+<div class="popup-cont" id="week-thing-popup">
 	
 	<div class="popup popup__week-thing">
 
