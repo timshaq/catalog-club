@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Ubuntu';
   src: url("../fonts/Ubuntu/Ubuntu-Light.woff2") format("woff2"), url("../fonts/Ubuntu/Ubuntu-Light.woff") format("woff");
@@ -4293,6 +4294,29 @@ main {
 
 .articles .watch-more__link {
   height: 40px;
+}
+
+.articles__list {
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.articles__li {
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 170%;
+  position: relative;
+  padding-left: 15px;
+}
+
+.articles__li:before {
+  content: '◼';
+  font-size: 10px;
+  line-height: 170%;
+  position: absolute;
+  top: 5%;
+  left: 0;
 }
 
 .articles .post {
@@ -10345,7 +10369,7 @@ main {
 }
 
 .popup-cont .popup__week-thing .popup__ph {
-  width: 100%;
+  width: 150px;
   height: 260px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -10354,8 +10378,14 @@ main {
 
 @media (min-width: 768px) {
   .popup-cont .popup__week-thing .popup__ph {
-    width: 330px;
+    width: 185px;
     margin-bottom: 31px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .popup-cont .popup__week-thing .popup__ph {
+    width: 200px;
   }
 }
 

@@ -102,15 +102,22 @@ function libraries() {
         .pipe(gulp.dest(build.lib))
 }
 
+// конвертация в форматы
+// function fonts() {
+//     gulp.src(src.fonts)
+//         .pipe(gulp.dest(build.fonts))
+//     gulp.src(src.ttfFonts)
+//         .pipe(ttf2woff())
+//         .pipe(gulp.dest(build.fonts));
+//     return gulp.src(src.ttfFonts)
+//         .pipe(ttf2woff2())
+//         .pipe(gulp.dest(build.fonts));
+// }
+
+// только перенос
 function fonts() {
-    gulp.src(src.fonts)
+    return gulp.src(src.fonts)
         .pipe(gulp.dest(build.fonts))
-    gulp.src(src.ttfFonts)
-        .pipe(ttf2woff())
-        .pipe(gulp.dest(build.fonts));
-    return gulp.src(src.ttfFonts)
-        .pipe(ttf2woff2())
-        .pipe(gulp.dest(build.fonts));
 }
 
 

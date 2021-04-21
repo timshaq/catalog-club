@@ -126,7 +126,23 @@
 			height: 0
 		&__link
 			height: 40px
-
+	&__list
+		margin-top: 25px
+		margin-bottom: 40px
+	&__li
+		margin-bottom: 20px
+		font-weight: 300
+		font-size: 14px
+		line-height: 170%
+		position: relative
+		padding-left: 15px 
+		&:before
+			content: '◼'
+			font-size: 10px
+			line-height: 170%
+			position: absolute
+			top: 5%
+			left: 0
 	& .post
 		margin-bottom: 20px
 		@media(min-width:$md)
