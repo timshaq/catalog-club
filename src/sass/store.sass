@@ -1,0 +1,95 @@
+.store-page
+	&__fix-cont
+		@media(min-width:$xl)
+			display: flex
+			justify-content: space-between
+	&__left
+		width: 290px
+		margin-right: auto
+		margin-left: auto
+		@media(min-width:$md)
+			width: 708px
+		@media(min-width:$xl)
+			width: 770px
+			margin-right: 0
+			margin-left: 0
+	&__about
+		@media(min-width:$xl)
+			display: flex
+			justify-content: space-between
+	&__card
+		@media(min-width:$xl)
+			width: 270px
+	&__content
+		@media(min-width:$xl)
+			width: 470px
+	&__aside
+		@media(min-width:$xl)
+			width: 370px
+			background-color: var(--orange)
+	& .aside
+		@media(min-width:$xl)
+			width: 370px
+	& .sale-card__social-links
+		margin-top: 25px
+	& .articles__like-cont
+		margin-top: 25px
+.store-card
+	@media(min-width:$md)
+		width: 340px
+	@media(min-width:$xl)
+		width: 270px
+	&__link-box
+		display: block
+	&__ph-box
+		width: 100%
+		height: 360px
+		@media(min-width:$md)
+			height: 420px
+		@media(min-width:$xl)
+			height: 335px
+	&__ph
+		width: 100%
+		height: 100%
+		object-fit: cover
+	&__btn
+		width: 100%
+		text-transform: uppercase
+		margin-top: 10px
+.store-more
+	@media(min-width:$xl)
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		width: 350px
+		margin-right: auto
+		margin-left: auto
+		margin-top: 10px
+	&__link
+		@media(min-width:$xl)
+			display: flex
+			flex-direction: column
+			align-items: center
+			width: 150px
+			margin-bottom: 20px
+	&__ph-box
+		@media(min-width:$xl)
+			width: 100%
+			height: 185px
+	&__ph
+		width: 100%
+		height: 100%
+		object-fit: cover
+	&__title
+		font-weight: 300
+		font-size: 12px
+		line-height: 170%
+		text-align: center
+		margin-top: 5px
+	&__fake-link
+		font-weight: 300
+		font-size: 12px
+		line-height: 170%
+		color: var(--orange)
+		text-align: center
+		margin-top: 5px

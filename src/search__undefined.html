@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru" id="html">
+<head>
+
+	<title>Поиск</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css">
+
+	
+
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+
+
+	
+
+</head>
+
+<body id="body">
+
+@@include('html/header.html')
+
+<main>
+
+@@include('html/breadscrumb.html')
+
+<section class="search-result">
+	<div class="search-result__fix-cont fix-cont">
+	<div class="search-result__content-box">
+		<form class="search-result__form">
+			<label class="search-result__label">
+				<input type="text" class="search-result__input" value="Платье">
+			</label>
+			<button class="search-result__submit black-btn">
+				Найти >>
+			</button>
+		</form>
+
+		<h1 class="search-result__count plain-text">
+			К сожалению, на ваш поисковый запрос ничего не найдено :(
+		</h1>
+
+		<div class="search-result__undefined-links">
+			<a href="#" class="search-result__undefined-link black-btn">
+				На главную >>
+			</a>
+			<a href="#" class="search-result__undefined-link orange link">
+				Каталоги и магазины >>
+			</a>
+		</div>
+		
+	</div>
+	</div>
+</section>
+
+
+</main>
+
+@@include('html/footer.html')
+
+</body>
+
+</html>
