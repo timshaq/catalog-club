@@ -23,6 +23,17 @@
 		flex-direction: column
 		justify-content: flex-start
 		align-items: center
+		&.hit
+			position: relative
+			&:before
+				content: url('../img/hot-icon.svg')
+				width: 42px
+				height: 42px
+				object-fit: contain
+				position: absolute
+				top: 15px
+				right: 15px
+				z-index: 2
 		@media(min-width:$md)
 			margin-bottom: 30px
 			margin-right: 0

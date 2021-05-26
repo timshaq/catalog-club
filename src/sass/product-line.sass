@@ -8,6 +8,17 @@
 			align-items: stretch
 	&.wardrobe
 		& .product-card
+			display: block
+			&__ph-box
+				@media(min-width:$xl)
+					&:hover
+						& + img
+							opacity: 0
+						& .ph-back
+							display: block
+							position: absolute
+							top: 0
+							left: 0
 			&__ph
 				width: 100%
 				height: 320px
@@ -17,6 +28,8 @@
 					height: 380px
 				@media(min-width:$xl)
 					height: 300px
+				&.ph-back
+					display: none
 			&__more
 				margin-left: auto
 				margin-right: auto
