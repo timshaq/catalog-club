@@ -9,6 +9,7 @@ import weekThingPopups from './weekThingPopups.js';
 import serviceFaq from './serviceFaq.js';
 import printTable from './printTable.js';
 import orderAddPopup from './orderAddPopup.js';
+import featuresFixPosition from './featuresFixPosition.js';
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -32,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	orderAddPopup();
 
-
-
+	featuresFixPosition();
 
 });

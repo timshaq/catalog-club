@@ -136,6 +136,42 @@ select
 			position: absolute
 			top: .7em
 			left: 0
+	& table
+		width: 100%
+		border-spacing: 0
+		&:not(:last-child)
+			margin-bottom: 30px
+	& tr
+		&.head
+			background-color: var(--black)
+			text-align: left
+			@media(min-width:$md)
+				text-align: center
+			& th
+				color: var(--white)
+				padding-left: 80px
+				text-transform: uppercase
+				font-weight: 400
+				@media(min-width:$md)
+					padding: 7px
+		&.subhead
+			& td
+				border-bottom: 1px solid var(--black)
+		&:nth-child(2n)
+			& td
+				background-color: var(--gray2)
+				&.pink-bg
+					background-color: var(--light-orange)
+	& th
+		padding-top: 7px
+		padding-bottom: 7px
+	& td
+		width: 25%
+		padding: 7px
+		border-bottom: 1px solid var(--gray)
+		text-align: center
+		&:not(:last-child)
+			border-right: 1px solid var(--gray)
 main
 	margin-top: 15px
 	@media(min-width:$md)

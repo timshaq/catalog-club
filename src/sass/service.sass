@@ -572,6 +572,7 @@
 		width: 140px
 		height: 200px
 		object-fit: contain
+		object-position: top
 		@media(min-width:$md)
 			width: 170px
 			height: 210px
@@ -598,12 +599,12 @@
 		@media(min-width:$xl)
 			width: 670px
 			margin-top: 0
-	&__table
+	& table
 		width: 100%
 		border-spacing: 0
 		&:not(:last-child)
 			margin-bottom: 30px
-	&__table-tr
+	& tr
 		&.head
 			background-color: var(--black)
 			text-align: left
@@ -622,12 +623,12 @@
 		&:nth-child(2n)
 			& td
 				background-color: var(--gray2)
-				&.service-size__table-td_pink-bg
+				&.pink-bg
 					background-color: var(--light-orange)
-	&__table-th
+	& th
 		padding-top: 7px
 		padding-bottom: 7px
-	&__table-td
+	& td
 		width: 25%
 		padding: 7px
 		border-bottom: 1px solid var(--gray)

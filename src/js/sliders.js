@@ -3,6 +3,12 @@ export default function () {
 	const previewSlider = new Swiper('#previewSlider', {
 		loop: true,
 		centeredSlides: true,
+		speed: 1000,
+		autoplay: {
+			delay: 3000,
+		},
+		disableOnInteraction: false,
+		waitForTransition: true,
 		pagination: {
 			el: '#previewPagination',
 			type: 'bullets',
@@ -34,6 +40,12 @@ export default function () {
 			nextEl: '#brandsNextBtn',
 			prevEl: '#brandsPrevBtn'
 		},
+		speed: 1000,
+		autoplay: {
+			delay: 3000,
+		},
+		disableOnInteraction: false,
+		waitForTransition: true,
 		breakpoints: {
 			320: {
 				slidesPerView: 2,

@@ -29,7 +29,7 @@ export default function () {
 	const liNonContainsList = Array.prototype.slice.call(liContainsNL);
 
 	liContainsList.forEach(li => {
-		console.log(li)
+		// console.log(li)
 		li.addEventListener('click', function() {
 			if(window.innerWidth >= 1200) return;
 

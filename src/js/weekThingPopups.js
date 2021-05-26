@@ -39,7 +39,7 @@ export default function() {
 	const popupText = popup.querySelector('.popup__article');
 
 	thingsList.forEach(thing => {
-		console.log('clicl')
+		// console.log('clicl')
 
 		thing.addEventListener('click', function() {
 
