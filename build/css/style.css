@@ -168,7 +168,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .editor-content h1 {
-  font-size: 16px;
+  font-size: 30px;
   line-height: 150%;
   text-transform: uppercase;
 }
@@ -1268,7 +1268,7 @@ main {
   .header__controls-tooltip:after {
     content: '';
     width: 100%;
-    height: 10px;
+    height: 50px;
     border: 0;
   }
   .header__controls-tooltip:after, .header__controls-tooltip:before {
@@ -1465,7 +1465,9 @@ main {
           transform: translateY(100%);
   z-index: 20;
   display: none;
-  height: calc(100vh - 235px);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   overflow-y: auto;
   z-index: 50;
   width: 100vw;
@@ -1475,9 +1477,10 @@ main {
 
 @media (min-width: 768px) {
   .menu-tooltip {
-    -webkit-transform: translate(30px, 100%);
-        -ms-transform: translate(30px, 100%);
-            transform: translate(30px, 100%);
+    width: 240px;
+    -webkit-transform: translate(0, 100%);
+        -ms-transform: translate(0, 100%);
+            transform: translate(0, 100%);
   }
 }
 
@@ -3560,6 +3563,8 @@ main {
 .product-line .product-card {
   width: 290px;
   margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3570,6 +3575,14 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+}
+
+@media (min-width: 768px) {
+  .product-line .product-card {
+    width: 340px;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -6462,7 +6475,7 @@ main {
 .service-proccess.summary .service-proccess__li:nth-child(2):after {
   content: '=';
   top: -45px;
-  right: -10px;
+  right: 0;
   -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);
           transform: translateX(100%);
@@ -6523,7 +6536,7 @@ main {
 .service-about.gallery {
   margin-bottom: 30px;
   margin-top: 30px;
-  width: 290px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -7347,6 +7360,21 @@ main {
   position: relative;
   z-index: 2;
   color: var(--white);
+  width: 40px;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .alphabet__word-header {
@@ -7366,6 +7394,8 @@ main {
           align-items: center;
   position: relative;
   margin-bottom: 10px;
+  display: inline-block;
+  width: 100%;
 }
 
 .alphabet__word-header:before, .alphabet__word-header:after {
@@ -10999,7 +11029,7 @@ main {
 }
 
 .popup-cont .popup__week-thing .popup__ph {
-  width: 150px;
+  width: 100%;
   height: 260px;
   -o-object-fit: cover;
      object-fit: cover;

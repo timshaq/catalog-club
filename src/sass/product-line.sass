@@ -60,9 +60,15 @@
 	& .product-card
 		width: 290px
 		margin-bottom: 30px
+		margin-right: auto
+		margin-left: auto
 		display: flex
 		flex-direction: column
 		position: relative
+		@media(min-width:$md)
+			width: 340px
+			margin-right: 0
+			margin-left: 0
 		@media(min-width:$xl)
 			width: 270px
 		&__status
