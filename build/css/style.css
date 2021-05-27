@@ -162,6 +162,11 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--black);
 }
 
+.editor-content img {
+  max-width: 100% !important;
+  width: 100%;
+}
+
 .editor-content h1 {
   font-size: 16px;
   line-height: 150%;
@@ -7220,37 +7225,30 @@ main {
 }
 
 @media (min-width: 1200px) {
-  .brand-about {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -webkit-flex-direction: row-reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  .brand-about__ph-cont {
+    float: right;
+    width: 370px;
+    margin-top: 20px;
   }
 }
 
-@media (min-width: 1200px) {
-  .brand-about__ph-cont {
-    width: 370px;
-  }
+.brand-about__ph {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: top center;
+     object-position: top center;
 }
 
 @media (min-width: 1200px) {
   .brand-about__text {
-    width: 770px;
+    width: 100%;
   }
 }
 
 .brand-about__text-title {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 20px;
   line-height: 170%;
   margin: 15px 0 10px;
@@ -7264,6 +7262,41 @@ main {
 
 .brand-about__text-article:not(:last-child) {
   margin-bottom: 40px;
+}
+
+.brand-about__links-title {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 170%;
+  margin-bottom: 5px;
+}
+
+.brand-about__links-box {
+  margin-top: 30px;
+}
+
+.brand-about__links {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.brand-about__link {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 27px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.brand-about .parallel-separator {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 27px;
 }
 
 .service-brands {
@@ -7303,7 +7336,7 @@ main {
 }
 
 .alphabet__word:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .alphabet__word-header-text {
