@@ -183,6 +183,7 @@ main
 	@media(min-width:$xl)
 		margin-top: 25px
 
+
 .fix-cont
 	padding-left: 15px
 	padding-right: 15px
@@ -550,5 +551,62 @@ main
 	&__underline
 		text-decoration: underline
 
-	
-/*    </GLOBAL>    */
+.fix-menu
+	display: none
+	@media(min-width: $xl)
+		display: block
+		position: fixed
+		top: 130px
+		left: 0
+		z-index: 20
+		width: 40px
+		height: 200px
+		&__hover-box
+			&:after
+				content: ''
+			&:before
+				content: ''
+			&:hover
+				&:after
+					content: ''
+					width: 40px
+					height: 100%
+					position: absolute
+					top: 0
+					right: -30px
+				&:before
+					content: ''
+					width: 10px
+					height: 20px
+					border-top: 10px solid transparent
+					border-bottom: 10px solid transparent
+					border-right: 10px solid var(--gray2)
+					position: absolute
+					top: 15px
+					right: -15px
+				& .fix-menu__list
+					display: block
+		&__ph
+			width: 100%
+			height: 100%
+			object-fit: cover
+		&__list
+			display: none
+			min-width: 220px
+			width: fit-content
+			background-color: var(--gray2)
+			padding: 20px
+			position: absolute
+			top: 0
+			left: 55px
+			max-height: calc(100vh - 230px)
+			overflow-y: auto
+		&__link
+			display: block
+			white-space: nowrap
+			font-weight: 300
+			font-size: 14px
+			line-height: 16px
+			& + .fix-menu__link
+				margin-top: 10px
+
