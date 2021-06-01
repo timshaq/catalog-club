@@ -3,6 +3,17 @@
 	max-width: 1920px
 	min-width: 320px
 	&__fix-cont
+	&__slider-btn-box
+		height: 0
+		z-index: 10
+		position: absolute
+		top: 45%
+		left: 50%
+		transform: translateX(-50%)
+		@media(min-width:$md)
+			width: 475px
+		@media(min-width:$xl)
+			width: 1170px
 	&__slider
 	&__slide
 	&__slider-ph
@@ -14,11 +25,11 @@
 	&__slider-btn-prev
 		left: 30px
 		@media(min-width:$md)
-			left: 19%
+			left: 0
 	&__slider-btn-next
 		right: 30px
 		@media(min-width:$md)
-			right: 19%
+			right: 0
 	&__slider-btn-icon
 		width: 5px
 		height: 10px
