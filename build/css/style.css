@@ -2597,6 +2597,13 @@ main {
   }
 }
 
+@media (min-width: 1200px) {
+  .category-line.four .category-card__all {
+    width: 170px;
+    margin-left: 20px;
+  }
+}
+
 .category-line .category-card {
   margin-bottom: 30px;
   display: -webkit-box;
