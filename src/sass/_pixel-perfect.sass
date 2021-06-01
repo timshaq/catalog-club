@@ -1,0 +1,33 @@
+#pixelPerfect
+	width: 320px
+	height: 100%
+	margin-right: auto
+	margin-left: auto
+	z-index: 1000
+	position: absolute
+	top: 0
+	left: 50%
+	transform: translateX(-50%)
+	opacity: .5
+	pointer-events: none
+	@media(min-width: $md)
+		width: 768px
+	@media(min-width: $xl)
+		width: 1170px
+	&.active 
+		& .pixel-perfect-img
+			width: 100%
+			filter: invert(1)
+			display: block
+	& .pixel-perfect-img
+		width: 100%
+		filter: invert(1)
+		display: none
+#pixelPerfectToggler
+	background-color: black
+	width: 50px
+	height: 50px
+	position: fixed
+	top: 20px
+	left: 20px
+	z-index: 1001

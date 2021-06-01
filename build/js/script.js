@@ -48,7 +48,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     return n.d(t, "a", t), t;
   }, n.o = function (e, t) {
     return Object.prototype.hasOwnProperty.call(e, t);
-  }, n.p = "", n(n.s = 10);
+  }, n.p = "", n(n.s = 11);
 }([function (e, t, n) {
   "use strict";
 
@@ -219,7 +219,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
           spaceBetween: 30
         },
         1200: {
-          slidesPerView: 1.622,
+          slidesPerView: "auto",
           spaceBetween: 30
         }
       }
@@ -291,8 +291,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       slidesPerView: 2.1,
       spaceBetween: 10
     }),
-        l = document.getElementById("serviceRefundSlider"),
-        c = new Swiper(l, {
+        c = document.getElementById("serviceRefundSlider"),
+        l = new Swiper(c, {
       slidesPerView: 2,
       spaceBetween: 10
     }),
@@ -336,7 +336,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
     t.length && n.forEach(function (e) {
       v.push(e);
-    }), i && v.push(r), o && v.push(s), l && v.push(c), f && v.push(w), u && v.push(p), v.length && (window.onresize = function () {
+    }), i && v.push(r), o && v.push(s), c && v.push(l), f && v.push(w), u && v.push(p), v.length && (window.onresize = function () {
       m(window.innerWidth);
     }, m(window.innerWidth));
   };
@@ -359,16 +359,16 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
     var o = document.getElementById("week-thing-popup"),
         s = o.querySelector(".popup__close"),
-        l = o.querySelector(".popup__ph"),
-        c = o.querySelector(".popup__article");
+        c = o.querySelector(".popup__ph"),
+        l = o.querySelector(".popup__article");
     t.forEach(function (e) {
       e.addEventListener("click", function () {
         if (o.classList.contains("open")) i(o);else {
           var _n = e.querySelector(".thing__ph").getAttribute("src");
 
-          l.setAttribute("src", _n);
+          c.setAttribute("src", _n);
           var t = e.querySelector(".thing__popup-text").innerText;
-          t || (t = "Описание не найдено"), c.innerText = t, r(o);
+          t || (t = "Описание не найдено"), l.innerText = t, r(o);
         }
       });
     }), s.addEventListener("click", function () {
@@ -390,7 +390,16 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     });
   };
 }, function (e, t, n) {
-  n(0), n(1), n(2), n(3), n(4), n(5), n(6), n(11), n(9), n(7), e.exports = n(8);
+  "use strict";
+
+  n.r(t), t["default"] = function () {
+    var e = document.getElementById("pixelPerfect");
+    document.getElementById("pixelPerfectToggler").addEventListener("click", function () {
+      e.classList.contains("active") ? e.classList.remove("active") : e.classList.add("active");
+    });
+  };
+}, function (e, t, n) {
+  n(0), n(1), n(2), n(3), n(10), n(4), n(5), n(6), n(12), n(9), n(7), e.exports = n(8);
 }, function (e, t, n) {
   "use strict";
 
@@ -399,14 +408,15 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       r = n(1),
       o = n(0),
       s = n(6),
-      l = n(5),
-      c = n(8),
+      c = n(5),
+      l = n(8),
       d = n(9),
       a = n(4),
       u = n(3),
       p = n(2);
+  n(10);
   document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("header");
-    Object(i["default"])(), Object(r["default"])(), Object(o["default"])(), Object(s["default"])(), Object(l["default"])(), Object(c["default"])(), Object(d["default"])(), Object(a["default"])(), Object(u["default"])(), Object(p["default"])();
+    Object(i["default"])(), Object(r["default"])(), Object(o["default"])(), Object(s["default"])(), Object(c["default"])(), Object(l["default"])(), Object(d["default"])(), Object(a["default"])(), Object(u["default"])(), Object(p["default"])();
   });
 }]);

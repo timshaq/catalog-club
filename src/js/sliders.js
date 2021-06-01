@@ -28,7 +28,7 @@ export default function () {
 				spaceBetween: 30,
 			},
 			1200: {
-				slidesPerView: 1.622,
+				slidesPerView: 'auto',
 				spaceBetween: 30,
 			},
 		},
