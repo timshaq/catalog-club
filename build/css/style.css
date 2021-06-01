@@ -11232,7 +11232,10 @@ main {
 .about-author__text-box {
   margin-top: 30px;
   padding-top: 30px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
   border-top: 1px solid var(--black30);
+  border-bottom: 1px solid var(--black30);
 }
 
 @media (min-width: 768px) {
@@ -11295,6 +11298,20 @@ main {
   line-height: 32px;
   display: block;
   margin-top: 25px;
+}
+
+.about-author__btn-link {
+  width: 290px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .about-author__btn-link {
+    width: 430px;
+  }
 }
 
 .about-author-profile__ph-box {
