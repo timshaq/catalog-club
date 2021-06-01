@@ -1,0 +1,91 @@
+.about-author
+	&__profile
+		@media(min-width: $md)
+			display: flex
+	&__text-box
+		margin-top: 30px
+		padding-top: 30px
+		border-top: 1px solid var(--black30)
+		@media(min-width: $md)
+			display: flex
+			justify-content: space-between
+		& h2
+			font-size: 20px
+			line-height: 34px
+			& + p
+				margin-top: 20px
+		& p
+			font-weight: 300
+			font-size: 16px
+			line-height: 29px
+			& + p
+				margin-top: 20px
+	&__left-text,
+	&__right-text
+		@media(min-width: $md)
+			width: calc(50% - 15px)
+		@media(min-width: $xl)
+			width: 570px
+	&__left-text
+		margin-bottom: 20px
+		@media(min-width: $md)
+			margin-bottom: 0
+	&__mail-link
+		font-weight: 500
+		font-size: 18px
+		line-height: 32px
+		display: block
+		margin-top: 25px
+.about-author-profile
+	&__ph-box
+		width: 100%
+		margin-bottom: 30px
+		@media(min-width: $md)
+			width: 370px
+			height: 370px
+			margin-bottom: 0
+	&__ph
+		width: 100%
+		height: 100%
+		object-fit: cover
+		object-position: center center
+	&__text
+		width: 100%
+		@media(min-width: $md)
+			width: 445px
+			margin-left: 30px
+		@media(min-width: $xl)
+			margin-left: 130px
+	&__title
+		font-weight: 300
+		font-size: 30px
+		line-height: 34px
+		margin-bottom: 5px
+	&__subtitle
+		font-weight: 300
+		font-size: 18px
+		line-height: 31px
+		color: var(--black60)
+	&__quote-box
+		margin-top: 25px
+		padding-top: 25px
+		position: relative
+		&:before
+			position: absolute
+			top: 0
+			left: 0
+			content: ''
+			width: 40px
+			height: 2px
+			background-color: var(--black)
+	&__blockquote
+		font-size: 22px
+		line-height: 37px
+		font-style: italic
+	&__cite
+		font-weight: 300
+		font-size: 20px
+		line-height: 34px
+		margin-top: 30px
+		font-style: normal
+		display: block
