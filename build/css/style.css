@@ -294,17 +294,20 @@ h1, h2, h3, h4, h5, h6 {
 
 main {
   margin-top: 15px;
+  margin-bottom: 40px;
 }
 
 @media (min-width: 768px) {
   main {
     margin-top: 30px;
+    margin-bottom: 50px;
   }
 }
 
 @media (min-width: 1200px) {
   main {
     margin-top: 25px;
+    margin-bottom: 60px;
   }
 }
 
@@ -1639,22 +1642,6 @@ main {
 @media (min-width: 1200px) {
   .prefooter {
     padding: 30px 0;
-  }
-}
-
-.footer {
-  margin-top: 40px;
-}
-
-@media (min-width: 768px) {
-  .footer {
-    margin-top: 50px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .footer {
-    margin-top: 60px;
   }
 }
 
@@ -5446,25 +5433,31 @@ main {
   margin-bottom: 15px;
 }
 
-.clothes-catalog .catalog__ph {
-  width: 130px;
+.clothes-catalog .catalog__ph-box {
+  display: block;
+  min-width: 130px;
   height: 189px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 @media (min-width: 768px) {
-  .clothes-catalog .catalog__ph {
-    width: 170px;
+  .clothes-catalog .catalog__ph-box {
+    min-width: 170px;
     height: 245px;
   }
 }
 
 @media (min-width: 1200px) {
-  .clothes-catalog .catalog__ph {
-    width: 185px;
+  .clothes-catalog .catalog__ph-box {
+    min-width: 185px;
     height: 265px;
   }
+}
+
+.clothes-catalog .catalog__ph {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .clothes-catalog .catalog__title-link {
