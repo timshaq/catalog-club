@@ -34,6 +34,9 @@ export default function () {
 		},
 
 	})
+	previewSlider.on('resize', function() {
+		previewSlider.updateSize();
+	})
 
 	const brandsSlider = new Swiper('#brandsSlider', {
 		navigation: {
@@ -171,6 +174,35 @@ export default function () {
 	})
 
 // ORDER STEP 1
+
+
+
+// shop.html slider
+
+
+	const swipeCatalogsSlider = new Swiper('#swipeCatalogsSlider', {
+		direction: 'vertical',
+		slidesPerView: 3,
+		spaceBetween: 20,
+		navigation: {
+			nextEl: '#swipeCatalogsSliderBtnNext',
+			prevEl: '#swipeCatalogsSliderBtnPrev'
+		},
+		mousewheel: true,
+		loop: true,
+		speed: 1000,
+		autoplay: {
+			delay: 3000,
+		},
+		disableOnInteraction: false,
+		waitForTransition: true,
+
+	})
+
+
+
+// shop.html slider
+
 
 	var mobSlidersArray = []
 	
