@@ -3646,7 +3646,7 @@ main {
 
 .sale-card__article {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 160%;
   margin-bottom: 20px;
 }
@@ -4596,7 +4596,7 @@ main {
 
 .articles__p {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 170%;
   margin: 15px 0;
 }
