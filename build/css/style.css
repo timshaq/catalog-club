@@ -75,7 +75,7 @@ nav, footer, header, aside {
 html, body {
   font-size: 100%;
   line-height: 1;
-  font-size: 14px;
+  font-size: 16px;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: none;
   -webkit-overflow-scrolling: touch;
@@ -532,8 +532,8 @@ main {
 
 .seo-text {
   font-weight: 300;
-  font-size: 14px;
-  font-size-line-height: 150%;
+  font-size: 16px;
+  line-height: 150%;
 }
 
 .custom-radio {
@@ -4335,7 +4335,7 @@ main {
 
 .week-thing .thing__description {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 150%;
   text-align: center;
   margin-top: 15px;
@@ -4771,7 +4771,7 @@ main {
 .articles__li {
   margin-bottom: 20px;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 170%;
   position: relative;
   padding-left: 15px;
@@ -5469,7 +5469,7 @@ main {
 
 .lastest-article__p {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 170%;
 }
 
@@ -6253,7 +6253,7 @@ main {
 
 .service-list__title {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 150%;
   text-align: center;
 }
@@ -6637,7 +6637,7 @@ main {
   top: 4px;
   left: 70px;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 150%;
   color: var(--dark-orange);
 }
@@ -6692,7 +6692,7 @@ main {
 .service-proccess.refund .service-proccess__li-name {
   text-align: center;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 150%;
   width: 140px;
   position: absolute;
@@ -6834,7 +6834,7 @@ main {
 
 .service-proccess.summary .service-proccess__li-name {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 150%;
   text-align: center;
   margin-top: 27px;
@@ -6982,7 +6982,7 @@ main {
 
 .service-faq__title {
   width: 85%;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 150%;
 }
 
@@ -7149,7 +7149,7 @@ main {
 
 .service-size__li-text {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 150%;
   text-decoration: underline;
 }
@@ -7248,14 +7248,14 @@ main {
 
 .service-termins__termin-title {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 150%;
   margin-bottom: 10px;
 }
 
 .service-termins__termin-description {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 150%;
 }
 
@@ -7355,7 +7355,7 @@ main {
 
 .service-size__example-param {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 16px;
 }
 
@@ -7625,7 +7625,7 @@ main {
 
 .service-brands__p {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 150%;
 }
 
@@ -10813,7 +10813,7 @@ main {
 
 .wish-header__description {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 150%;
   margin-top: 15px;
   text-align: center;
@@ -11586,7 +11586,7 @@ main {
 
 .popup-cont .popup__week-thing .popup__article {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 150%;
   text-align: center;
   margin-bottom: 15px;
