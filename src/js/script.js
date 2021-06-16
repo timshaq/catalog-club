@@ -1,5 +1,6 @@
 "use strict";
 
+import headerFix from './headerFix.js';
 import sliders from './sliders.js';
 import callbackPopup from './callbackPopup.js';
 import btnBurger from './btnBurger.js';
@@ -15,6 +16,8 @@ import pixelPerfect from './pixelPerfect.js';
 document.addEventListener("DOMContentLoaded", function () {
 
 	var header = document.getElementById('header');
+	
+	headerFix();
 
 	sliders();
 

@@ -164,6 +164,13 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--black);
 }
 
+div:not([class]),
+p:not([class]) {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 170%;
+}
+
 .editor-content img {
   max-width: 100% !important;
   width: 100%;
@@ -1375,8 +1382,8 @@ main {
   }
   .header__controls-tooltip:after {
     content: '';
-    width: 100%;
-    height: 50px;
+    width: 70px;
+    height: 20px;
     border: 0;
   }
   .header__controls-tooltip:after, .header__controls-tooltip:before {
@@ -1725,6 +1732,167 @@ main {
   text-transform: uppercase;
 }
 
+.header-fix {
+  display: none;
+  width: 100%;
+  height: 70px;
+  background-color: var(--white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.07);
+}
+
+.header-fix.active {
+  display: block;
+}
+
+.header-fix__burger-btn {
+  width: 30px;
+  height: 30px;
+}
+
+.header-fix__burger-icon {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.header-fix .header__controls-logo {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.header-fix .header__controls-home-link {
+  width: 27px;
+  height: 55px;
+  margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .header-fix .header__controls-home-link {
+    width: 32px;
+    height: 65px;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-fix .header__controls-home-link {
+    margin-left: 0;
+  }
+}
+
+.header-fix .header__controls {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-bottom: 5px;
+}
+
+@media (min-width: 1200px) {
+  .header-fix .header__controls {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.header-fix .header__controls-list {
+  margin-left: auto;
+  margin-top: 0;
+}
+
+@media (min-width: 1200px) {
+  .header-fix .header__controls-list {
+    margin-left: 0;
+  }
+}
+
+.header-fix .header__controls-li:not(:last-child) {
+  margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .header-fix .header__controls-li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.header-fix .header__controls-li {
+  width: 30px;
+  height: 30px;
+}
+
+@media (min-width: 768px) {
+  .header-fix .header__controls-li {
+    width: auto;
+    height: auto;
+  }
+}
+
+.header-fix .header__controls-icon {
+  width: 30px;
+  height: 30px;
+}
+
+@media (min-width: 768px) {
+  .header-fix .header__controls-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.header-fix .header__controls-name {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .header-fix .header__controls-name {
+    display: inline;
+  }
+}
+
+.header-fix .menu-tooltip {
+  left: 0;
+  bottom: 0;
+  height: calc(100vh - 70px);
+  overflow: auto;
+  z-index: 30;
+}
+
+@media (min-width: 1200px) {
+  .header-fix .header__nav {
+    padding: 0 20px 0 20px;
+    border: none;
+  }
+  .header-fix .header__nav-list {
+    width: 100%;
+  }
+  .header-fix .header__nav-li + .header__nav-li {
+    margin-left: 40px;
+  }
+  .header-fix .header__nav-list {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-fix .header__nav-li.contains {
+    padding-right: 10px;
+  }
+}
+
 .prefooter {
   background-color: var(--gray2);
   padding: 15px 0;
@@ -1766,7 +1934,13 @@ main {
 
 .features {
   background-color: var(--gray3);
-  padding: 15px 0;
+  padding: 10px 0;
+}
+
+@media (min-width: 1200px) {
+  .features {
+    padding: 15px 0;
+  }
 }
 
 .features.fixed {
@@ -1779,7 +1953,7 @@ main {
     position: fixed;
     bottom: 0;
     width: 100%;
-    z-index: 30;
+    z-index: 29;
   }
   .features.fixed.disable {
     display: none;
@@ -1838,7 +2012,7 @@ main {
 
 @media (min-width: 768px) {
   .features__link {
-    width: 86px;
+    width: 115px;
   }
 }
 
