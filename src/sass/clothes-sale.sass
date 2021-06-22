@@ -84,6 +84,10 @@
 		font-size: 16px
 		line-height: 160%
 		margin-bottom: 20px
+		overflow: hidden
+		max-height: 200px
+		@media(min-width:$md)
+			max-height: 100px
 	&__link
 		width: 135px
 		height: 35px
@@ -119,6 +123,8 @@
 			overflow: auto
 			height: auto
 			margin-bottom: 0
+		& .sale-card__article
+			max-height: none
 	& .product-line
 		margin-top: 60px
 

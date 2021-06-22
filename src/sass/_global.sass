@@ -95,7 +95,8 @@ select
 *, a
 	color: var(--black)
 div:not([class]),
-p:not([class])
+p:not([class]),
+span:not([class])
 	font-weight: 300
 	font-size: 16px
 	line-height: 170%
@@ -127,9 +128,24 @@ p:not([class])
 		font-size: 16px
 		line-height: 25px
 		margin: 10px 0
+	& a
+	    border-bottom: 1px solid var(--black)
+	& ol
+		margin-top: 25px
+		margin-bottom: 40px
 	& ul
 		margin-top: 25px
 		margin-bottom: 40px
+		& li
+			&:before
+				content: ''
+				width: 8px
+				height: 8px
+				background-color: var(--black)
+				font-size: 10px
+				position: absolute
+				top: .7em
+				left: 0
 	& li
 		margin-bottom: 20px
 		font-weight: 300
@@ -137,15 +153,6 @@ p:not([class])
 		line-height: 170%
 		position: relative
 		padding-left: 15px 
-		&:before
-			content: ''
-			width: 8px
-			height: 8px
-			background-color: var(--black)
-			font-size: 10px
-			position: absolute
-			top: .7em
-			left: 0
 	& table
 		width: 100%
 		border-spacing: 0
@@ -180,6 +187,7 @@ p:not([class])
 		padding: 7px
 		border-bottom: 1px solid var(--gray)
 		text-align: center
+		vertical-align: top
 		&:not(:last-child)
 			border-right: 1px solid var(--gray)
 main

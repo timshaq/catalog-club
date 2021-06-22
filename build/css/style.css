@@ -165,7 +165,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 div:not([class]),
-p:not([class]) {
+p:not([class]),
+span:not([class]) {
   font-weight: 300;
   font-size: 16px;
   line-height: 170%;
@@ -214,9 +215,29 @@ p:not([class]) {
   margin: 10px 0;
 }
 
+.editor-content a {
+  border-bottom: 1px solid var(--black);
+}
+
+.editor-content ol {
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
 .editor-content ul {
   margin-top: 25px;
   margin-bottom: 40px;
+}
+
+.editor-content ul li:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: var(--black);
+  font-size: 10px;
+  position: absolute;
+  top: .7em;
+  left: 0;
 }
 
 .editor-content li {
@@ -226,17 +247,6 @@ p:not([class]) {
   line-height: 170%;
   position: relative;
   padding-left: 15px;
-}
-
-.editor-content li:before {
-  content: '';
-  width: 8px;
-  height: 8px;
-  background-color: var(--black);
-  font-size: 10px;
-  position: absolute;
-  top: .7em;
-  left: 0;
 }
 
 .editor-content table {
@@ -294,6 +304,7 @@ p:not([class]) {
   padding: 7px;
   border-bottom: 1px solid var(--gray);
   text-align: center;
+  vertical-align: top;
 }
 
 .editor-content td:not(:last-child) {
@@ -1751,6 +1762,12 @@ main {
 .header-fix__burger-btn {
   width: 30px;
   height: 30px;
+}
+
+@media (min-width: 1200px) {
+  .header-fix__burger-btn {
+    display: none;
+  }
 }
 
 .header-fix__burger-icon {
@@ -3823,6 +3840,14 @@ main {
   font-size: 16px;
   line-height: 160%;
   margin-bottom: 20px;
+  overflow: hidden;
+  max-height: 200px;
+}
+
+@media (min-width: 768px) {
+  .sale-card__article {
+    max-height: 100px;
+  }
 }
 
 .sale-card__link {
@@ -3898,6 +3923,10 @@ main {
   overflow: auto;
   height: auto;
   margin-bottom: 0;
+}
+
+.sale-card.open .sale-card__article {
+  max-height: none;
 }
 
 .sale-card .product-line {
@@ -7156,7 +7185,7 @@ main {
 
 .service-faq__title {
   width: 85%;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 150%;
 }
 
@@ -7190,7 +7219,6 @@ main {
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
-  color: var(--black50);
   width: 85%;
   margin-top: 15px;
   margin-bottom: 5px;
