@@ -48,7 +48,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     return n.d(t, "a", t), t;
   }, n.o = function (e, t) {
     return Object.prototype.hasOwnProperty.call(e, t);
-  }, n.p = "", n(n.s = 12);
+  }, n.p = "", n(n.s = 13);
 }([function (e, t, n) {
   "use strict";
 
@@ -90,9 +90,9 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     }
 
     var o = document.querySelectorAll(".callback-btn"),
-        s = Array.prototype.slice.call(o);
+        r = Array.prototype.slice.call(o);
     document.getElementById("callbackClose");
-    s.forEach(function (t) {
+    r.forEach(function (t) {
       t.addEventListener("click", function () {
         return i(e);
       });
@@ -132,6 +132,28 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       i();
     }), i(), n.addEventListener("click", function () {
       return t.classList.contains("open") ? t.classList.remove("open") : t.classList.add("open");
+    });
+  };
+}, function (e, t, n) {
+  "use strict";
+
+  n.r(t), t["default"] = function () {
+    var e = document.querySelectorAll(".mob-link-with-tooltip"),
+        t = Array.prototype.slice.call(e),
+        n = function n() {
+      return window.innerWidth;
+    };
+
+    console.log("vw = ", n()), t.forEach(function (e) {
+      e.addEventListener("click", function (i) {
+        if (n() < 1200) {
+          i.preventDefault(), t.forEach(function (e) {
+            return e.parentElement.classList.remove("open");
+          });
+          var _n = e.parentElement.classList;
+          _n.contains("open") ? _n.remove("open") : _n.add("open");
+        }
+      });
     });
   };
 }, function (e, t, n) {
@@ -185,10 +207,10 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     }
 
     var o = document.getElementById("reviewsPopupOpen"),
-        s = document.getElementById("reviewsPopupClose");
+        r = document.getElementById("reviewsPopupClose");
     o.addEventListener("click", function () {
       return i(e);
-    }), s.addEventListener("click", function () {
+    }), r.addEventListener("click", function () {
       n(e);
     }), e.addEventListener("click", function (t) {
       t.target === this && n(e);
@@ -306,12 +328,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       spaceBetween: 10
     }),
         o = document.getElementById("serviceLinksSlider"),
-        s = new Swiper(o, {
+        r = new Swiper(o, {
       slidesPerView: 1.3,
       spaceBetween: 10
     }),
-        r = document.getElementById("instructionSlider"),
-        c = new Swiper(r, {
+        s = document.getElementById("instructionSlider"),
+        c = new Swiper(s, {
       slidesPerView: 2.1,
       spaceBetween: 10
     }),
@@ -332,8 +354,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
         prevEl: u
       }
     }),
-        w = document.getElementById("addProductPopupProductsSlider"),
-        m = new Swiper(w, {
+        m = document.getElementById("addProductPopupProductsSlider"),
+        w = new Swiper(m, {
       slidesPerView: 1,
       spaceBetween: 0,
       allowTouchMove: !1,
@@ -377,7 +399,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
     n.length && i.forEach(function (e) {
       v.push(e);
-    }), o && v.push(s), r && v.push(c), l && v.push(d), w && v.push(m), p && v.push(f), v.length && (window.onresize = function () {
+    }), o && v.push(r), s && v.push(c), l && v.push(d), m && v.push(w), p && v.push(f), v.length && (window.onresize = function () {
       y(window.innerWidth);
     }, y(window.innerWidth));
   };
@@ -398,24 +420,24 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       e.classList.add("open"), n.style.overflowX = "hidden", n.style.overflowY = "hidden";
     }
 
-    var s = document.getElementById("week-thing-popup"),
-        r = s.querySelector(".popup__close"),
-        c = s.querySelector(".popup__ph"),
-        l = s.querySelector(".popup__article");
+    var r = document.getElementById("week-thing-popup"),
+        s = r.querySelector(".popup__close"),
+        c = r.querySelector(".popup__ph"),
+        l = r.querySelector(".popup__article");
     t.forEach(function (e) {
       e.addEventListener("click", function () {
-        if (s.classList.contains("open")) i(s);else {
-          var _n = e.querySelector(".thing__ph").getAttribute("src");
+        if (r.classList.contains("open")) i(r);else {
+          var _n2 = e.querySelector(".thing__ph").getAttribute("src");
 
-          c.setAttribute("src", _n);
+          c.setAttribute("src", _n2);
           var t = e.querySelector(".thing__popup-text").innerText;
-          t || (t = "Описание не найдено"), l.innerText = t, o(s);
+          t || (t = "Описание не найдено"), l.innerText = t, o(r);
         }
       });
-    }), r.addEventListener("click", function () {
-      i(s);
-    }), s.addEventListener("click", function (e) {
-      e.target === this && i(s);
+    }), s.addEventListener("click", function () {
+      i(r);
+    }), r.addEventListener("click", function (e) {
+      e.target === this && i(r);
     });
   };
 }, function (e, t, n) {
@@ -440,25 +462,25 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     });
   };
 }, function (e, t, n) {
-  n(0), n(1), n(2), n(3), n(4), n(11), n(5), n(6), n(7), n(13), n(10), n(8), e.exports = n(9);
+  n(0), n(1), n(2), n(3), n(4), n(5), n(12), n(6), n(7), n(8), n(14), n(11), n(9), e.exports = n(10);
 }, function (e, t, n) {
   "use strict";
 
   n.r(t);
   var i = n(3),
-      o = n(8),
-      s = n(1),
-      r = n(0),
-      c = n(7),
-      l = n(6),
-      d = n(9),
-      a = n(10),
-      u = n(5),
-      p = n(4),
-      f = n(2);
-  n(11);
+      o = n(9),
+      r = n(1),
+      s = n(0),
+      c = n(8),
+      l = n(7),
+      d = n(10),
+      a = n(11),
+      u = n(6),
+      p = n(5),
+      f = n(2),
+      m = (n(12), n(4));
   document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("header");
-    Object(i["default"])(), Object(o["default"])(), Object(s["default"])(), Object(r["default"])(), Object(c["default"])(), Object(l["default"])(), Object(d["default"])(), Object(a["default"])(), Object(u["default"])(), Object(p["default"])(), Object(f["default"])();
+    Object(i["default"])(), Object(o["default"])(), Object(r["default"])(), Object(s["default"])(), Object(c["default"])(), Object(l["default"])(), Object(d["default"])(), Object(a["default"])(), Object(u["default"])(), Object(p["default"])(), Object(f["default"])(), Object(m["default"])();
   });
 }]);
