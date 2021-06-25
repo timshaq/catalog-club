@@ -172,7 +172,7 @@ span:not([class]) {
   line-height: 170%;
 }
 
-.tile .clear img {
+.tile.clear img {
   -o-object-fit: contain;
      object-fit: contain;
 }
