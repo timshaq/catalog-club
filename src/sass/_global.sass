@@ -100,6 +100,9 @@ span:not([class])
 	font-weight: 300
 	font-size: 16px
 	line-height: 170%
+.tile .clear
+	& img
+		object-fit: contain
 .editor-content
 	& img
 		max-width: 100% !important
@@ -129,7 +132,7 @@ span:not([class])
 		line-height: 25px
 		margin: 10px 0
 	& a
-	    border-bottom: 1px solid var(--black)
+	    text-decoration: underline
 	& ol
 		margin-top: 25px
 		margin-bottom: 40px
@@ -272,6 +275,8 @@ main
 
 .link
 	color: var(--orange)
+a.link
+	text-decoration: underline
 
 .white-btn, .black-btn, .orange-btn, .gray-btn
 	display: flex

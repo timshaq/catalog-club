@@ -172,6 +172,11 @@ span:not([class]) {
   line-height: 170%;
 }
 
+.tile .clear img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .editor-content img {
   max-width: 100% !important;
   width: 100%;
@@ -216,7 +221,7 @@ span:not([class]) {
 }
 
 .editor-content a {
-  border-bottom: 1px solid var(--black);
+  text-decoration: underline;
 }
 
 .editor-content ol {
@@ -466,6 +471,10 @@ main {
 
 .link {
   color: var(--orange);
+}
+
+a.link {
+  text-decoration: underline;
 }
 
 .white-btn, .black-btn, .orange-btn, .gray-btn {
@@ -3943,6 +3952,10 @@ main {
   overflow: auto;
   height: auto;
   margin-bottom: 0;
+}
+
+.sale-card.open .sale-card__hidden a {
+  text-decoration: underline;
 }
 
 .sale-card.open .sale-card__article {
@@ -11796,8 +11809,8 @@ main {
 .popup-cont .popup__week-thing .popup__ph {
   width: 100%;
   height: 260px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin-bottom: 10px;
 }
 
